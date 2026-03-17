@@ -28,8 +28,10 @@ a {
 {{ content }}
 
 {% if page.url != '/' %}
-  <div style="margin-top: 24px;">
-    <a href="{{ '/' | relative_url }}">BACK TO TITLES</a>
+  <div style="margin-top: 24px; text-align: left;">
+    <a href="{{ '/' | relative_url }}" style="font-size: 12px;">
+      BACK TO TITLES
+    </a>
   </div>
 {% endif %}
 
