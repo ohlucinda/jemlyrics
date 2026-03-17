@@ -24,6 +24,8 @@ body {
 
 </body>
 </html>
+{% if page.url != '/' %}
 <div style="margin-top: 60px;">
-  <a href="{{ '/' | relative_url }}">←</a>
+  <a href="{{ '/' | relative_url }}" style="font-size: 14px;">←</a>
 </div>
+{% endif %}
