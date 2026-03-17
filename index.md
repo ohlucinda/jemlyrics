@@ -4,7 +4,8 @@ layout: default
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 80px;">
 
-  <div style="text-align: left;">
+  <!-- 左 -->
+  <div style="width: 40%;">
 
     <div style="margin: 20px 0;">
       <a href="https://ohlucinda.wixsite.com/jemmusicja" target="_blank" rel="noopener noreferrer">
@@ -26,11 +27,14 @@ layout: default
 
   </div>
 
-  <div>
-    <img src="/jem.jpg" style="max-width: 420px; height: auto;">
+  <!-- 右 -->
+  <div style="width: 50%;">
+    <img src="{{ '/jem.jpg' | relative_url }}" style="width: 100%; height: auto;">
   </div>
 
 </div>
+
+<!-- 下 -->
 <div style="text-align: center; margin-top: 80px;">
 
   <div style="margin: 10px 0;">
