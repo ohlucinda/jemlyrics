@@ -9,8 +9,9 @@
 body {
   font-family: 'Aboreto', cursive;
   max-width: 900px;
-  margin: 60px auto;
-  line-height: 1.2;
+  margin: 40px auto;
+  line-height: 1.1;
+  font-size: 28px;
   white-space: pre-wrap;
 }
 
@@ -24,17 +25,9 @@ a {
 
 <body>
 
-<h1>Je'm</h1>
+<h1 style="font-size: 1em; margin-bottom: 40px;">Je'm</h1>
 
 {{ content }}
-
-{% if page.url != '/' %}
-  <div style="margin-top: 20px; text-align: center;">
-    <a href="{% if page.url == '/lyrics/' %}{{ '/' | relative_url }}{% else %}{{ '/lyrics' | relative_url }}{% endif %}">
-      {% if page.url == '/lyrics/' %}BACK TO HOME{% else %}BACK TO TITLES{% endif %}
-    </a>
-  </div>
-{% endif %}
 
 </body>
 </html>
