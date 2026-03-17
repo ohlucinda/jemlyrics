@@ -2,44 +2,41 @@
 layout: default
 ---
 
-<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 120px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 80px;">
 
-  <!-- 左 -->
-  <div style="width: 45%; display: flex; flex-direction: column; gap: 40px;">
+  <div style="width: 45%; display: flex; flex-direction: column; gap: 28px;">
 
-    <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank" rel="noopener noreferrer">
+    <a href="https://ohlucinda.wixsite.com/jemmusicja" target="_blank">
       MY NAME IS JE'M
     </a>
 
-    <a href="/lyrics">
+    <a href="{{ '/lyrics/' | relative_url }}" style="font-size: 1.8em;">
       LYRICS
     </a>
 
-    <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank" rel="noopener noreferrer">
+    <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank">
       MY NOTES
     </a>
 
   </div>
 
-  <!-- 右 -->
   <div style="width: 50%;">
-    <img src="/jem.jpg" style="width: 100%; height: auto;">
+    <img src="{{ '/jem.jpg' | relative_url }}" style="width: 100%;">
   </div>
 
 </div>
 
-<!-- 下 -->
-<div style="margin-top: 40px; text-align: right;">
+<div style="margin-top: 40px; text-align: right; line-height: 1.1;">
 
-  <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank" rel="noopener noreferrer">
+  <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">
     APPLE MUSIC
   </a><br>
 
-  <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank">
     YOUTUBE
   </a>
 
-  <div style="margin-top: 10px; font-size: 0.5em;">
+  <div style="font-size: 0.5em; margin-top: 10px;">
     © All rights reserved
   </div>
 
