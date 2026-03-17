@@ -4,9 +4,9 @@ layout: default
 
 <div style="text-align: center; margin-top: 60px;">
 
-  <div style="margin: 20px 0;">
-    MY NAME IS JE'M
-  </div>
+ <a href="https://ohlucinda.wixsite.com/jemmusicja">
+  MY NAME IS JE'M
+</a>
 
   <div style="margin: 20px 0;">
    <a href="{{ '/lyrics' | relative_url }}">SONGS</a>
