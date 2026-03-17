@@ -1,6 +1,4 @@
----
-layout: default
-title: TITANIUM GRIP
+
 ------
 title: TITANIUM GRIP
 ---
