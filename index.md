@@ -29,14 +29,18 @@ layout: default
 </div>
 
 <!-- 下 -->
-<div style="text-align: center; margin-top: 60px; display: flex; flex-direction: column; gap: 10px;">
+<div style="text-align: center; margin-top: 60px; display: flex; flex-direction: column; gap: 4px;">
 
-  <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank" rel="noopener noreferrer" style="font-size: 16px;">
+  <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank" rel="noopener noreferrer">
     APPLE MUSIC
   </a>
 
-  <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank" rel="noopener noreferrer" style="font-size: 16px;">
+  <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank" rel="noopener noreferrer">
     YOUTUBE
   </a>
+
+  <div style="margin-top: 12px; font-size: 0.5em;">
+    © All rights reserved
+  </div>
 
 </div>
