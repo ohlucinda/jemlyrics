@@ -27,10 +27,17 @@ a {
 
 {{ content }}
 
-{% if page.url != '/' %}
+{% if page.path == 'lyrics.md' %}
   <div style="margin-top: 0px; text-align: center;">
-    <a href="{% if page.url == '/lyrics' or page.url == '/lyrics/' %}{{ '/' | relative_url }}{% else %}{{ '/lyrics' | relative_url }}{% endif %}" style="font-size: 14px;">
-      {% if page.url == '/lyrics' or page.url == '/lyrics/' %}BACK TO HOME{% else %}BACK TO TITLES{% endif %}
+    <a href="{{ '/' | relative_url }}" style="font-size: 14px;">
+      BACK TO HOME
+    </a>
+  </div>
+
+{% elsif page.url != '/' %}
+  <div style="margin-top: 0px; text-align: center;">
+    <a href="{{ '/lyrics' | relative_url }}" style="font-size: 14px;">
+      BACK TO TITLES
     </a>
   </div>
 {% endif %}
