@@ -12,8 +12,10 @@ layout: default
    <a href="{{ '/lyrics' | relative_url }}">SONGS</a>
   </div>
 
-  <div style="margin: 20px 0;">
+ <div style="margin: 20px 0;">
+  <a href="https://ohlucinda.wixsite.com/jemmusicja/blog">
     MY NOTES
-  </div>
+  </a>
+</div>
 
 </div>
