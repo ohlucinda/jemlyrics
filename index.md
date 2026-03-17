@@ -11,9 +11,9 @@ layout: default
   </div>
 
   <div style="margin: 20px 0;">
-    <a href="{{ '/lyrics' | relative_url }}">
-      SONGS
-    </a>
+   <a href="{{ '/lyrics' | relative_url }}">
+  LYRICS
+</a>
   </div>
 
   <div style="margin: 20px 0;">
