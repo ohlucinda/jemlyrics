@@ -29,8 +29,8 @@ a {
 
 {% if page.url != '/' %}
   <div style="margin-top: 0px; text-align: center;">
-    <a href="{{ '/lyrics' | relative_url }}" style="font-size: 14px;">
-      BACK TO TITLES
+    <a href="{% if page.url == '/lyrics/' %}{{ '/' | relative_url }}{% else %}{{ '/lyrics' | relative_url }}{% endif %}" style="font-size: 14px;">
+      {% if page.url == '/lyrics/' %}BACK TO HOME{% else %}BACK TO TITLES{% endif %}
     </a>
   </div>
 {% endif %}
