@@ -1,47 +1,46 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
+---
+layout: default
+---
 
-<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 120px;">
 
-<style>
-body {
-  font-family: 'Aboreto', cursive;
-  max-width: 800px;
-  margin: 40px auto;
-  line-height: 1.6;
-  white-space: pre-wrap;
-  font-size: 44px;
-}
+  <!-- 左 -->
+  <div style="width: 45%; display: flex; flex-direction: column; gap: 40px;">
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-</style>
-</head>
-
-<body>
-
-<h1>Je'm</h1>
-
-{{ content }}
-
-{% if page.path == 'lyrics.md' %}
-  <div style="margin-top: 0px; text-align: center;">
-    <a href="{{ '/' | relative_url }}" style="font-size: 14px;">
-      BACK TO HOME
+    <a href="https://ohlucinda.wixsite.com/jemmusicja" target="_blank" rel="noopener noreferrer" style="font-size: 0.7em;">
+      MY NAME IS JE'M
     </a>
+
+    <a href="{{ '/lyrics' | relative_url }}" style="font-size: 2.2em;">
+      LYRICS
+    </a>
+
+    <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank" rel="noopener noreferrer" style="font-size: 0.9em;">
+      MY NOTES
+    </a>
+
   </div>
 
-{% elsif page.url != '/' %}
-  <div style="margin-top: 0px; text-align: center;">
-    <a href="{{ '/lyrics' | relative_url }}" style="font-size: 14px;">
-      BACK TO TITLES
-    </a>
+  <!-- 右 -->
+  <div style="width: 50%;">
+    <img src="{{ '/jem.jpg' | relative_url }}" style="width: 100%; height: auto;">
   </div>
-{% endif %}
 
-</body>
-</html>
+</div>
+
+<!-- 下 -->
+<div style="margin-top: 60px; display: flex; flex-direction: column; align-items: flex-end; line-height: 1.1;">
+
+  <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank" rel="noopener noreferrer" style="font-size: 0.9em;">
+    APPLE MUSIC
+  </a>
+
+  <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank" rel="noopener noreferrer" style="font-size: 0.9em;">
+    YOUTUBE
+  </a>
+
+  <div style="margin-top: 10px; font-size: 0.5em;">
+    © All rights reserved
+  </div>
+
+</div>
