@@ -4,20 +4,22 @@ layout: default
 
 <div style="text-align: center; margin-top: 60px;">
 
- <a href="https://ohlucinda.wixsite.com/jemmusicja">
-  MY NAME IS JE'M
-</a>
-
   <div style="margin: 20px 0;">
-   <a href="https://ohlucinda.wixsite.com/jemmusicja" target="_blank" rel="noopener noreferrer">
-  MY NAME IS JE'M
-</a>
+    <a href="https://ohlucinda.wixsite.com/jemmusicja" target="_blank" rel="noopener noreferrer">
+      MY NAME IS JE'M
+    </a>
   </div>
 
- <div style="margin: 20px 0;">
-  <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank" rel="noopener noreferrer">
-  MY NOTES
-</a>
-</div>
+  <div style="margin: 20px 0;">
+    <a href="{{ '/lyrics' | relative_url }}">
+      SONGS
+    </a>
+  </div>
+
+  <div style="margin: 20px 0;">
+    <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank" rel="noopener noreferrer">
+      MY NOTES
+    </a>
+  </div>
 
 </div>
