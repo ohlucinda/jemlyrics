@@ -9,7 +9,7 @@ layout: default
   </div>
 
   <div style="margin: 20px 0;">
-    <a href="{{ '/' | relative_url }}">SONGS</a>
+   <a href="{{ '/lyrics' | relative_url }}">SONGS</a>
   </div>
 
   <div style="margin: 20px 0;">
