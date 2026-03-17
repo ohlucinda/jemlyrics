@@ -29,7 +29,7 @@ layout: default
 </div>
 
 <!-- 下 -->
-<div style="margin-top: 60px; display: flex; flex-direction: column; align-items: flex-end; gap: 2px;">
+<div style="margin-top: 60px; display: flex; flex-direction: column; align-items: flex-end; line-height: 1.0;">
 
   <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank" rel="noopener noreferrer">
     APPLE MUSIC
@@ -39,7 +39,7 @@ layout: default
     YOUTUBE
   </a>
 
-  <div style="margin-top: 10px; font-size: 0.4em; text-align: right;">
+  <div style="margin-top: 6px; font-size: 0.4em;">
     © All rights reserved
   </div>
 
