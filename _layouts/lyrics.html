@@ -8,7 +8,7 @@
 <style>
 body {
   font-family: 'Aboreto', cursive;
-  margin: 60px 0 60px 120px;  /* ← 左に余白つけて流す */
+  margin: 60px 0 60px 120px;
   font-size: 28px;
   line-height: 1.6;
   white-space: pre-wrap;
@@ -25,28 +25,54 @@ a {
   font-size: 44px;
 }
 
-/* 戻るリンク */
+/* 一覧ページだけ中央にする */
+.list-page .title {
+  text-align: center;
+}
+
+/* 一覧 */
+.list a {
+  font-size: 36px;
+}
+
+.list div {
+  margin: 4px 0;
+}
+
+/* 戻る */
 .back {
   margin-top: 40px;
-  text-align: center;  /* ← 中央に */
+  text-align: center;
 }
 
 .back a {
-  font-size: 28px;     /* ← 大きく */
+  font-size: 28px;
 }
 </style>
 
 </head>
 
-<body>
+<body class="{% if page.url == '/lyrics/' %}list-page{% endif %}">
 
 <div class="title">Je'm</div>
 
 {{ content }}
 
-<div class="back">
-  <a href="{{ '/lyrics' | relative_url }}">BACK TO TITLES</a>
-</div>
+{% if page.url == '/lyrics/' %}
+  <div class="list">
+    {% for post in site.posts %}
+      <div>
+        <a href="{{ post.url | relative_url }}">
+          {{ post.path | split: '/' | last | remove: '.md' | slice: 11, 100 | replace: '-', ' ' | upcase }}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="back">
+    <a href="{{ '/lyrics' | relative_url }}">BACK TO TITLES</a>
+  </div>
+{% endif %}
 
 </body>
 </html>
