@@ -27,16 +27,14 @@ layout: default
 
 .wrapper {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 80px;
 }
 
 .left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 40px;
-  padding-top: 60px;
 }
 
 .left a {
@@ -131,7 +129,7 @@ layout: default
 
 <div class="overlay" id="overlay" onclick="hideOverlay()">
   <img src="{{ '/hime01.jpg' | relative_url }}">
-  <div class="close-hint">クリックで戻る</div>
+  <div class="close-hint">CLICK TO CLOSE</div>
 </div>
 
 <script>
@@ -143,65 +141,5 @@ function showOverlay() {
 function hideOverlay() {
   const overlay = document.getElementById('overlay');
   overlay.style.display = 'none';
-}
-</script>  justify-content: center;
-  align-items: center;
-  z-index: 100;
-  opacity: 0;
-  transition: opacity 0.6s ease;
-}
-
-.overlay.active {
-  display: flex;
-  opacity: 1;
-}
-
-.overlay img {
-  max-height: 90vh;
-  max-width: 90vw;
-  object-fit: contain;
-}
-</style>
-
-<div class="page-wrap">
-
-  <div class="site-header" onclick="showOverlay()">
-    JE'M
-  </div>
-
-  <div class="wrapper">
-    <div class="left">
-      <a href="https://ohlucinda.wixsite.com/jemmusicja" target="_blank">MY NAME IS JE'M</a>
-      <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
-      <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank">MY NOTES</a>
-    </div>
-    <div class="right-col">
-      <img src="{{ '/jem.jpg' | relative_url }}">
-      <div class="bottom">
-        <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
-        <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank">YOUTUBE</a>
-        <div class="copy">© All rights reserved</div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<!-- オーバーレイ -->
-<div class="overlay" id="overlay" onclick="hideOverlay()">
-  <img src="{{ '/hime01.jpg' | relative_url }}">
-</div>
-
-<script>
-function showOverlay() {
-  const overlay = document.getElementById('overlay');
-  overlay.style.display = 'flex';
-  setTimeout(() => { overlay.style.opacity = '1'; }, 10);
-}
-
-function hideOverlay() {
-  const overlay = document.getElementById('overlay');
-  overlay.style.opacity = '0';
-  setTimeout(() => { overlay.style.display = 'none'; }, 600);
 }
 </script>
