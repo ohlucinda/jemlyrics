@@ -41,8 +41,8 @@ a {
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-  padding-left: 15%;
-  width: 100%;
+  width: 60%;
+  margin-left: 10%;
 }
 
 .list a {
@@ -69,6 +69,22 @@ a {
 
   <div class="site-header">
     <a href="{{ '/' | relative_url }}">JE'M</a>
+  </div>
+
+  <div class="list">
+    {% for post in site.posts %}
+      <a href="{{ post.url | relative_url }}">{{ post.title | upcase }}</a>
+    {% endfor %}
+  </div>
+
+  <div class="back">
+    <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
+  </div>
+
+</div>
+
+</body>
+</html>    <a href="{{ '/' | relative_url }}">JE'M</a>
   </div>
 
   <div class="list">
