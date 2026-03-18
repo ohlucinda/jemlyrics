@@ -20,9 +20,8 @@ layout: default
   cursor: pointer;
 }
 
-.site-header a {
+.site-header span {
   font-size: 100px;
-  text-decoration: none;
   color: inherit;
 }
 
@@ -86,6 +85,66 @@ layout: default
   height: 100%;
   background: rgba(255,255,255,0.95);
   justify-content: center;
+  align-items: center;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.overlay img {
+  max-height: 90vh;
+  max-width: 90vw;
+  object-fit: contain;
+}
+
+.overlay .close-hint {
+  position: fixed;
+  bottom: 40px;
+  font-size: 20px;
+  color: #888;
+  font-family: 'Aboreto', cursive;
+}
+</style>
+
+<div class="page-wrap">
+
+  <div class="site-header" onclick="showOverlay()">
+    <span>JE'M</span>
+  </div>
+
+  <div class="wrapper">
+    <div class="left">
+      <a href="https://ohlucinda.wixsite.com/jemmusicja" target="_blank">MY NAME IS JE'M</a>
+      <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
+      <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank">MY NOTES</a>
+    </div>
+    <div class="right-col">
+      <img src="{{ '/jem.jpg' | relative_url }}">
+      <div class="bottom">
+        <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
+        <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank">YOUTUBE</a>
+        <div class="copy">© All rights reserved</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="overlay" id="overlay" onclick="hideOverlay()">
+  <img src="{{ '/hime01.jpg' | relative_url }}">
+  <div class="close-hint">クリックで戻る</div>
+</div>
+
+<script>
+function showOverlay() {
+  const overlay = document.getElementById('overlay');
+  overlay.style.display = 'flex';
+}
+
+function hideOverlay() {
+  const overlay = document.getElementById('overlay');
+  overlay.style.display = 'none';
+}
+</script>  justify-content: center;
   align-items: center;
   z-index: 100;
   opacity: 0;
