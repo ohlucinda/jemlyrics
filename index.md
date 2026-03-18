@@ -5,7 +5,7 @@ layout: default
 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 100px;">
 
   <!-- 左 -->
-  <div style="display: flex; flex-direction: column; gap: 36px;">
+  <div style="display: flex; flex-direction: column; gap: 32px;">
 
     <a href="https://ohlucinda.wixsite.com/jemmusicja" target="_blank" style="font-size: 23px;">
       MY NAME IS JE'M
