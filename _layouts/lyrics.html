@@ -51,8 +51,7 @@ a {
 
 {{ content }}
 
-{% if page.url == '/lyrics/' %}
-  <div class="list">
+<div class="list">
   {% for post in site.posts %}
     <div style="margin: 16px 0;">
       <a href="{{ post.url | relative_url }}">
@@ -61,9 +60,6 @@ a {
     </div>
   {% endfor %}
 </div>
-    {% endfor %}
-  </div>
-{% endif %}
 
 <div class="back">
   <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
