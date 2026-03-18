@@ -1,4 +1,3 @@
 ---
-layout: lyrics
-is_index: true
+layout: titles
 ---
