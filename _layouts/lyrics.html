@@ -10,14 +10,32 @@ body {
   font-family: 'Aboreto', cursive;
   max-width: 800px;
   margin: 60px auto;
-  font-size: 42px;
+  font-size: 26px; /* ← 小さく戻した */
   line-height: 1.6;
   white-space: pre-wrap;
+  text-align: left; /* ← 左寄せ */
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.list {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.back {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
 }
 </style>
 
@@ -25,21 +43,23 @@ a {
 
 <body>
 
-<h1 style="font-size: 24px; margin-bottom: 40px; text-align: center;">
-  Je'm
-</h1>
+<div class="title">Je'm</div>
 
 {{ content }}
 
-  {% for post in site.posts %}
-  <div style="text-align: center; margin: 20px 0;">
-    <a href="{{ post.url | relative_url }}">
-     {{ post.slug | replace: '-', ' ' | upcase }}
-    </a>
+{% if page.url == '/lyrics/' %}
+  <div class="list">
+    {% for post in site.posts %}
+      <div style="margin: 20px 0;">
+        <a href="{{ post.url | relative_url }}">
+          {{ post.slug | replace: '-', ' ' | upcase }}
+        </a>
+      </div>
+    {% endfor %}
   </div>
-{% endfor %}
+{% endif %}
 
-<div style="margin-top: 24px; text-align: center; font-size: 18px;">
+<div class="back">
   <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
 </div>
 
