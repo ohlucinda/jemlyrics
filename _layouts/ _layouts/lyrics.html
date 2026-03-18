@@ -34,7 +34,7 @@ a {
   {% for post in site.posts %}
   <div style="text-align: center; margin: 20px 0;">
     <a href="{{ post.url | relative_url }}">
-      {{ post.title }}
+      {{ post.slug }}
     </a>
   </div>
 {% endfor %}
