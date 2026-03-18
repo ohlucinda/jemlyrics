@@ -8,7 +8,7 @@
 <style>
 body {
   font-family: 'Aboreto', cursive;
-  margin: 60px 0 60px 120px;
+  margin: 60px 0 60px 100px; /* ← 少し中央寄りに調整 */
   font-size: 28px;
   line-height: 1.6;
   white-space: pre-wrap;
@@ -24,7 +24,7 @@ a {
   margin-bottom: 20px;
 }
 
-/* 一覧ページだけ中央 */
+/* 一覧だけ中央 */
 body.list .title {
   text-align: center;
 }
@@ -35,7 +35,7 @@ body.list .title {
 }
 
 .list div {
-  margin: 2px 0;   /* ← 間隔詰めた */
+  margin: 0px 0;   /* ← ここで間隔ほぼゼロ */
 }
 
 /* 戻るリンク */
@@ -67,6 +67,12 @@ body.list .title {
       </div>
     {% endfor %}
   </div>
+
+  <!-- ★一覧ページにも戻るリンク追加 -->
+  <div class="back">
+    <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
+  </div>
+
 {% else %}
   <div class="back">
     <a href="{{ '/lyrics' | relative_url }}">BACK TO TITLES</a>
