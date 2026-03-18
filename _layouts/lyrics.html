@@ -53,12 +53,14 @@ a {
 
 {% if page.url == '/lyrics/' %}
   <div class="list">
-    {% for post in site.posts %}
-      <div style="margin: 16px 0;">
-        <a href="{{ post.url | relative_url }}">
-          {{ post.path | split: '/' | last | remove: '.md' | replace: '-', ' ' | upcase }}
-        </a>
-      </div>
+  {% for post in site.posts %}
+    <div style="margin: 16px 0;">
+      <a href="{{ post.url | relative_url }}">
+        {{ post.path | split: '/' | last | remove: '.md' | replace: '-', ' ' | upcase }}
+      </a>
+    </div>
+  {% endfor %}
+</div>
     {% endfor %}
   </div>
 {% endif %}
