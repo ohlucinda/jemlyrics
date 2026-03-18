@@ -4,7 +4,7 @@ layout: default
 
 <style>
 body {
-  font-size: 32px; /* ← 全体サイズを底上げ */
+  font-size: 32px;
 }
 
 .wrapper {
@@ -12,25 +12,20 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
-  margin: 120px auto 60px; /* ← 上の余白しっかり */
+  margin: 120px auto 60px;
 }
 
 .left {
   display: flex;
   flex-direction: column;
-  gap: 40px; /* ← 行間バランス */
+  gap: 40px;
 }
 
-.name {
-  font-size: 44px; /* ← Je'm をLYRICSと同じサイズに */
-}
-
-.lyrics {
-  font-size: 44px;
-}
-
+/* ★3つ全部同じサイズ */
+.name,
+.lyrics,
 .notes {
-  font-size: 32px;
+  font-size: 44px;
 }
 
 .right img {
@@ -43,7 +38,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 8px; /* ← 詰める */
+  gap: 8px;
 }
 
 .bottom a {
@@ -71,6 +66,35 @@ a {
 
     <a href="{{ '/lyrics' | relative_url }}" class="lyrics">
       LYRICS
+    </a>
+
+    <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank" class="notes">
+      MY NOTES
+    </a>
+
+  </div>
+
+  <div class="right">
+    <img src="{{ '/jem.jpg' | relative_url }}">
+  </div>
+
+</div>
+
+<div class="bottom">
+
+  <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">
+    APPLE MUSIC
+  </a>
+
+  <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank">
+    YOUTUBE
+  </a>
+
+  <div class="copy">
+    © All rights reserved
+  </div>
+
+</div>      LYRICS
     </a>
 
     <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank" class="notes">
