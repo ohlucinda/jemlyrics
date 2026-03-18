@@ -16,7 +16,7 @@ layout: default
 }
 
 .site-header {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .site-header a {
@@ -27,14 +27,16 @@ layout: default
 
 .wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 80px;
 }
 
 .left {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 40px;
+  padding-top: 60px;
 }
 
 .left a {
@@ -43,7 +45,13 @@ layout: default
   color: inherit;
 }
 
-.right img {
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.right-col img {
   height: 55vh;
   width: auto;
   display: block;
@@ -53,21 +61,18 @@ layout: default
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
-  width: fit-content;
-  align-self: center;
-  margin-left: calc(80px + /* leftの幅に合わせる */ 0px);
+  gap: 6px;
 }
 
 .bottom a {
-  font-size: 28px;
+  font-size: 22px;
   text-decoration: none;
   color: inherit;
 }
 
 .copy {
-  font-size: 18px;
-  margin-top: 6px;
+  font-size: 14px;
+  margin-top: 4px;
 }
 </style>
 
