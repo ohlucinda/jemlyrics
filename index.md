@@ -20,7 +20,7 @@ layout: default
 }
 
 .site-header a {
-  font-size: 56px;
+  font-size: 100px;
   text-decoration: none;
   color: inherit;
 }
