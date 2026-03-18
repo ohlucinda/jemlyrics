@@ -2,17 +2,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Aboreto', cursive;
-  max-width: 800px;
-  margin: 60px auto;
-  font-size: 28px;
-  line-height: 1.6;
-  white-space: pre-wrap;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -20,55 +21,61 @@ a {
   color: inherit;
 }
 
-.title {
-  text-align: center;   /* ← Je'mは中央 */
-  margin-bottom: 40px;
-  font-size: 44px;
+.page-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  gap: 50px;
+}
+
+.site-header a {
+  font-size: 100px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .list {
-  text-align: center;   /* ← 一覧も中央 */
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 .list a {
-  font-size: 36px;
-}
-
-.list div {
-  margin: 10px 0;       /* ← 元の自然な間隔 */
-}
-
-.back {
-  margin-top: 30px;
-  text-align: center;
+  font-size: 44px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .back a {
-  font-size: 28px;
+  font-size: 22px;
+  text-decoration: none;
+  color: inherit;
 }
 </style>
 
 </head>
-
 <body>
 
-<div class="title">Je'm</div>
+<div class="page-wrap">
 
-{{ content }}
+  <div class="site-header">
+    <a href="{{ '/' | relative_url }}">JE'M</a>
+  </div>
 
-<div class="list">
-  {% for post in site.posts %}
-    <div>
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title | upcase }}
-      </a>
-    </div>
-  {% endfor %}
-</div>
+  <div class="list">
+    {% for post in site.posts %}
+      <a href="{{ post.url | relative_url }}">{{ post.title | upcase }}</a>
+    {% endfor %}
+  </div>
 
-<div class="back">
-  <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
+  <div class="back">
+    <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
+  </div>
+
 </div>
 
 </body>
