@@ -63,13 +63,13 @@ layout: default
 }
 
 .bottom a {
-  font-size: 22px;
+  font-size: 32px;
   text-decoration: none;
   color: inherit;
 }
 
 .copy {
-  font-size: 14px;
+  font-size: 20px;
   margin-top: 4px;
 }
 </style>
