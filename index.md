@@ -9,10 +9,14 @@ layout: default
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 60px 40px;
+  padding: 30px 40px;
   box-sizing: border-box;
   font-family: 'Aboreto', cursive;
-  gap: 60px;
+  gap: 30px;
+}
+
+.site-header {
+  margin-bottom: 10px;
 }
 
 .site-header a {
@@ -48,8 +52,11 @@ layout: default
 .bottom {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
+  width: fit-content;
+  align-self: center;
+  margin-left: calc(80px + /* leftの幅に合わせる */ 0px);
 }
 
 .bottom a {
@@ -76,15 +83,14 @@ layout: default
       <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
       <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank">MY NOTES</a>
     </div>
-    <div class="right">
+    <div class="right-col">
       <img src="{{ '/jem.jpg' | relative_url }}">
+      <div class="bottom">
+        <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
+        <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank">YOUTUBE</a>
+        <div class="copy">© All rights reserved</div>
+      </div>
     </div>
-  </div>
-
-  <div class="bottom">
-    <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
-    <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank">YOUTUBE</a>
-    <div class="copy">© All rights reserved</div>
   </div>
 
 </div>
