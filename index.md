@@ -4,9 +4,11 @@ layout: default
 
 <style>
 .page-wrap {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 60px 40px;
   box-sizing: border-box;
   font-family: 'Aboreto', cursive;
@@ -14,7 +16,7 @@ layout: default
 }
 
 .site-header a {
-  font-size: 44px;
+  font-size: 56px;
   text-decoration: none;
   color: inherit;
 }
@@ -32,13 +34,13 @@ layout: default
 }
 
 .left a {
-  font-size: 44px;
+  font-size: 56px;
   text-decoration: none;
   color: inherit;
 }
 
 .right img {
-  height: 50vh;
+  height: 55vh;
   width: auto;
   display: block;
 }
@@ -51,13 +53,13 @@ layout: default
 }
 
 .bottom a {
-  font-size: 23px;
+  font-size: 28px;
   text-decoration: none;
   color: inherit;
 }
 
 .copy {
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 6px;
 }
 </style>
