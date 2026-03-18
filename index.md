@@ -7,8 +7,6 @@ layout: default
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 40px 60px;
   box-sizing: border-box;
   font-family: 'Aboreto', cursive;
 }
@@ -16,6 +14,12 @@ layout: default
 .site-header {
   text-align: center;
   font-size: 44px;
+  padding: 30px 0;
+}
+
+.site-header a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .wrapper {
@@ -23,6 +27,8 @@ layout: default
   justify-content: space-between;
   align-items: center;
   flex: 1;
+  padding: 0 60px;
+  gap: 40px;
 }
 
 .left {
@@ -35,10 +41,20 @@ layout: default
   font-size: 44px;
   text-decoration: none;
   color: inherit;
+  white-space: nowrap;
+}
+
+.right {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .right img {
-  width: 420px;
+  width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
   display: block;
 }
 
@@ -47,6 +63,7 @@ layout: default
   flex-direction: column;
   align-items: flex-end;
   gap: 8px;
+  padding: 30px 60px;
 }
 
 .bottom a {
