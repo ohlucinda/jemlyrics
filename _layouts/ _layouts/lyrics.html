@@ -31,6 +31,14 @@ a {
 
 {{ content }}
 
+  {% for post in site.posts %}
+  <div style="text-align: center; margin: 20px 0;">
+    <a href="{{ post.url | relative_url }}">
+      {{ post.title }}
+    </a>
+  </div>
+{% endfor %}
+
 <div style="margin-top: 24px; text-align: center; font-size: 18px;">
   <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
 </div>
