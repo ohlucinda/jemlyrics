@@ -4,31 +4,25 @@ layout: default
 
 <style>
 .page-wrap {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 60px 40px;
   box-sizing: border-box;
   font-family: 'Aboreto', cursive;
-}
-
-.site-header {
-  text-align: center;
-  font-size: 44px;
-  padding: 30px 0;
+  gap: 60px;
 }
 
 .site-header a {
+  font-size: 44px;
   text-decoration: none;
   color: inherit;
 }
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex: 1;
-  padding: 0 60px;
-  gap: 40px;
+  gap: 80px;
 }
 
 .left {
@@ -41,29 +35,19 @@ layout: default
   font-size: 44px;
   text-decoration: none;
   color: inherit;
-  white-space: nowrap;
-}
-
-.right {
-  flex: 1;
-  max-width: 50%;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .right img {
-  width: 100%;
-  max-height: 70vh;
-  object-fit: cover;
+  height: 50vh;
+  width: auto;
   display: block;
 }
 
 .bottom {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   gap: 8px;
-  padding: 30px 60px;
 }
 
 .bottom a {
@@ -85,17 +69,14 @@ layout: default
   </div>
 
   <div class="wrapper">
-
     <div class="left">
       <a href="https://ohlucinda.wixsite.com/jemmusicja" target="_blank">MY NAME IS JE'M</a>
       <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
       <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank">MY NOTES</a>
     </div>
-
     <div class="right">
       <img src="{{ '/jem.jpg' | relative_url }}">
     </div>
-
   </div>
 
   <div class="bottom">
