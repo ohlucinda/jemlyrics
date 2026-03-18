@@ -10,7 +10,7 @@ layout: default
       MY NAME IS JE'M
     </a>
 
-    <a href="/lyrics/" style="font-size: 2em;">
+   <a href="{{ '/lyrics.html' | relative_url }}">
       LYRICS
     </a>
 
