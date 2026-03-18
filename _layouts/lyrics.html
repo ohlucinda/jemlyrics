@@ -8,7 +8,7 @@
 <style>
 body {
   font-family: 'Aboreto', cursive;
-  margin: 40px 0 40px 20px;
+  margin: 60px 0 60px 120px;  /* ← 左に余白つけて流す */
   font-size: 28px;
   line-height: 1.6;
   white-space: pre-wrap;
@@ -20,24 +20,19 @@ a {
   color: inherit;
 }
 
-/* ★ここだけ中央 */
 .title {
-  text-align: center;
   margin-bottom: 30px;
   font-size: 44px;
 }
 
-.list {
-  margin-top: 20px;
-}
-
-.list a {
-  font-size: 36px;
-}
-
+/* 戻るリンク */
 .back {
-  margin-top: 16px;
-  font-size: 18px;
+  margin-top: 40px;
+  text-align: center;  /* ← 中央に */
+}
+
+.back a {
+  font-size: 28px;     /* ← 大きく */
 }
 </style>
 
@@ -49,18 +44,8 @@ a {
 
 {{ content }}
 
-<div class="list">
-  {% for post in site.posts %}
-    <div style="margin: 4px 0;">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.path | split: '/' | last | remove: '.md' | slice: 11, 100 | replace: '-', ' ' | upcase }}
-      </a>
-    </div>
-  {% endfor %}
-</div>
-
 <div class="back">
-  <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
+  <a href="{{ '/lyrics' | relative_url }}">BACK TO TITLES</a>
 </div>
 
 </body>
