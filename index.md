@@ -7,7 +7,7 @@ body {
   margin: 0;
 }
 
-/* 全体レイアウト */
+/* 全体 */
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -16,14 +16,14 @@ body {
   margin: 120px auto 60px;
 }
 
-/* 左（メインリンク） */
+/* 左 */
 .left {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-/* 上3つ：完全に同じサイズ */
+/* 上3つ（完全に同じサイズ） */
 .left a {
   font-size: 44px;
   text-decoration: none;
@@ -33,9 +33,10 @@ body {
 /* 右画像 */
 .right img {
   width: 420px;
+  display: block;
 }
 
-/* 下（外部リンク） */
+/* 下 */
 .bottom {
   max-width: 1100px;
   margin: 40px auto;
@@ -45,7 +46,7 @@ body {
   gap: 8px;
 }
 
-/* 下リンクは元のサイズ維持 */
+/* 下リンク（元のサイズ） */
 .bottom a {
   font-size: 23px;
   text-decoration: none;
