@@ -9,14 +9,14 @@ layout: default
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px 40px;
+  padding: 40px;
   box-sizing: border-box;
   font-family: 'Aboreto', cursive;
-  gap: 30px;
+  gap: 50px;
 }
 
 .site-header {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .site-header a {
@@ -27,16 +27,14 @@ layout: default
 
 .wrapper {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 80px;
 }
 
 .left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 40px;
-  padding-top: 60px;
+  gap: 50px;
 }
 
 .left a {
@@ -48,11 +46,11 @@ layout: default
 .right-col {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
 .right-col img {
-  height: 55vh;
+  height: 70vh;
   width: auto;
   display: block;
 }
@@ -60,7 +58,7 @@ layout: default
 .bottom {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 6px;
 }
 
