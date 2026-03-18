@@ -56,7 +56,7 @@ a {
     {% for post in site.posts %}
       <div style="margin: 16px 0;">
         <a href="{{ post.url | relative_url }}">
-          {{ post.slug | replace: '-', ' ' | upcase }}
+          {{ post.path | split: '/' | last | remove: '.md' | replace: '-', ' ' | upcase }}
         </a>
       </div>
     {% endfor %}
