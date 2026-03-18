@@ -8,9 +8,7 @@
 <style>
 body {
   font-family: 'Aboreto', cursive;
-  max-width: 800px;
-  margin: 40px auto;   /* ← 上の余白も少し詰めた */
-  padding: 0 10px;     /* ← 左に寄せる */
+  margin: 40px 0 40px 20px;  /* ← 左に寄せる本体 */
   font-size: 28px;
   line-height: 1.6;
   white-space: pre-wrap;
@@ -23,14 +21,12 @@ a {
 }
 
 .title {
-  text-align: left;     /* ← 中央やめる */
   margin-bottom: 30px;
   font-size: 44px;
 }
 
 .list {
-  text-align: left;
-  margin-top: 20px;     /* ← 詰める */
+  margin-top: 20px;
 }
 
 .list a {
@@ -38,7 +34,6 @@ a {
 }
 
 .back {
-  text-align: left;     /* ← 揃える */
   margin-top: 16px;
   font-size: 18px;
 }
@@ -54,7 +49,7 @@ a {
 
 <div class="list">
   {% for post in site.posts %}
-    <div style="margin: 4px 0;">   <!-- ← ここが間隔 -->
+    <div style="margin: 4px 0;">
       <a href="{{ post.url | relative_url }}">
         {{ post.path | split: '/' | last | remove: '.md' | slice: 11, 100 | replace: '-', ' ' | upcase }}
       </a>
