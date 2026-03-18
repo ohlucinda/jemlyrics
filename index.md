@@ -9,14 +9,15 @@ layout: default
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding: 30px 40px;
   box-sizing: border-box;
   font-family: 'Aboreto', cursive;
   gap: 50px;
 }
 
 .site-header {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .site-header a {
@@ -27,14 +28,16 @@ layout: default
 
 .wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 80px;
 }
 
 .left {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 60px;
 }
 
 .left a {
@@ -46,7 +49,7 @@ layout: default
 .right-col {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
 }
 
 .right-col img {
@@ -72,12 +75,39 @@ layout: default
   font-size: 20px;
   margin-top: 4px;
 }
+
+/* オーバーレイ */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.95);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.overlay img {
+  max-height: 90vh;
+  max-width: 90vw;
+  object-fit: contain;
+}
 </style>
 
 <div class="page-wrap">
 
-  <div class="site-header">
-    <a href="{{ '/' | relative_url }}">JE'M</a>
+  <div class="site-header" onclick="showOverlay()">
+    JE'M
   </div>
 
   <div class="wrapper">
@@ -97,3 +127,22 @@ layout: default
   </div>
 
 </div>
+
+<!-- オーバーレイ -->
+<div class="overlay" id="overlay" onclick="hideOverlay()">
+  <img src="{{ '/hime01.jpg' | relative_url }}">
+</div>
+
+<script>
+function showOverlay() {
+  const overlay = document.getElementById('overlay');
+  overlay.style.display = 'flex';
+  setTimeout(() => { overlay.style.opacity = '1'; }, 10);
+}
+
+function hideOverlay() {
+  const overlay = document.getElementById('overlay');
+  overlay.style.opacity = '0';
+  setTimeout(() => { overlay.style.display = 'none'; }, 600);
+}
+</script>
