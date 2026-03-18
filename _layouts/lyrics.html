@@ -10,10 +10,10 @@ body {
   font-family: 'Aboreto', cursive;
   max-width: 800px;
   margin: 60px auto;
-  font-size: 26px; /* ← 小さく戻した */
+  font-size: 28px;
   line-height: 1.6;
   white-space: pre-wrap;
-  text-align: left; /* ← 左寄せ */
+  text-align: left;
 }
 
 a {
@@ -24,18 +24,22 @@ a {
 .title {
   text-align: center;
   margin-bottom: 40px;
-  font-size: 24px;
+  font-size: 44px;
 }
 
 .list {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 40px;
+}
+
+.list a {
+  font-size: 36px;
 }
 
 .back {
   text-align: center;
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 18px;
 }
 </style>
 
@@ -50,7 +54,7 @@ a {
 {% if page.url == '/lyrics/' %}
   <div class="list">
     {% for post in site.posts %}
-      <div style="margin: 20px 0;">
+      <div style="margin: 16px 0;">
         <a href="{{ post.url | relative_url }}">
           {{ post.slug | replace: '-', ' ' | upcase }}
         </a>
