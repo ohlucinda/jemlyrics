@@ -9,10 +9,15 @@
 body {
   font-family: 'Aboreto', cursive;
   max-width: 1200px;
-  margin: 80px auto;
+  margin: 0 auto;
+  padding-top: 80px;   /* ← 上の余白 */
   font-size: 20px;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -23,7 +28,13 @@ a {
 
 <body>
 
-{{ content }}
+<div class="container">
+
+  <h1 style="font-size: 24px; margin-bottom: 60px;">Je'm</h1>
+
+  {{ content }}
+
+</div>
 
 </body>
 </html>
