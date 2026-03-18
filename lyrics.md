@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: lyrics
 ---
 
 {% for post in site.posts %}
