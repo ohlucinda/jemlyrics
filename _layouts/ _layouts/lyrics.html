@@ -9,22 +9,15 @@
 body {
   font-family: 'Aboreto', cursive;
   max-width: 800px;
-  margin: 40px auto;
+  margin: 60px auto;
   font-size: 42px;
   line-height: 1.6;
   white-space: pre-wrap;
-  padding-bottom: 40px;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.back {
-  margin-top: 16px;
-  text-align: center;
-  font-size: 18px;
 }
 </style>
 
@@ -32,12 +25,14 @@ a {
 
 <body>
 
-<h1 style="font-size: 24px; margin-bottom: 32px;">Je'm</h1>
+<h1 style="font-size: 24px; margin-bottom: 40px; text-align: center;">
+  Je'm
+</h1>
 
 {{ content }}
 
-<div class="back">
-  <a href="{{ '/lyrics.html' | relative_url }}">BACK TO TITLES</a>
+<div style="margin-top: 24px; text-align: center; font-size: 18px;">
+  <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
 </div>
 
 </body>
