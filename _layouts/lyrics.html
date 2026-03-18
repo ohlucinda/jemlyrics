@@ -8,34 +8,29 @@
 <style>
 body {
   font-family: 'Aboreto', cursive;
-  margin: 60px 0 60px 100px; /* ← 少し中央寄りに調整 */
+  margin: 60px 0 60px 120px;
   font-size: 28px;
   line-height: 1.6;
   white-space: pre-wrap;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
+/* Je'm */
 .title {
   font-size: 44px;
-  margin-bottom: 20px;
-}
-
-/* 一覧だけ中央 */
-body.list .title {
-  text-align: center;
+  margin-bottom: 10px;  /* ← タイトルとの距離を詰める */
 }
 
 /* 一覧 */
+.list {
+  margin-top: 10px;     /* ← ここで位置調整（重要） */
+}
+
 .list a {
   font-size: 36px;
 }
 
 .list div {
-  margin: 0px 0;   /* ← ここで間隔ほぼゼロ */
+  margin: 0;           /* ← タイトル同士の間隔を最小に */
 }
 
 /* 戻るリンク */
@@ -51,33 +46,25 @@ body.list .title {
 
 </head>
 
-<body class="{% if page.url contains 'lyrics' %}list{% endif %}">
+<body>
 
 <div class="title">Je'm</div>
 
 {{ content }}
 
-{% if page.url contains 'lyrics' %}
-  <div class="list">
-    {% for post in site.posts %}
-      <div>
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title | upcase }}
-        </a>
-      </div>
-    {% endfor %}
-  </div>
+<div class="list">
+  {% for post in site.posts %}
+    <div>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title | upcase }}
+      </a>
+    </div>
+  {% endfor %}
+</div>
 
-  <!-- ★一覧ページにも戻るリンク追加 -->
-  <div class="back">
-    <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
-  </div>
-
-{% else %}
-  <div class="back">
-    <a href="{{ '/lyrics' | relative_url }}">BACK TO TITLES</a>
-  </div>
-{% endif %}
+<div class="back">
+  <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
+</div>
 
 </body>
 </html>
