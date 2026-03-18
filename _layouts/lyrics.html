@@ -12,7 +12,6 @@ body {
   font-size: 28px;
   line-height: 1.6;
   white-space: pre-wrap;
-  text-align: left;
 }
 
 a {
@@ -21,12 +20,12 @@ a {
 }
 
 .title {
-  margin-bottom: 30px;
   font-size: 44px;
+  margin-bottom: 30px;
 }
 
-/* 一覧ページだけ中央にする */
-.list-page .title {
+/* 一覧のときだけ中央 */
+body.list .title {
   text-align: center;
 }
 
@@ -52,25 +51,25 @@ a {
 
 </head>
 
-<body class="{% if page.url == '/lyrics/' %}list-page{% endif %}">
+<body class="{% if page.url == '/lyrics.html' %}list{% endif %}">
 
 <div class="title">Je'm</div>
 
 {{ content }}
 
-{% if page.url == '/lyrics/' %}
+{% if page.url == '/lyrics.html' %}
   <div class="list">
     {% for post in site.posts %}
       <div>
-        <a href="{{ post.url | relative_url }}">
-          {{ post.path | split: '/' | last | remove: '.md' | slice: 11, 100 | replace: '-', ' ' | upcase }}
+        <a href="{{ post.url }}">
+          {{ post.title | upcase }}
         </a>
       </div>
     {% endfor %}
   </div>
 {% else %}
   <div class="back">
-    <a href="{{ '/lyrics' | relative_url }}">BACK TO TITLES</a>
+    <a href="/lyrics.html">BACK TO TITLES</a>
   </div>
 {% endif %}
 
