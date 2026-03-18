@@ -3,99 +3,88 @@ layout: default
 ---
 
 <style>
-body {
-  margin: 0;
+.page-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  font-family: 'Aboreto', cursive;
 }
 
-/* 全体 */
+.site-header {
+  text-align: center;
+  font-size: 44px;
+}
+
 .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
-  margin: 120px auto 60px;
+  flex: 1;
 }
 
-/* 左 */
 .left {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-/* 上3つ（完全に同じサイズ） */
 .left a {
   font-size: 44px;
   text-decoration: none;
   color: inherit;
 }
 
-/* 右画像 */
 .right img {
   width: 420px;
   display: block;
 }
 
-/* 下 */
 .bottom {
-  max-width: 1100px;
-  margin: 40px auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 8px;
 }
 
-/* 下リンク（元のサイズ） */
 .bottom a {
   font-size: 23px;
   text-decoration: none;
   color: inherit;
 }
 
-/* コピー */
 .copy {
   font-size: 16px;
   margin-top: 6px;
 }
 </style>
 
-<div class="wrapper">
+<div class="page-wrap">
 
-  <div class="left">
+  <div class="site-header">
+    <a href="{{ '/' | relative_url }}">JE'M</a>
+  </div>
 
-    <a href="https://ohlucinda.wixsite.com/jemmusicja" target="_blank">
-      MY NAME IS JE'M
-    </a>
+  <div class="wrapper">
 
-    <a href="{{ '/lyrics' | relative_url }}">
-      LYRICS
-    </a>
+    <div class="left">
+      <a href="https://ohlucinda.wixsite.com/jemmusicja" target="_blank">MY NAME IS JE'M</a>
+      <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
+      <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank">MY NOTES</a>
+    </div>
 
-    <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank">
-      MY NOTES
-    </a>
+    <div class="right">
+      <img src="{{ '/jem.jpg' | relative_url }}">
+    </div>
 
   </div>
 
-  <div class="right">
-    <img src="{{ '/jem.jpg' | relative_url }}">
-  </div>
-
-</div>
-
-<div class="bottom">
-
-  <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">
-    APPLE MUSIC
-  </a>
-
-  <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank">
-    YOUTUBE
-  </a>
-
-  <div class="copy">
-    © All rights reserved
+  <div class="bottom">
+    <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
+    <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank">YOUTUBE</a>
+    <div class="copy">© All rights reserved</div>
   </div>
 
 </div>
