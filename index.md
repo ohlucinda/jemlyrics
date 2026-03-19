@@ -27,27 +27,12 @@ layout: default
   display: flex;
   align-items: center;
   gap: 80px;
-  flex: 1;
-}
-
-.left {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  flex-shrink: 0;
-  align-self: center;
 }
 
 .left a {
   font-size: 50px;
   text-decoration: none;
   color: inherit;
-}
-
-.right-col {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
 }
 
 .right-col img {
@@ -61,6 +46,8 @@ layout: default
   flex-direction: column;
   align-items: flex-end;
   gap: 6px;
+  width: 560px;
+  margin-left: calc(50px + 560px + 80px);
 }
 
 .bottom a {
@@ -123,23 +110,19 @@ layout: default
     width: 100%;
   }
 
-  .left {
-    gap: 24px;
-    width: 100%;
-    align-self: auto;
-  }
-
   .left a {
     font-size: 36px;
-  }
-
-  .right-col {
-    width: 100%;
   }
 
   .right-col img {
     width: 100%;
     height: auto;
+  }
+
+  .bottom {
+    width: 100%;
+    margin-left: 0;
+    align-items: flex-end;
   }
 
   .bottom a {
@@ -164,12 +147,13 @@ layout: default
     </div>
     <div class="right-col">
       <img src="{{ '/jem2.jpg' | relative_url }}">
-      <div class="bottom">
-        <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
-        <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank">YOUTUBE</a>
-        <div class="copy">© All rights reserved</div>
-      </div>
     </div>
+  </div>
+
+  <div class="bottom">
+    <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
+    <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank">YOUTUBE</a>
+    <div class="copy">© All rights reserved</div>
   </div>
 
 </div>
