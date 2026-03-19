@@ -35,6 +35,7 @@ layout: default
   flex-direction: column;
   gap: 40px;
   flex-shrink: 0;
+  align-self: center;
 }
 
 .left a {
@@ -63,14 +64,14 @@ layout: default
 }
 
 .bottom a {
-  font-size: 18px;
+  font-size: 24px;
   text-decoration: none;
   color: inherit;
   white-space: nowrap;
 }
 
 .copy {
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 4px;
   white-space: nowrap;
 }
@@ -125,6 +126,7 @@ layout: default
   .left {
     gap: 24px;
     width: 100%;
+    align-self: auto;
   }
 
   .left a {
@@ -141,11 +143,11 @@ layout: default
   }
 
   .bottom a {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .copy {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 </style>
