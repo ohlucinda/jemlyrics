@@ -158,7 +158,6 @@ layout: default
 
   <div class="wrapper">
     <div class="left">
-      <a href="https://ohlucinda.wixsite.com/jemmusicja" target="_blank">MY NAME IS JE'M</a>
       <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
       <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank">MY NOTES</a>
     </div>
