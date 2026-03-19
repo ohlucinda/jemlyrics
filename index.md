@@ -21,7 +21,7 @@ layout: default
 }
 
 .site-header span {
-  font-size: 100px;
+  font-size: 80px;
   color: inherit;
 }
 
@@ -41,7 +41,7 @@ layout: default
 }
 
 .left a {
-  font-size: 56px;
+  font-size: 44px;
   text-decoration: none;
   color: inherit;
 }
@@ -55,7 +55,7 @@ layout: default
 }
 
 .right-col img {
-  height: 70vh;
+  height: 65vh;
   width: auto;
   max-width: 100%;
   display: block;
@@ -69,14 +69,16 @@ layout: default
 }
 
 .bottom a {
-  font-size: 32px;
+  font-size: 22px;
   text-decoration: none;
   color: inherit;
+  white-space: nowrap;
 }
 
 .copy {
-  font-size: 20px;
+  font-size: 14px;
   margin-top: 4px;
+  white-space: nowrap;
 }
 
 /* オーバーレイ */
@@ -144,16 +146,12 @@ layout: default
     width: 100%;
   }
 
-  .bottom {
-    align-items: flex-end;
-  }
-
   .bottom a {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .copy {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 </style>
