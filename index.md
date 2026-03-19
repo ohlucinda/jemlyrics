@@ -38,7 +38,7 @@ layout: default
 }
 
 .left a {
-  font-size: 36px;
+  font-size: 50px;
   text-decoration: none;
   color: inherit;
 }
@@ -50,7 +50,7 @@ layout: default
 }
 
 .right-col img {
-  width: 420px;
+  width: 560px;
   height: auto;
   display: block;
 }
@@ -128,7 +128,7 @@ layout: default
   }
 
   .left a {
-    font-size: 26px;
+    font-size: 36px;
   }
 
   .right-col {
@@ -159,7 +159,6 @@ layout: default
   <div class="wrapper">
     <div class="left">
       <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
-      <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank">MY NOTES</a>
     </div>
     <div class="right-col">
       <img src="{{ '/jem2.jpg' | relative_url }}">
