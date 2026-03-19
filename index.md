@@ -24,7 +24,7 @@ layout: default
 }
 
 .main-img {
-  width: 560px;
+  width: 616px;
   height: auto;
   display: block;
 }
@@ -33,8 +33,7 @@ layout: default
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 560px;
-  gap: 40px;
+  width: 616px;
 }
 
 .bottom-row a {
@@ -45,8 +44,11 @@ layout: default
 }
 
 .copy {
+  position: fixed;
+  bottom: 60px;
+  right: 100px;
   font-size: 14px;
-  white-space: nowrap;
+  color: inherit;
 }
 
 /* オーバーレイ */
@@ -96,15 +98,15 @@ layout: default
 
   .bottom-row {
     width: 100%;
-    flex-wrap: wrap;
-    gap: 20px;
   }
 
   .bottom-row a {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .copy {
+    bottom: 60px;
+    right: 24px;
     font-size: 12px;
   }
 }
@@ -122,10 +124,11 @@ layout: default
     <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
     <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
     <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank">YOUTUBE</a>
-    <div class="copy">© All rights reserved</div>
   </div>
 
 </div>
+
+<div class="copy">© All rights reserved</div>
 
 <div class="overlay" id="overlay" onclick="hideOverlay()">
   <img src="{{ '/hime01.jpg' | relative_url }}">
