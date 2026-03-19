@@ -85,21 +85,22 @@ layout: default
   width: 100%;
   height: 100%;
   background: rgba(255,255,255,0.95);
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 100;
   cursor: pointer;
+  gap: 30px;
 }
 
 .overlay img {
-  max-height: 90vh;
+  width: 480px;
+  height: auto;
   max-width: 90vw;
   object-fit: contain;
 }
 
 .overlay .close-hint {
-  position: fixed;
-  bottom: 40px;
   font-size: 20px;
   color: #888;
   font-family: 'Aboreto', cursive;
