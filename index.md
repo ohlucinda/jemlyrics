@@ -21,7 +21,7 @@ layout: default
 }
 
 .site-header span {
-  font-size: 80px;
+  font-size: 70px;
   color: inherit;
 }
 
@@ -39,7 +39,7 @@ layout: default
 }
 
 .left a {
-  font-size: 44px;
+  font-size: 36px;
   text-decoration: none;
   color: inherit;
 }
@@ -64,14 +64,14 @@ layout: default
 }
 
 .bottom a {
-  font-size: 22px;
+  font-size: 18px;
   text-decoration: none;
   color: inherit;
   white-space: nowrap;
 }
 
 .copy {
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 4px;
   white-space: nowrap;
 }
@@ -101,7 +101,7 @@ layout: default
 }
 
 .overlay .close-hint {
-  font-size: 20px;
+  font-size: 16px;
   color: #888;
   font-family: 'Aboreto', cursive;
 }
@@ -115,7 +115,7 @@ layout: default
   }
 
   .site-header span {
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .wrapper {
@@ -130,7 +130,7 @@ layout: default
   }
 
   .left a {
-    font-size: 32px;
+    font-size: 26px;
   }
 
   .right-col {
@@ -143,11 +143,11 @@ layout: default
   }
 
   .bottom a {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .copy {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 </style>
