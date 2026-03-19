@@ -11,7 +11,7 @@ layout: default
   padding: 60px 40px;
   box-sizing: border-box;
   font-family: 'Aboreto', cursive;
-  gap: 50px;
+  gap: 40px;
 }
 
 .site-header {
@@ -23,34 +23,21 @@ layout: default
   color: inherit;
 }
 
-.wrapper {
-  display: flex;
-  align-items: center;
-  gap: 80px;
-}
-
-.left a {
-  font-size: 50px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.right-col img {
+.main-img {
   width: 560px;
   height: auto;
   display: block;
 }
 
-.bottom {
+.bottom-row {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 6px;
+  justify-content: space-between;
+  align-items: center;
   width: 560px;
-  margin-left: calc(50px + 560px + 80px);
+  gap: 40px;
 }
 
-.bottom a {
+.bottom-row a {
   font-size: 24px;
   text-decoration: none;
   color: inherit;
@@ -58,8 +45,7 @@ layout: default
 }
 
 .copy {
-  font-size: 16px;
-  margin-top: 4px;
+  font-size: 14px;
   white-space: nowrap;
 }
 
@@ -104,28 +90,17 @@ layout: default
     font-size: 50px;
   }
 
-  .wrapper {
-    flex-direction: column;
-    gap: 30px;
+  .main-img {
     width: 100%;
   }
 
-  .left a {
-    font-size: 36px;
-  }
-
-  .right-col img {
+  .bottom-row {
     width: 100%;
-    height: auto;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
-  .bottom {
-    width: 100%;
-    margin-left: 0;
-    align-items: flex-end;
-  }
-
-  .bottom a {
+  .bottom-row a {
     font-size: 18px;
   }
 
@@ -141,16 +116,10 @@ layout: default
     <span>JE'M</span>
   </div>
 
-  <div class="wrapper">
-    <div class="left">
-      <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
-    </div>
-    <div class="right-col">
-      <img src="{{ '/jem2.jpg' | relative_url }}">
-    </div>
-  </div>
+  <img class="main-img" src="{{ '/jem2.jpg' | relative_url }}">
 
-  <div class="bottom">
+  <div class="bottom-row">
+    <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
     <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
     <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank">YOUTUBE</a>
     <div class="copy">© All rights reserved</div>
