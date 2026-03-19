@@ -1,3 +1,8 @@
+title: "Je'm | OHLUCINDA | independent music"
+description: "Song lyrics and independent music"
+url: "https://ohlucinda.github.io"
+baseurl: "/jemmusic"
+
 theme: minima
 
 kramdown:
