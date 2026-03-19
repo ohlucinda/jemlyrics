@@ -8,7 +8,6 @@ layout: default
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   padding: 60px 40px;
   box-sizing: border-box;
   font-family: 'Aboreto', cursive;
@@ -28,6 +27,7 @@ layout: default
   display: flex;
   align-items: center;
   gap: 80px;
+  flex: 1;
 }
 
 .left {
