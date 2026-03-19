@@ -101,6 +101,55 @@ layout: default
   color: #888;
   font-family: 'Aboreto', cursive;
 }
+
+/* スマホ用 */
+@media (max-width: 768px) {
+  .page-wrap {
+    padding: 40px 24px;
+    gap: 30px;
+    justify-content: flex-start;
+  }
+
+  .site-header span {
+    font-size: 60px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .left {
+    gap: 24px;
+    width: 100%;
+  }
+
+  .left a {
+    font-size: 32px;
+  }
+
+  .right-col {
+    width: 100%;
+  }
+
+  .right-col img {
+    height: auto;
+    width: 100%;
+  }
+
+  .bottom {
+    align-items: flex-end;
+  }
+
+  .bottom a {
+    font-size: 20px;
+  }
+
+  .copy {
+    font-size: 14px;
+  }
+}
 </style>
 
 <div class="page-wrap">
