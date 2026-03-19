@@ -11,11 +11,12 @@ layout: default
   padding: 60px 40px;
   box-sizing: border-box;
   font-family: 'Aboreto', cursive;
-  gap: 40px;
+  gap: 60px;
 }
 
 .site-header {
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .site-header span {
@@ -37,7 +38,7 @@ layout: default
 }
 
 .bottom-row a {
-  font-size: 24px;
+  font-size: 36px;
   text-decoration: none;
   color: inherit;
   white-space: nowrap;
@@ -85,7 +86,7 @@ layout: default
 @media (max-width: 768px) {
   .page-wrap {
     padding: 40px 24px;
-    gap: 30px;
+    gap: 40px;
   }
 
   .site-header span {
@@ -101,7 +102,7 @@ layout: default
   }
 
   .bottom-row a {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .copy {
