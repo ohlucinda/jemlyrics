@@ -50,7 +50,7 @@ layout: default
 }
 
 .right-col img {
-  width: 480px;
+  width: 420px;
   height: auto;
   display: block;
 }
