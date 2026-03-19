@@ -29,12 +29,15 @@ layout: default
   display: flex;
   align-items: center;
   gap: 80px;
+  width: 100%;
+  max-width: 1100px;
 }
 
 .left {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  flex-shrink: 0;
 }
 
 .left a {
@@ -47,11 +50,14 @@ layout: default
   display: flex;
   flex-direction: column;
   gap: 12px;
+  flex: 1;
+  min-width: 0;
 }
 
 .right-col img {
   height: 70vh;
   width: auto;
+  max-width: 100%;
   display: block;
 }
 
