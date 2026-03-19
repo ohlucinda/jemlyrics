@@ -8,15 +8,14 @@ layout: default
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 30px 40px;
+  justify-content: flex-start;
+  padding: 60px 40px;
   box-sizing: border-box;
   font-family: 'Aboreto', cursive;
   gap: 50px;
 }
 
 .site-header {
-  margin-bottom: 20px;
   cursor: pointer;
 }
 
@@ -111,7 +110,6 @@ layout: default
   .page-wrap {
     padding: 40px 24px;
     gap: 30px;
-    justify-content: flex-start;
   }
 
   .site-header span {
