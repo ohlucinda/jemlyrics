@@ -162,7 +162,7 @@ layout: default
       <a href="https://ohlucinda.wixsite.com/jemmusicja/blog" target="_blank">MY NOTES</a>
     </div>
     <div class="right-col">
-      <img src="{{ '/jem.jpg' | relative_url }}">
+      <img src="{{ '/jem2.jpg' | relative_url }}">
       <div class="bottom">
         <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
         <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank">YOUTUBE</a>
