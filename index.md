@@ -46,9 +46,11 @@ layout: default
 }
 
 .copy {
+  position: fixed;
+  bottom: 60px;
+  right: 100px;
   font-size: 14px;
   color: inherit;
-  text-align: center;
 }
 
 /* オーバーレイ */
@@ -109,6 +111,8 @@ layout: default
   }
 
   .copy {
+    bottom: 60px;
+    right: 24px;
     font-size: 12px;
   }
 }
@@ -128,9 +132,9 @@ layout: default
     <a href="https://jemmusicja.bandcamp.com" target="_blank">BAND CAMP</a>
   </div>
 
-  <div class="copy">© All rights reserved</div>
-
 </div>
+
+<div class="copy">© All rights reserved</div>
 
 <div class="overlay" id="overlay" onclick="hideOverlay()">
   <img src="{{ '/hime01.jpg' | relative_url }}">
