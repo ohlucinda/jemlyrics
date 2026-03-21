@@ -24,7 +24,7 @@ layout: default
 }
 
 .main-img {
-  width: 616px;
+  width: 680px;
   height: auto;
   display: block;
 }
@@ -33,7 +33,8 @@ layout: default
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 700px;
+  width: 680px;
+  gap: 20px;
 }
 
 .bottom-row a {
@@ -99,7 +100,7 @@ layout: default
   .bottom-row {
     width: 100%;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 16px;
     justify-content: space-between;
   }
 
