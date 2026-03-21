@@ -11,12 +11,11 @@ layout: default
   padding: 60px 40px;
   box-sizing: border-box;
   font-family: 'Aboreto', cursive;
-  gap: 60px;
+  gap: 40px;
 }
 
 .site-header {
   cursor: pointer;
-  margin-bottom: 20px;
 }
 
 .site-header span {
@@ -34,7 +33,7 @@ layout: default
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 616px;
+  width: 700px;
 }
 
 .bottom-row a {
@@ -86,7 +85,7 @@ layout: default
 @media (max-width: 768px) {
   .page-wrap {
     padding: 40px 24px;
-    gap: 40px;
+    gap: 30px;
   }
 
   .site-header span {
@@ -99,6 +98,9 @@ layout: default
 
   .bottom-row {
     width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
   }
 
   .bottom-row a {
@@ -124,7 +126,7 @@ layout: default
   <div class="bottom-row">
     <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
     <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
-    <a href="https://www.youtube.com/@JEMMUSICJA" target="_blank">YOUTUBE</a>
+    <a href="https://jemmusicja.bandcamp.com" target="_blank">BAND CAMP</a>
   </div>
 
 </div>
