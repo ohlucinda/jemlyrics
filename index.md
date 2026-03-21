@@ -11,7 +11,7 @@ layout: default
   padding: 60px 40px;
   box-sizing: border-box;
   font-family: 'Aboreto', cursive;
-  gap: 40px;
+  gap: 60px;
 }
 
 .site-header {
@@ -29,19 +29,11 @@ layout: default
   display: block;
 }
 
-.bottom-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 600px;
-  gap: 16px;
-}
-
 .bottom-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 600px;
   gap: 10px;
 }
 
@@ -53,6 +45,9 @@ layout: default
 }
 
 .copy {
+  position: fixed;
+  bottom: 60px;
+  right: 100px;
   font-size: 14px;
   color: inherit;
 }
@@ -91,7 +86,7 @@ layout: default
 @media (max-width: 768px) {
   .page-wrap {
     padding: 40px 24px;
-    gap: 30px;
+    gap: 40px;
   }
 
   .site-header span {
@@ -102,11 +97,8 @@ layout: default
     width: 100%;
   }
 
-  .bottom-wrap {
-    width: 100%;
-  }
-
   .bottom-row {
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
@@ -117,6 +109,8 @@ layout: default
   }
 
   .copy {
+    bottom: 60px;
+    right: 24px;
     font-size: 12px;
   }
 }
@@ -130,16 +124,15 @@ layout: default
 
   <img class="main-img" src="{{ '/jem2.jpg' | relative_url }}">
 
-  <div class="bottom-wrap">
-    <div class="bottom-row">
-      <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
-      <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
-      <a href="https://jemmusicja.bandcamp.com" target="_blank">BAND CAMP</a>
-    </div>
-    <div class="copy">© All rights reserved</div>
+  <div class="bottom-row">
+    <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
+    <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
+    <a href="https://jemmusicja.bandcamp.com" target="_blank">BAND CAMP</a>
   </div>
 
 </div>
+
+<div class="copy">© All rights reserved</div>
 
 <div class="overlay" id="overlay" onclick="hideOverlay()">
   <img src="{{ '/hime01.jpg' | relative_url }}">
