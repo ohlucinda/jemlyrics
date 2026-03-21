@@ -27,6 +27,7 @@ layout: default
   width: 600px;
   height: auto;
   display: block;
+  margin-top: 40px;
 }
 
 .bottom-row {
@@ -95,6 +96,7 @@ layout: default
 
   .main-img {
     width: 100%;
+    margin-top: 20px;
   }
 
   .bottom-row {
