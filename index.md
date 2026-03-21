@@ -24,7 +24,7 @@ layout: default
 }
 
 .main-img {
-  width: 680px;
+  width: 600px;
   height: auto;
   display: block;
 }
@@ -33,12 +33,12 @@ layout: default
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 680px;
-  gap: 20px;
+  width: 600px;
+  gap: 10px;
 }
 
 .bottom-row a {
-  font-size: 36px;
+  font-size: 30px;
   text-decoration: none;
   color: inherit;
   white-space: nowrap;
