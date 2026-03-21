@@ -8,6 +8,7 @@ layout: default
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 60px 40px;
   box-sizing: border-box;
   font-family: 'Aboreto', cursive;
@@ -45,11 +46,9 @@ layout: default
 }
 
 .copy {
-  position: fixed;
-  bottom: 60px;
-  right: 100px;
   font-size: 14px;
   color: inherit;
+  text-align: center;
 }
 
 /* オーバーレイ */
@@ -87,6 +86,7 @@ layout: default
   .page-wrap {
     padding: 40px 24px;
     gap: 30px;
+    justify-content: flex-start;
   }
 
   .site-header span {
@@ -109,8 +109,6 @@ layout: default
   }
 
   .copy {
-    bottom: 60px;
-    right: 24px;
     font-size: 12px;
   }
 }
@@ -130,9 +128,9 @@ layout: default
     <a href="https://jemmusicja.bandcamp.com" target="_blank">BAND CAMP</a>
   </div>
 
-</div>
+  <div class="copy">© All rights reserved</div>
 
-<div class="copy">© All rights reserved</div>
+</div>
 
 <div class="overlay" id="overlay" onclick="hideOverlay()">
   <img src="{{ '/hime01.jpg' | relative_url }}">
