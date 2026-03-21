@@ -99,9 +99,9 @@ layout: default
 
   .bottom-row {
     width: 100%;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
   }
 
   .bottom-row a {
