@@ -127,7 +127,7 @@ layout: default
   <img class="main-img" src="{{ '/jem2.jpg' | relative_url }}">
 
   <div class="bottom-row">
-  <a href="{{ '/lyrics' | relative_url }}" style="color:#111;">LYRICS</a>
+  <a href="{{ '/lyrics' | relative_url }}" style="color:#000;">LYRICS</a>
   <a href="..." target="_blank">APPLE MUSIC</a>
   <a href="..." target="_blank">BANDCAMP</a>
 </div>
