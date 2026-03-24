@@ -128,8 +128,8 @@ layout: default
 
   <div class="bottom-row">
   <a href="{{ '/lyrics' | relative_url }}" style="color:#111;">LYRICS</a>
-  <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank" style="color:#333;">APPLE MUSIC</a>
-  <a href="https://jemmusicja.bandcamp.com" target="_blank" style="color:#555;">BANDCAMP</a>
+  <a href="..." target="_blank">APPLE MUSIC</a>
+  <a href="..." target="_blank">BANDCAMP</a>
 </div>
 
 </div>
