@@ -49,3 +49,9 @@ Electrified
 Like a signal in the sky
 Electrified
 Tonight
+
+<p style="margin:0 0 6px 0; font-size:11px; color:#999; letter-spacing:0.12em; margin-left:20px;">
+  PREVIEW
+</p>
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/electrified/1884650298?i=1884650299&l=en-US"></iframe>
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/electrified-ii/1884650298?i=1884650300&l=en-US"></iframe>
