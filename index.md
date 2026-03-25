@@ -50,9 +50,9 @@ layout: default
   position: fixed;
   bottom: 90px;
   right: 24px;
-  font-size: 14px;
+  font-size: 14px; /* スマホ基準 */
   color: #666;
-  text-align: right;
+  text-align: right; /* ← HとD揃え */
   z-index: 200;
 }
 
@@ -69,6 +69,13 @@ layout: default
   font-size: 12px;
   color: inherit;
   text-align: right;
+}
+
+/* Macだけサイズ変更 */
+@media (min-width: 769px) {
+  .get-in-touch {
+    font-size: 16px;
+  }
 }
 
 /* オーバーレイ */
@@ -132,14 +139,12 @@ layout: default
     bottom: 90px;
     right: 24px;
     font-size: 14px;
-    text-align: right;
   }
 
   .copy {
     bottom: 60px;
     right: 24px;
     font-size: 12px;
-    text-align: right;
   }
 }
 </style>
