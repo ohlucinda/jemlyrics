@@ -45,12 +45,30 @@ layout: default
   white-space: nowrap;
 }
 
+/* GET IN TOUCH */
+.get-in-touch {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  font-size: 14px;
+  color: #666;
+  text-align: right;
+  z-index: 200;
+}
+
+.get-in-touch a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* © */
 .copy {
   position: fixed;
   bottom: 60px;
-  right: 100px;
-  font-size: 14px;
+  right: 24px;
+  font-size: 12px;
   color: inherit;
+  text-align: right;
 }
 
 /* オーバーレイ */
@@ -83,7 +101,7 @@ layout: default
   font-family: 'Aboreto', cursive;
 }
 
-/* スマホ用 */
+/* スマホ */
 @media (max-width: 768px) {
   .page-wrap {
     padding: 40px 24px;
@@ -110,10 +128,18 @@ layout: default
     font-size: 22px;
   }
 
+  .get-in-touch {
+    bottom: 90px;
+    right: 24px;
+    font-size: 14px;
+    text-align: right;
+  }
+
   .copy {
     bottom: 60px;
     right: 24px;
     font-size: 12px;
+    text-align: right;
   }
 }
 </style>
