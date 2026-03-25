@@ -48,9 +48,9 @@ layout: default
 /* GET IN TOUCH */
 .get-in-touch {
   position: fixed;
-  bottom: 90px;
-  right: 100px;      /* ← 元の基準に合わせる */
-  font-size: 14px;   /* スマホ */
+  bottom: 100px;   /* ← 上 */
+  right: 100px;
+  font-size: 14px; /* スマホ */
   color: #666;
   text-align: right;
   z-index: 200;
@@ -61,20 +61,24 @@ layout: default
   color: inherit;
 }
 
-/* ©（元の位置に戻す） */
+/* ©（BACK TOと高さ揃える） */
 .copy {
   position: fixed;
-  bottom: 60px;
-  right: 100px;      /* ← BACK TOと揃ってた位置 */
-  font-size: 12px;
+  bottom: 60px;    /* ← BACK TOと同じ高さにする */
+  right: 100px;
+  font-size: 12px; /* スマホ */
   color: inherit;
   text-align: right;
 }
 
-/* Macだけサイズ変更 */
+/* Mac */
 @media (min-width: 769px) {
   .get-in-touch {
     font-size: 16px;
+  }
+
+  .copy {
+    font-size: 14px; /* ← BACK TOと同じ */
   }
 }
 
@@ -135,16 +139,15 @@ layout: default
     font-size: 22px;
   }
 
-  /* スマホでは元の位置（24px） */
   .get-in-touch {
     right: 24px;
-    bottom: 90px;
+    bottom: 100px;
     font-size: 14px;
   }
 
   .copy {
     right: 24px;
-    bottom: 60px;
+    bottom: 60px;   /* ← BACK TOと揃える */
     font-size: 12px;
   }
 }
