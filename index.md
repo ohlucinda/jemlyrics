@@ -132,10 +132,10 @@ layout: default
     <a href="https://jemmusicja.bandcamp.com" target="_blank">BANDCAMP</a>
   </div>
 
-<div class="get-in-touch">
-  <a href="mailto:floribundatunes@duck.com">GET IN TOUCH</a>
 </div>
 
+<div class="get-in-touch">
+  <a href="mailto:floribundatunes@duck.com">GET IN TOUCH</a>
 </div>
 
 <div class="copy">© All rights reserved</div>
