@@ -49,10 +49,10 @@ layout: default
 .get-in-touch {
   position: fixed;
   bottom: 90px;
-  right: 24px;
-  font-size: 14px; /* スマホ基準 */
+  right: 100px;      /* ← 元の基準に合わせる */
+  font-size: 14px;   /* スマホ */
   color: #666;
-  text-align: right; /* ← HとD揃え */
+  text-align: right;
   z-index: 200;
 }
 
@@ -61,11 +61,11 @@ layout: default
   color: inherit;
 }
 
-/* © */
+/* ©（元の位置に戻す） */
 .copy {
   position: fixed;
   bottom: 60px;
-  right: 24px;
+  right: 100px;      /* ← BACK TOと揃ってた位置 */
   font-size: 12px;
   color: inherit;
   text-align: right;
@@ -135,15 +135,16 @@ layout: default
     font-size: 22px;
   }
 
+  /* スマホでは元の位置（24px） */
   .get-in-touch {
-    bottom: 90px;
     right: 24px;
+    bottom: 90px;
     font-size: 14px;
   }
 
   .copy {
-    bottom: 60px;
     right: 24px;
+    bottom: 60px;
     font-size: 12px;
   }
 }
