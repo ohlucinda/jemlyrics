@@ -57,3 +57,8 @@ And my world feels brand new
 When I'm next to you
 
 It's all the simple joy your presence brings
+
+<p style="margin:0 0 6px 0; font-size:11px; color:#999; letter-spacing:0.12em; margin-left:20px;">
+  PREVIEW
+</p>
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/simple-joy/1885017477?i=1885017479&l=en-US"></iframe>
