@@ -169,7 +169,7 @@ layout: default
 </div>
 
 <div class="get-in-touch">
-  <a href="mailto:goinmint@gmail.com">GET IN TOUCH</a>
+  <a href="mailto:floribundatunes@duck.com">GET IN TOUCH</a>
 </div>
 
 <div class="copy">© All rights reserved</div>
