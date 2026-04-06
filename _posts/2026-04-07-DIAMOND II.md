@@ -1,6 +1,6 @@
 ---
 layout: lyrics
-title:DIAMOND II 
+title: DIAMOND II 
 ---
 
 私はダイヤ
