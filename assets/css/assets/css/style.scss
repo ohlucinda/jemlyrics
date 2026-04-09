@@ -1,0 +1,16 @@
+---
+# 空白でもこのハイフン3つが2組必要です
+---
+
+@font-face {
+  font-family: 'AdjustedFont';
+  /* 英字に使う標準フォント */
+  src: local('Helvetica'), local('Arial');
+  /* 120%に拡大。お好みで 115% などに微調整してください */
+  size-adjust: 120%;
+}
+
+body {
+  /* 英字設定を日本語より先に書くのがコツです */
+  font-family: 'AdjustedFont', "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
