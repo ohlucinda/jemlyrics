@@ -14,7 +14,6 @@ body {
   color: #333; 
 }
 a { text-decoration: none; color: inherit; }
-
 .page-wrap {
   min-height: 100vh;
   display: flex;
@@ -23,37 +22,38 @@ a { text-decoration: none; color: inherit; }
   padding: 60px 40px 100px;
   gap: 40px;
 }
-
 .site-header a { font-size: 70px; }
-
-/* フォントはAdobe Caslon、バランスは最初の「節制」を再現 */
 .lyrics-content {
-  font-family: "adobe-caslon-pro", serif; /* 今のフォント */
+  font-family: "adobe-caslon-pro", serif;
   font-weight: 400;
-  font-size: 18px;           /* タイトル一覧と全く同じ数値 */
-  line-height: 2.2;          /* 最初のあの心地よい行間 */
-  letter-spacing: 0.12em;    /* タイトル一覧と全く同じあの字間 */
+  font-size: 18px;
+  line-height: 2.2;
+  letter-spacing: 0.12em;
   text-align: left;
   white-space: pre-wrap;
   width: 60%;
   margin-left: 10%;
 }
-
+.en {
+  font-size: 21px;
+}
 .back {
   position: fixed;
   bottom: 60px;
   right: 100px;
 }
 .back a { font-size: 14px; }
-
 @media (max-width: 768px) {
   .page-wrap { padding: 40px 24px 100px; gap: 30px; }
   .site-header a { font-size: 50px; }
   .lyrics-content {
-    font-size: 16px;         /* スマホ版も一覧と同じ数値 */
+    font-size: 16px;
     width: 100%;
     margin-left: 0;
-    padding-left: 0%;
+    padding-left: 0;
+  }
+  .en {
+    font-size: 19px;
   }
   .back { bottom: 60px; right: 24px; }
   .back a { font-size: 14px; }
@@ -72,5 +72,12 @@ a { text-decoration: none; color: inherit; }
 <div class="back">
   <a href="{{ '/lyrics' | relative_url }}">BACK TO LYRICS</a>
 </div>
+<script>
+  const content = document.querySelector('.lyrics-content');
+  content.innerHTML = content.innerHTML.replace(
+    /([A-Za-z0-9'".,!?\- ]+)/g,
+    '<span class="en">$1</span>'
+  );
+</script>
 </body>
 </html>
