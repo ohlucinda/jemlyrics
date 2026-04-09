@@ -1,19 +1,86 @@
----
----
-
-/* 1. 今の Adobe Caslon Pro の「英語部分だけ」に名前をつけて調整する */
 @font-face {
-  font-family: "Caslon-Adjust";
-  /* 今使っている Adobe Caslon Pro を直接指定 */
+  font-family: "CaslonEnglish";
   src: local("adobe-caslon-pro");
-  /* 英語（アルファベット・数字）の範囲だけを指定 */
-  unicode-range: U+0020-007E;
-  /* 英語だけを1.1倍（110%）にする */
   size-adjust: 110%;
 }
 
-/* 2. 歌詞エリアに適用 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Aboreto', cursive;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 40px 100px;
+  gap: 40px;
+}
+
+.site-header a {
+  font-size: 70px;
+}
+
+/* 歌詞 */
 .lyrics-content {
-  /* 調整した英語用 Caslon を先に置き、次に通常の Caslon を置く */
-  font-family: "Caslon-Adjust", "adobe-caslon-pro", serif;
+  font-family: "CaslonEnglish", "adobe-caslon-pro", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2.2;
+  letter-spacing: 0.12em;
+  text-align: left;
+  white-space: pre-wrap;
+  width: 60%;
+  margin-left: 10%;
+}
+
+/* BACK */
+.back {
+  position: fixed;
+  bottom: 60px;
+  right: 100px;
+}
+
+.back a {
+  font-size: 14px;
+}
+
+/* スマホ */
+@media (max-width: 768px) {
+  .page-wrap {
+    padding: 40px 24px 100px;
+    gap: 30px;
+  }
+
+  .site-header a {
+    font-size: 50px;
+  }
+
+  .lyrics-content {
+    font-size: 16px;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .back {
+    bottom: 60px;
+    right: 24px;
+  }
+
+  .back a {
+    font-size: 12px;
+  }
 }
