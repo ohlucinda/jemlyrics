@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@100&family=Zen+Maru+Gothic:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@400&family=Zen+Maru+Gothic:wght@400&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; }
 body { font-family: 'Aboreto', cursive; margin: 0; padding: 0; }
@@ -25,39 +25,24 @@ a { text-decoration: none; color: inherit; }
   width: 60%;
   margin-left: 10%;
 }
-
 .list a { 
   font-family: 'Montserrat', 'Zen Maru Gothic', sans-serif; 
-  font-weight: 100; /* 極細設定 */
+  font-weight: 400; /* ここを標準の太さに戻しました */
   font-size: 18px; 
-  letter-spacing: 0.15em; 
+  letter-spacing: 0.1em; 
 }
-
 .back {
   position: fixed;
   bottom: 60px;
   right: 100px;
 }
 .back a { font-size: 14px; }
-
-/* スマホ用 */
 @media (max-width: 768px) {
-  .page-wrap {
-    padding: 40px 24px 100px;
-    gap: 50px;
-  }
+  .page-wrap { padding: 40px 24px 100px; gap: 50px; }
   .site-header a { font-size: 50px; }
-  .list {
-    width: 100%;
-    margin-left: 0;
-    padding-left: 10%;
-    gap: 30px;
-  }
+  .list { width: 100%; margin-left: 0; padding-left: 10%; gap: 30px; }
   .list a { font-size: 16px; }
-  .back {
-    bottom: 60px;
-    right: 24px;
-  }
+  .back { bottom: 60px; right: 24px; }
   .back a { font-size: 14px; }
 }
 </style>
