@@ -73,11 +73,26 @@ a { text-decoration: none; color: inherit; }
   <a href="{{ '/lyrics' | relative_url }}">BACK TO LYRICS</a>
 </div>
 <script>
-  const content = document.querySelector('.lyrics-content');
-  content.innerHTML = content.innerHTML.replace(
-    /(?<=>|^)([^<]*[A-Za-z][^<]*)(?=<|$)/g,
-    (match) => match.replace(/^(\s*)(.+?)(\s*)$/, '$1<span class="en">$2</span>$3')
-  );
+  function wrapEnglish(node) {
+    if (node.nodeType === 3) {
+      const text = node.textContent;
+      if (/[A-Za-z]/.test(text)) {
+        const span = document.createElement('span');
+        span.innerHTML = text.replace(
+          /([A-Za-z][A-Za-z0-9'".,!?\- ]*)/g,
+          '<span class="en">$1</span>'
+        );
+        node.parentNode.replaceChild(span, node);
+      }
+    } else if (
+      node.nodeType === 1 &&
+      !node.hasAttribute('style') &&
+      node.tagName !== 'IFRAME'
+    ) {
+      Array.from(node.childNodes).forEach(wrapEnglish);
+    }
+  }
+  wrapEnglish(document.querySelector('.lyrics-content'));
 </script>
 </body>
 </html>
