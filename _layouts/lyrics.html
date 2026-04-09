@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Zen+Maru+Gothic:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@100&family=Zen+Maru+Gothic:wght@400&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; }
 body { font-family: 'Aboreto', cursive; margin: 0; padding: 0; }
@@ -18,16 +18,17 @@ a { text-decoration: none; color: inherit; }
 }
 .site-header a { font-size: 70px; }
 
-/* 歌詞の部分：丸みのある優しいフォントに */
 .lyrics-content {
-  font-family: 'Zen Maru Gothic', sans-serif;
+  /* 英語には極細Montserrat、日本語には丸ゴシックを適用 */
+  font-family: 'Montserrat', 'Zen Maru Gothic', sans-serif;
+  font-weight: 100; /* 極限まで細くします */
   font-size: 18px;
-  line-height: 2.2; /* 行間を広げてゆったりさせました */
+  line-height: 2.2;
   text-align: left;
   white-space: pre-wrap;
   width: 60%;
   margin-left: 10%;
-  letter-spacing: 0.08em; /* 文字のトゲトゲ感を消すために間隔を少し広げています */
+  letter-spacing: 0.1em; /* 間隔を広げて繊細さを出します */
 }
 
 .back {
