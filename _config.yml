@@ -7,4 +7,6 @@ theme: minima
 
 kramdown:
   input: GFM
-  hard_wrap: future: true
+  hard_wrap: true
+
+  future: true
