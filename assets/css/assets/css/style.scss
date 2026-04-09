@@ -1,16 +1,19 @@
 ---
 ---
 
+/* 1. 今の Adobe Caslon Pro の「英語部分だけ」に名前をつけて調整する */
 @font-face {
-  font-family: 'EnglishAdjust';
-  /* 英字用のフォントだけを指定 */
-  src: local('Helvetica'), local('Arial');
-  /* 英字だけを大きくする */
-  size-adjust: 120%;
+  font-family: "Caslon-Adjust";
+  /* 今使っている Adobe Caslon Pro を直接指定 */
+  src: local("adobe-caslon-pro");
+  /* 英語（アルファベット・数字）の範囲だけを指定 */
+  unicode-range: U+0020-007E;
+  /* 英語だけを1.1倍（110%）にする */
+  size-adjust: 110%;
 }
 
-body {
-  /* 最初に英字の設定を置き、その後に何も書かない */
-  /* こうすると、日本語はブラウザが自動で選ぶ「いつものフォント」になります */
-  font-family: 'EnglishAdjust';
+/* 2. 歌詞エリアに適用 */
+.lyrics-content {
+  /* 調整した英語用 Caslon を先に置き、次に通常の Caslon を置く */
+  font-family: "Caslon-Adjust", "adobe-caslon-pro", serif;
 }
