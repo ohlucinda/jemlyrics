@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@100&family=Zen+Maru+Gothic:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@400&family=Zen+Maru+Gothic:wght@400&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; }
 body { font-family: 'Aboreto', cursive; margin: 0; padding: 0; }
@@ -17,59 +17,15 @@ a { text-decoration: none; color: inherit; }
   gap: 40px;
 }
 .site-header a { font-size: 70px; }
-
 .lyrics-content {
-  /* 英語には極細Montserrat、日本語には丸ゴシックを適用 */
   font-family: 'Montserrat', 'Zen Maru Gothic', sans-serif;
-  font-weight: 100; /* 極限まで細くします */
+  font-weight: 400; /* 標準的な太さ */
   font-size: 18px;
   line-height: 2.2;
   text-align: left;
   white-space: pre-wrap;
   width: 60%;
   margin-left: 10%;
-  letter-spacing: 0.1em; /* 間隔を広げて繊細さを出します */
+  letter-spacing: 0.05em;
 }
-
-.back {
-  position: fixed;
-  bottom: 60px;
-  right: 100px;
-}
-.back a { font-size: 14px; }
-
-/* スマホ用 */
-@media (max-width: 768px) {
-  .page-wrap {
-    padding: 40px 24px 100px;
-    gap: 30px;
-  }
-  .site-header a { font-size: 50px; }
-  .lyrics-content {
-    font-size: 16px;
-    width: 100%;
-    margin-left: 0;
-    padding-left: 5%;
-  }
-  .back {
-    bottom: 60px;
-    right: 24px;
-  }
-  .back a { font-size: 14px; }
-}
-</style>
-</head>
-<body>
-<div class="page-wrap">
-  <div class="site-header">
-    <a href="{{ '/' | relative_url }}">JE'M</a>
-  </div>
-  <div class="lyrics-content">
-    {{ content }}
-  </div>
-</div>
-<div class="back">
-  <a href="{{ '/lyrics' | relative_url }}">BACK TO LYRICS</a>
-</div>
-</body>
-</html>
+/* ...以下、backボタンやスマホ設定などはそのまま（略さず貼り付けてください）... */
