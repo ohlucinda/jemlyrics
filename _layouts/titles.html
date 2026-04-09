@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Zen+Maru+Gothic:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@100&family=Zen+Maru+Gothic:wght@400&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; }
 body { font-family: 'Aboreto', cursive; margin: 0; padding: 0; }
@@ -26,11 +26,11 @@ a { text-decoration: none; color: inherit; }
   margin-left: 10%;
 }
 
-/* 曲名リスト：ここも丸みのあるフォントに */
 .list a { 
-  font-family: 'Zen Maru Gothic', sans-serif; 
+  font-family: 'Montserrat', 'Zen Maru Gothic', sans-serif; 
+  font-weight: 100; /* 極細設定 */
   font-size: 18px; 
-  letter-spacing: 0.12em; 
+  letter-spacing: 0.15em; 
 }
 
 .back {
@@ -71,13 +71,6 @@ a { text-decoration: none; color: inherit; }
     {% for post in site.posts %}
       <a href="{{ post.url | relative_url }}">{{ post.title | upcase }}</a>
     {% endfor %}
-  </div>
-</div>
-<div class="back">
-  <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
-</div>
-</body>
-</html>    {% endfor %}
   </div>
 </div>
 <div class="back">
