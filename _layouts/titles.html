@@ -3,11 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://use.typekit.net/qsa5fag.css">
 <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; }
 body { font-family: 'Aboreto', cursive; margin: 0; padding: 0; }
 a { text-decoration: none; color: inherit; }
+
 .page-wrap {
   min-height: 100vh;
   display: flex;
@@ -16,7 +18,9 @@ a { text-decoration: none; color: inherit; }
   padding: 60px 40px 100px;
   gap: 120px;
 }
+
 .site-header a { font-size: 70px; }
+
 .list {
   display: flex;
   flex-direction: column;
@@ -25,7 +29,14 @@ a { text-decoration: none; color: inherit; }
   width: 60%;
   margin-left: 10%;
 }
-.list a { font-size: 18px; }
+
+/* 曲名リスト：Adobe Caslonを適用 */
+.list a { 
+  font-family: "adobe-caslon-pro", serif; 
+  font-size: 20px; 
+  letter-spacing: 0.12em; 
+}
+
 .back {
   position: fixed;
   bottom: 60px;
@@ -33,12 +44,8 @@ a { text-decoration: none; color: inherit; }
 }
 .back a { font-size: 14px; }
 
-/* スマホ用 */
 @media (max-width: 768px) {
-  .page-wrap {
-    padding: 40px 24px 100px;
-    gap: 50px;
-  }
+  .page-wrap { padding: 40px 24px 100px; gap: 50px; }
   .site-header a { font-size: 50px; }
   .list {
     width: 100%;
@@ -46,11 +53,8 @@ a { text-decoration: none; color: inherit; }
     padding-left: 10%;
     gap: 30px;
   }
-  .list a { font-size: 16px; }
-  .back {
-    bottom: 60px;
-    right: 24px;
-  }
+  .list a { font-size: 18px; }
+  .back { bottom: 60px; right: 24px; }
   .back a { font-size: 14px; }
 }
 </style>
