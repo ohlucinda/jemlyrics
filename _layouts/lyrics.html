@@ -7,7 +7,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; }
-body { font-family: 'Aboreto', cursive; margin: 0; padding: 0; }
+body { 
+  font-family: 'Aboreto', cursive; 
+  margin: 0; 
+  padding: 0; 
+  color: #333; /* 真っ黒より少しだけ柔らかくして一覧と馴染ませます */
+}
 a { text-decoration: none; color: inherit; }
 
 .page-wrap {
@@ -21,17 +26,17 @@ a { text-decoration: none; color: inherit; }
 
 .site-header a { font-size: 70px; }
 
-/* 歌詞の部分：Adobe Caslonを適用 */
+/* 歌詞の部分：タイトル一覧の日本語の空気感に数値を合わせる */
 .lyrics-content {
   font-family: "adobe-caslon-pro", serif; 
   font-weight: 400;
-  font-size: 20px;
-  line-height: 2.2;
+  font-size: 18px;           /* タイトル一覧（18px）と物理的に統一 */
+  line-height: 2.5;          /* 行間を広げて、日本語が詰まって見えないようにする */
+  letter-spacing: 0.12em;    /* タイトル一覧（0.12em）と全く同じ字間に設定 */
   text-align: left;
   white-space: pre-wrap;
   width: 60%;
   margin-left: 10%;
-  letter-spacing: 0.05em;
 }
 
 .back {
@@ -45,10 +50,10 @@ a { text-decoration: none; color: inherit; }
   .page-wrap { padding: 40px 24px 100px; gap: 30px; }
   .site-header a { font-size: 50px; }
   .lyrics-content {
-    font-size: 18px;
+    font-size: 16px;         /* スマホ版の一覧（16px）と統一 */
     width: 100%;
     margin-left: 0;
-    padding-left: 5%;
+    padding-left: 10%;       /* 左の余白も一覧のリストと揃える */
   }
   .back { bottom: 60px; right: 24px; }
   .back a { font-size: 14px; }
