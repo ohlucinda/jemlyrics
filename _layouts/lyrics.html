@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@400&family=Zen+Maru+Gothic:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; }
 body { font-family: 'Aboreto', cursive; margin: 0; padding: 0; }
 a { text-decoration: none; color: inherit; }
-
 .page-wrap {
   min-height: 100vh;
   display: flex;
@@ -17,22 +16,15 @@ a { text-decoration: none; color: inherit; }
   padding: 60px 40px 100px;
   gap: 40px;
 }
-
 .site-header a { font-size: 70px; }
-
-/* 歌詞の部分：読みやすい標準的な太さ(400)に設定 */
 .lyrics-content {
-  font-family: 'Montserrat', 'Zen Maru Gothic', sans-serif;
-  font-weight: 400;
   font-size: 18px;
-  line-height: 2.2;
+  line-height: 2;
   text-align: left;
   white-space: pre-wrap;
   width: 60%;
   margin-left: 10%;
-  letter-spacing: 0.08em;
 }
-
 .back {
   position: fixed;
   bottom: 60px;
@@ -40,7 +32,7 @@ a { text-decoration: none; color: inherit; }
 }
 .back a { font-size: 14px; }
 
-/* スマホ用設定 */
+/* スマホ用 */
 @media (max-width: 768px) {
   .page-wrap {
     padding: 40px 24px 100px;
