@@ -1,16 +1,16 @@
 ---
-# 空白でもこのハイフン3つが2組必要です
 ---
 
 @font-face {
-  font-family: 'AdjustedFont';
-  /* 英字に使う標準フォント */
+  font-family: 'EnglishAdjust';
+  /* 英字用のフォントだけを指定 */
   src: local('Helvetica'), local('Arial');
-  /* 120%に拡大。お好みで 115% などに微調整してください */
+  /* 英字だけを大きくする */
   size-adjust: 120%;
 }
 
 body {
-  /* 英字設定を日本語より先に書くのがコツです */
-  font-family: 'AdjustedFont', "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  /* 最初に英字の設定を置き、その後に何も書かない */
+  /* こうすると、日本語はブラウザが自動で選ぶ「いつものフォント」になります */
+  font-family: 'EnglishAdjust';
 }
