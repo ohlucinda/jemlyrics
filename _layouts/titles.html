@@ -27,7 +27,9 @@ a { text-decoration: none; color: inherit; }
 
 .site-header a { font-size: 70px; }
 
+/* ここを基準にする */
 .list {
+  position: relative;  /* ←追加（基準） */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -38,12 +40,12 @@ a { text-decoration: none; color: inherit; }
 
 .list a { font-size: 18px; }
 
-/* 画像（タイトル1行目に合わせる） */
+/* 画像（タイトル1行目に完全一致） */
 .art {
-  position: fixed;
-  top: 60px;        /* 基準 */
-  transform: translateY(120px); /* gap分ずらす＝タイトル位置 */
-  right: 100px;
+  position: absolute;
+  top: 0;              /* ←これで1行目と揃う */
+  left: 100%;          /* listの右横に出す */
+  margin-left: 60px;   /* 少し離す */
   width: 260px;
   height: auto;
 }
@@ -92,11 +94,13 @@ a { text-decoration: none; color: inherit; }
     {% for post in site.posts %}
       <a href="{{ post.url | relative_url }}">{{ post.title | upcase }}</a>
     {% endfor %}
+
+    <!-- ここに置く -->
+    <img src="{{ '/che-EDIT.jpg' | relative_url }}" class="art">
+
   </div>
 
 </div>
-
-<img src="{{ '/che-EDIT.jpg' | relative_url }}" class="art">
 
 <div class="back">
   <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
