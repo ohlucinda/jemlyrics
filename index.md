@@ -73,11 +73,11 @@ layout: default
   text-align: right;
 }
 
-76  /* Mac */
-77  @media (min-width: 768px) { 
-78    .get-in-touch {
-79      font-size: 16px;
-80    }
+  /* Mac */
+  @media (min-width: 769px) {
+  .get-in-touch {
+    font-size: 16px;
+  }
 
   .copy {
     font-size: 14px;
