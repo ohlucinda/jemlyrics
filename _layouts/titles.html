@@ -38,12 +38,12 @@ a { text-decoration: none; color: inherit; }
 
 .list a { font-size: 18px; }
 
-/* 画像（ここが今回の核） */
+/* 画像（確定版） */
 .art {
   position: fixed;
-  top: 60px;      /* タイトルの一番上に揃える */
-  right: 100px;   /* HOME（BACK）のラインに揃える */
-  width: 260px;   /* 強すぎないサイズ */
+  top: 140px;
+  right: 100px;
+  width: 260px;
   height: auto;
 }
 
@@ -73,10 +73,7 @@ a { text-decoration: none; color: inherit; }
   .back { bottom: 60px; right: 24px; }
   .back a { font-size: 14px; }
 
-  /* スマホでは表示しない */
-  .art {
-    display: none;
-  }
+  .art { display: none; }
 }
 </style>
 
@@ -98,8 +95,7 @@ a { text-decoration: none; color: inherit; }
 
 </div>
 
-<!-- ここに画像 -->
-<img src="che.jpg" class="art">
+<img src="{{ '/che-EDIT.jpg' | relative_url }}" class="art">
 
 <div class="back">
   <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
