@@ -148,7 +148,7 @@ layout: default
     bottom: 60px;
     font-size: 12px;
   }
-}
+
 /* スマホ・iPad（横幅768px以下）の時だけ、サイトを隠してメッセージを出す */
 @media screen and (max-width: 768px) {
   body::before {
