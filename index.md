@@ -118,7 +118,7 @@ layout: default
 @media (max-width: 768px) {
   .page-wrap {
     padding: 40px 24px;
-    gap: 40px;
+    gap: 30px;
   }
 
   .site-header span {
