@@ -121,15 +121,9 @@ layout: default
     gap: 30px;
   }
 
-  .site-header {
-  width: 85%;
-  margin: 0 auto;
-}
-
-  .main-img {
-  width: 85%;          /* ←ここが変わる本体 */
-  margin: 20px auto 0;
-  display: block;
+.main-img {
+  width: 100%;
+  margin-top: 20px;
 }
 
   .bottom-row {
