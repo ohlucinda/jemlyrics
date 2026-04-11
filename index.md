@@ -152,7 +152,7 @@ layout: default
 } /* ← 151行目。これでMacの設定を一度「完結」させます */
 
 /* スマホ・iPadの時だけ、サイトを隠してメッセージを出す */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   body::before {
     content: "Designed for Mac, PC and iPad.";
     position: fixed;
