@@ -158,16 +158,18 @@ layout: default
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;   /* 画面の幅いっぱいに */
+    height: 100vh;  /* 画面の高さいっぱいに */
     background: white;
     color: black;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;    /* 上下の中央 */
+    justify-content: center; /* 左右の中央 */
+    text-align: center;      /* 文字自体を中央寄せ */
     font-family: serif;
     font-size: 20px;
     z-index: 9999;
+    margin: 0;               /* 余計な余白を消す */
   }
 }
 </style>
