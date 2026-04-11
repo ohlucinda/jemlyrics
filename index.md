@@ -121,13 +121,14 @@ layout: default
     gap: 30px;
   }
 
-  .site-header span {
-    font-size: 50px;
-  }
+  .site-header {
+  width: 85%;
+  margin: 0 auto;
+}
 
   .main-img {
-  width: calc(100% - 48px);  /* ←左右24pxを引く */
-  margin: 20px auto 0;       /* ←中央配置 */
+  width: 85%;          /* ←ここが変わる本体 */
+  margin: 20px auto 0;
   display: block;
 }
 
