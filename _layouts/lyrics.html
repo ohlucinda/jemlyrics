@@ -9,45 +9,52 @@
 <style>
 * { box-sizing: border-box; }
 
-body { 
-  font-family: 'Aboreto', cursive; 
-  margin: 0; 
-  padding: 0; 
-  color: #333; 
+body {
+  font-family: 'Aboreto', cursive;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 a { text-decoration: none; color: inherit; }
 
+/* 全体 */
 .page-wrap {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
-  align-items: flex-start;   /* ←ここ変更（最重要） */
-
+  align-items: center;
   padding: 60px 40px 100px;
   gap: 40px;
 }
 
-.site-header a { font-size: 70px; }
+/* 共通の軸 */
+.inner {
+  width: 600px;
+  max-width: 90%;
+}
 
+/* タイトル */
+.site-header a {
+  font-size: 70px;
+}
+
+/* 歌詞 */
 .lyrics-content {
   font-family: "adobe-caslon-pro", serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 2.2;
   letter-spacing: 0;
-  text-align: left;
   white-space: pre-wrap;
-
-  width: 60%;
-  margin-left: 10%;
+  margin-top: 40px;
 }
 
+/* 英語 */
 .en {
   font-size: 19px;
 }
 
+/* BACK */
 .back {
   position: fixed;
   bottom: 60px;
@@ -58,37 +65,32 @@ a { text-decoration: none; color: inherit; }
 
 /* スマホ */
 @media (max-width: 768px) {
-  .page-wrap { padding: 40px 24px 100px; gap: 30px; }
+  .page-wrap { padding: 40px 24px 100px; }
   .site-header a { font-size: 50px; }
 
   .lyrics-content {
     font-size: 16px;
-    width: 100%;
-    margin-left: 0;
-    padding-left: 0;
   }
 
-  .en {
-    font-size: 17px;
-  }
-
-  .back { bottom: 60px; right: 24px; }
-  .back a { font-size: 14px; }
+  .back { right: 24px; }
 }
 </style>
-
 </head>
 
 <body>
 
 <div class="page-wrap">
 
-  <div class="site-header">
-    <a href="{{ '/' | relative_url }}">JE'M</a>
-  </div>
+  <div class="inner">
 
-  <div class="lyrics-content">
-    {{ content }}
+    <div class="site-header">
+      <a href="{{ '/' | relative_url }}">JE'M</a>
+    </div>
+
+    <div class="lyrics-content">
+      {{ content }}
+    </div>
+
   </div>
 
 </div>
