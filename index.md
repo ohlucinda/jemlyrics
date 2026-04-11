@@ -16,6 +16,9 @@ layout: default
 
 .site-header {
   cursor: pointer;
+
+  width: 600px;
+  max-width: 100%;
 }
 
 .site-header span {
