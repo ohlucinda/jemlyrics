@@ -74,7 +74,7 @@ layout: default
 }
 
 /* Mac */
-@media (min-width: 769px) {
+
   .get-in-touch {
     font-size: 16px;
   }
