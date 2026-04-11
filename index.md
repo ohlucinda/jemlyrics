@@ -149,29 +149,27 @@ layout: default
     font-size: 12px;
   }
 
-/* スマホ・iPad（横幅768px以下）の時だけ、サイトを隠してメッセージを出す */
-@media screen and (max-width: 768px) {
+} /* ← 151行目。これでMacの設定を一度「完結」させます */
+
+/* スマホ・iPadの時だけ、サイトを隠してメッセージを出す */
+@media screen and (max-width: 767px) {
   body::before {
-    content: "Designed for Mac."; 
+    content: "DESIGNED FOR MAC.";
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ffffff; 
-    color: #000000;      
+    background: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Aboreto', cursive;
-    font-size: 18px;
-    z-index: 999999;  
+    font-family: serif;
+    font-size: 20px;
+    z-index: 9999;
   }
-  
-  .page-wrap, .get-in-touch, .copy {
-    display: none !important; 
-  }
-}  
+}
 </style>
 
 <div class="page-wrap">
