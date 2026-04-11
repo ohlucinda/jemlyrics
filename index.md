@@ -154,7 +154,7 @@ layout: default
 /* スマホ・iPadの時だけ、サイトを隠してメッセージを出す */
 @media screen and (max-width: 767px) {
   body::before {
-    content: "DESIGNED FOR MAC.";
+    content: "DESIGNED FOR MAC AND PC.";
     position: fixed;
     top: 0;
     left: 0;
