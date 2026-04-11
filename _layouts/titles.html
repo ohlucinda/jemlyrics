@@ -38,14 +38,14 @@ a { text-decoration: none; color: inherit; }
 
 .list a { font-size: 18px; }
 
-/* 画像（完成形） */
+/* 画像（BACK基準） */
 .art {
   position: fixed;
-  top: 180px;         /* タイトル1行目 */
-  right: 100px;       /* Eライン */
-  width: 240px;       /* バランス調整済み */
+  right: 100px;
+  bottom: 120px;   /* ←BACKの上に配置 */
+  width: 240px;
   height: auto;
-  max-height: 60vh;   /* ←これでiPad問題解決 */
+  max-height: 60vh;
 }
 
 /* BACK */
@@ -57,7 +57,7 @@ a { text-decoration: none; color: inherit; }
 
 .back a { font-size: 14px; }
 
-/* iPadなど高さ低い環境 */
+/* iPad */
 @media (max-width: 1024px) {
   .art {
     width: 200px;
@@ -66,21 +66,6 @@ a { text-decoration: none; color: inherit; }
 
 /* スマホ */
 @media (max-width: 768px) {
-  .page-wrap { padding: 40px 24px 100px; gap: 50px; }
-  .site-header a { font-size: 50px; }
-
-  .list { 
-    width: 100%; 
-    margin-left: 0; 
-    padding-left: 0%; 
-    gap: 30px; 
-  }
-
-  .list a { font-size: 16px; }
-
-  .back { bottom: 60px; right: 24px; }
-  .back a { font-size: 14px; }
-
   .art { display: none; }
 }
 </style>
