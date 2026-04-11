@@ -126,9 +126,10 @@ layout: default
   }
 
   .main-img {
-    width: 100%;
-    margin-top: 20px;
-  }
+  width: 600px;
+  max-width: 100%;
+  margin-top: 20px;
+}
 
   .bottom-row {
     width: 100%;
