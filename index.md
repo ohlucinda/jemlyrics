@@ -126,8 +126,7 @@ layout: default
   }
 
   .main-img {
-  width: 600px;
-  max-width: 100%;
+  width: 100%;   /* ←これにする */
   margin-top: 20px;
 }
 
