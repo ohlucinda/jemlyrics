@@ -126,8 +126,9 @@ layout: default
   }
 
   .main-img {
-  width: 100%;   /* ←これにする */
-  margin-top: 20px;
+  width: calc(100% - 48px);  /* ←左右24pxを引く */
+  margin: 20px auto 0;       /* ←中央配置 */
+  display: block;
 }
 
   .bottom-row {
