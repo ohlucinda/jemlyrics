@@ -5,24 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://use.typekit.net/qsa5fag.css">
 <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
 <style>
 * { box-sizing: border-box; }
+
 body { 
   font-family: 'Aboreto', cursive; 
   margin: 0; 
   padding: 0; 
   color: #333; 
 }
+
 a { text-decoration: none; color: inherit; }
+
 .page-wrap {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  align-items: flex-start;   /* ←ここ変更（最重要） */
+
   padding: 60px 40px 100px;
   gap: 40px;
 }
+
 .site-header a { font-size: 70px; }
+
 .lyrics-content {
   font-family: "adobe-caslon-pro", serif;
   font-weight: 400;
@@ -31,68 +39,87 @@ a { text-decoration: none; color: inherit; }
   letter-spacing: 0;
   text-align: left;
   white-space: pre-wrap;
+
   width: 60%;
   margin-left: 10%;
 }
+
 .en {
   font-size: 19px;
 }
+
 .back {
   position: fixed;
   bottom: 60px;
   right: 100px;
 }
+
 .back a { font-size: 14px; }
+
+/* スマホ */
 @media (max-width: 768px) {
   .page-wrap { padding: 40px 24px 100px; gap: 30px; }
   .site-header a { font-size: 50px; }
+
   .lyrics-content {
     font-size: 16px;
     width: 100%;
     margin-left: 0;
     padding-left: 0;
   }
+
   .en {
     font-size: 17px;
   }
+
   .back { bottom: 60px; right: 24px; }
   .back a { font-size: 14px; }
 }
 </style>
+
 </head>
+
 <body>
+
 <div class="page-wrap">
+
   <div class="site-header">
     <a href="{{ '/' | relative_url }}">JE'M</a>
   </div>
+
   <div class="lyrics-content">
     {{ content }}
   </div>
+
 </div>
+
 <div class="back">
   <a href="{{ '/lyrics' | relative_url }}">BACK TO LYRICS</a>
 </div>
+
 <script>
-  function wrapEnglish(node) {
-    if (node.nodeType === 3) {
-      const text = node.textContent;
-      if (/[A-Za-z]/.test(text)) {
-        const span = document.createElement('span');
-        span.innerHTML = text.replace(
-          /([A-Za-z][A-Za-z0-9'".,!?\- ]*)/g,
-          '<span class="en">$1</span>'
-        );
-        node.parentNode.replaceChild(span, node);
-      }
-    } else if (
-      node.nodeType === 1 &&
-      !node.hasAttribute('style') &&
-      node.tagName !== 'IFRAME'
-    ) {
-      Array.from(node.childNodes).forEach(wrapEnglish);
+function wrapEnglish(node) {
+  if (node.nodeType === 3) {
+    const text = node.textContent;
+    if (/[A-Za-z]/.test(text)) {
+      const span = document.createElement('span');
+      span.innerHTML = text.replace(
+        /([A-Za-z][A-Za-z0-9'".,!?\- ]*)/g,
+        '<span class="en">$1</span>'
+      );
+      node.parentNode.replaceChild(span, node);
     }
+  } else if (
+    node.nodeType === 1 &&
+    !node.hasAttribute('style') &&
+    node.tagName !== 'IFRAME'
+  ) {
+    Array.from(node.childNodes).forEach(wrapEnglish);
   }
-  wrapEnglish(document.querySelector('.lyrics-content'));
+}
+
+wrapEnglish(document.querySelector('.lyrics-content'));
 </script>
+
 </body>
 </html>
