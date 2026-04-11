@@ -27,9 +27,7 @@ a { text-decoration: none; color: inherit; }
 
 .site-header a { font-size: 70px; }
 
-/* 基準 */
 .list {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -40,11 +38,11 @@ a { text-decoration: none; color: inherit; }
 
 .list a { font-size: 18px; }
 
-/* 画像（完全一致） */
+/* 画像（正しい位置） */
 .art {
-  position: absolute;
-  top: 0;            /* タイトル1行目と一致 */
-  right: -360px;     /* Eラインに合わせる */
+  position: fixed;
+  top: 180px;       /* ←タイトル1行目に合わせる */
+  right: 100px;     /* ←Eライン */
   width: 260px;
   height: auto;
 }
@@ -93,11 +91,11 @@ a { text-decoration: none; color: inherit; }
     {% for post in site.posts %}
       <a href="{{ post.url | relative_url }}">{{ post.title | upcase }}</a>
     {% endfor %}
-
-    <img src="{{ '/che-EDIT.jpg' | relative_url }}" class="art">
   </div>
 
 </div>
+
+<img src="{{ '/che-EDIT.jpg' | relative_url }}" class="art">
 
 <div class="back">
   <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
