@@ -38,11 +38,12 @@ a { text-decoration: none; color: inherit; }
 
 .list a { font-size: 18px; }
 
-/* 画像（タイトル上＋HOMEライン揃え） */
+/* 画像（タイトル1行目に合わせる） */
 .art {
   position: fixed;
-  top: 60px;        /* タイトルの一番上と一致 */
-  right: 100px;     /* HOME（BACK）と一致 */
+  top: 60px;        /* 基準 */
+  transform: translateY(120px); /* gap分ずらす＝タイトル位置 */
+  right: 100px;
   width: 260px;
   height: auto;
 }
