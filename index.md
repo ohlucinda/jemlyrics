@@ -152,24 +152,32 @@ layout: default
 } /* ← 151行目。これでMacの設定を一度「完結」させます */
 
 /* スマホ・iPadの時だけ、サイトを隠してメッセージを出す */
-@media screen and (max-width: 1024px) {
-  body::before {
+@media screen and (max-width: 767px) {
+  /* iPhoneの時だけ、サイトの中身を根本から消してチラつきを防ぐ */
+  body {
+    display: none !important;
+  }
+  
+  /* 画面全体を白くし、メッセージを浮かび上がらせる */
+  html {
+    background: white;
+  }
+  
+  html::before {
     content: "Designed for Mac, PC and iPad.";
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;   /* 画面の幅いっぱいに */
-    height: 100vh;  /* 画面の高さいっぱいに */
-    background: white;
-    color: black;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    align-items: center;    /* 上下の中央 */
-    justify-content: center; /* 左右の中央 */
-    text-align: center;      /* 文字自体を中央寄せ */
+    align-items: center;
+    justify-content: center;
+    color: black;
     font-family: serif;
     font-size: 20px;
+    text-align: center;
     z-index: 9999;
-    margin: 0;               /* 余計な余白を消す */
   }
 }
 </style>
