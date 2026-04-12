@@ -1,49 +1,66 @@
 <style>
-/* スマホ専用の静寂をデザインする */
 body {
-  background: white;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* 余計なスクロールを禁止 */
 }
 
-.sp-container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: white;
+/* 背景画像 */
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* メッセージ */
-.statement {
-  font-family: serif;
-  font-size: 20px;
-  color: black;
-  margin-bottom: 40px;
-  padding: 0 20px;
-  line-height: 1.6;
-}
-
-/* リンク */
-.enter-link {
+/* 上：LYRICS */
+.top {
+  position: fixed;
+  top: 40px;
+  left: 24px;
   font-family: 'Aboreto', cursive;
-  font-size: 14px;
+  font-size: 18px;
+}
+
+/* 中央：名前 */
+.center {
+  position: fixed;
+  top: 45%;
+  left: 24px;
+  transform: translateY(-50%);
+  font-family: 'Aboreto', cursive;
+  font-size: 32px;
+  line-height: 1.4;
+}
+
+/* 下：APPLE MUSIC */
+.bottom {
+  position: fixed;
+  bottom: 40px;
+  left: 24px;
+  font-family: 'Aboreto', cursive;
+  font-size: 18px;
+}
+
+a {
+  color: white;
   text-decoration: none;
-  color: #888;
-  letter-spacing: 0.1em;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 4px;
 }
 </style>
 
-<div class="sp-container">
-  <div class="statement">
-    Designed for Mac, PC and iPad.
-  </div>
+<img src="/jem2.jpg" class="bg">
 
-  <a href="/indexsp.html" class="enter-link">ENTER HOME</a>
+<div class="top">
+  <a href="/lyrics/">LYRICS</a>
+</div>
+
+<div class="center">
+  je’m<br>
+  ohlucinda<br>
+  aquawits
+</div>
+
+<div class="bottom">
+  <a href="https://music.apple.com/" target="_blank">APPLE MUSIC</a>
 </div>
