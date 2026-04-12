@@ -3,74 +3,20 @@ layout: default
 ---
 
 <style>
-/* 1. layout: default からの干渉を強制的にリセット */
-.page-wrap {
-  min-height: 100vh !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important; 
-  padding: 40px 24px 100px !important; /* 歌詞ページと同期 */
-  gap: 30px !important;
-  width: 100% !important;
-}
-
-/* 2. 内枠：画面幅を超えないように制御 */
-.inner {
-  width: 100% !important;
-  max-width: 600px !important; /* 歌詞ページの inner と同じ最大幅 */
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important; 
-}
-
-/* 1. 基本は Mac 用の大きなサイズ（70pxなど）を許容する */
-.site-header span {
-  font-family: 'Aboreto', cursive;
-  font-size: 70px; 
-  line-height: 1.0;
-}
-
-/* 2. スマホ（画面幅 768px 以下）の時だけ、歌詞ページと同じ 40px に固定する */
-@media (max-width: 768px) {
-  .site-header span {
-    font-size: 40px !important; /* 歌詞ページ（IMG_1549）と同期 */
-    letter-spacing: -0.02em;
-  }
-  
-  .page-wrap {
-    padding: 40px 24px !important;
-  }
-}
-
-/* 4. 画像：横幅いっぱいに収める */
-.main-img {
-  width: 100% !important;
-  height: auto !important;
-  margin-top: 20px !important;
-  display: block !important;
-}
-
-/* 5. リンク：大きすぎるのを抑制 */
-.bottom-row {
-  width: 100% !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  gap: 15px !important;
-  margin-top: 30px !important;
-}
-
-.bottom-row a {
+/* 一旦、他の設定は全部無視。ロゴのサイズが動くかだけを見ます */
+.site-header span,
+.site-header a,
+.site-header-sp span,
+.site-header-sp a {
   font-family: 'Aboreto', cursive !important;
-  font-size: 20px !important; /* 少し控えめに調整 */
-  text-decoration: none !important;
-  color: inherit !important;
+  font-size: 20px !important; /* あえて「明らかに小さい」サイズにしています */
+  line-height: 1.0 !important;
 }
 
-/* 固定要素 */
-.get-in-touch, .copy {
-  right: 24px !important;
-  text-align: right !important;
+/* 画像が画面からはみ出さないための最低限の指定 */
+img {
+  max-width: 100% !important;
+  height: auto !important;
 }
 </style>
 
@@ -81,19 +27,11 @@ layout: default
       <span>JE'M</span>
     </div>
 
-    <img class="main-img" src="{{ '/jem2.jpg' | relative_url }}">
+    <img src="{{ '/jem2.jpg' | relative_url }}">
 
-    <div class="bottom-row">
+    <div class="links" style="margin-top: 20px;">
       <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
-      <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
-      <a href="https://jemmusicja.bandcamp.com" target="_blank">BANDCAMP</a>
     </div>
 
   </div>
 </div>
-
-<div class="get-in-touch">
-  <a href="mailto:floribundatunes@duck.com">GET IN TOUCH</a>
-</div>
-
-<div class="copy">© All rights reserved</div>
