@@ -20,9 +20,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0;  /* ←これ追加 */
 }
 
-/* 右上：LYRICS */
+/* LYRICS */
 .top {
   position: fixed;
   top: 60px;
@@ -33,7 +34,7 @@ body {
   letter-spacing: 0.08em;
 }
 
-/* 中央（左） */
+/* アーティスト */
 .center {
   position: fixed;
   top: 50%;
@@ -44,7 +45,7 @@ body {
   line-height: 1.6;
 }
 
-/* 右下 */
+/* 下 */
 .bottom {
   position: fixed;
   bottom: 60px;
@@ -72,43 +73,8 @@ a {
 
 <body>
 
-<!-- ここがポイント -->
-<img src="/jemmusic/jem3.jpg" class="bg" onerror="this.style.display='none'">
-
-<div class="top">
-  <a href="https://ohlucinda.github.io/jemmusic/lyrics">LYRICS</a>
-</div>
-
-<div class="center">
-  <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US">JE'M</a><br>
-  <a href="https://music.apple.com/jp/artist/ohlucinda/1840163010?l=en-US">OHLUCINDA</a><br>
-  <a href="https://music.apple.com/jp/artist/aquawits/1873995916?l=en-US">AQUAWITS</a>
-</div>
-
-<div class="bottom">
-  <a href="mailto:floribundatunes@duck.com">GET IN TOUCH</a>
-</div>
-
-<div class="copy">
-  © ALL RIGHTS RESERVED
-</div>
-
-</body>
-</html>  text-decoration: none;
-}
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url("jem3.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-  
-</style>
-</head>
-
-<body>
+<!-- ここだけ違う -->
+<img src="/jemmusic/jem3.jpg" class="bg" onload="this.style.opacity='1'">
 
 <div class="top">
   <a href="https://ohlucinda.github.io/jemmusic/lyrics">LYRICS</a>
