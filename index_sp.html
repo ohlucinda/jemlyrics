@@ -23,20 +23,23 @@ layout: default
   align-items: flex-start !important; 
 }
 
-/* 3. ロゴ：歌詞ページのサイズと余白に完全同期 */
-.site-header {
-  width: 100% !important;
-  text-align: left !important;
-  /* 歌詞ページの .inner のパディングと合わせるために追加 */
-  padding-left: 2px !important; 
+/* 1. 基本は Mac 用の大きなサイズ（70pxなど）を許容する */
+.site-header span {
+  font-family: 'Aboreto', cursive;
+  font-size: 70px; 
+  line-height: 1.0;
 }
 
-.site-header span {
-  font-family: 'Aboreto', cursive !important;
-  font-size: 40px !important; /* 50pxから40pxに下げて一致させます */
-  line-height: 1.0 !important;
-  letter-spacing: -1px !important; /* 文字間を詰めて歌詞ページの印象に近づける */
-  display: inline-block !important;
+/* 2. スマホ（画面幅 768px 以下）の時だけ、歌詞ページと同じ 40px に固定する */
+@media (max-width: 768px) {
+  .site-header span {
+    font-size: 40px !important; /* 歌詞ページ（IMG_1549）と同期 */
+    letter-spacing: -0.02em;
+  }
+  
+  .page-wrap {
+    padding: 40px 24px !important;
+  }
 }
 
 /* 4. 画像：横幅いっぱいに収める */
