@@ -3,83 +3,109 @@ layout: default
 ---
 
 <style>
-/* 1. 全要素のボックスモデルをリセット */
-* { 
-  box-sizing: border-box !important; 
-}
+/* 1. スマホ専用のリセット（Macの設定を一切持ち込まない） */
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
   padding: 0;
   background: white;
-  -webkit-text-size-adjust: 100%; /* iPhoneで文字サイズが勝手に変わるのを防ぐ */
+  -webkit-text-size-adjust: 100%;
 }
 
-/* 2. 外枠：歌詞一覧の 40px 24px と完全に一致させる（!importantで強制） */
-.page-wrap-sp {
+/* 2. 外枠：歌詞ページのスマホ表示とピタリと合わせる */
+.page-wrap {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  padding: 40px 24px 100px !important; 
+  align-items: center; /* 中央に置いてからinnerで制御 */
+  padding: 40px 24px 100px; /* 歌詞ページの 40px 24px と同期 */
 }
 
-/* 3. 内枠：歌詞一覧の .inner（幅90%）と完全に一致させる */
-.inner-sp {
+/* 3. 内枠：歌詞ページの .inner (width: 600px, max-width: 90%) を再現 */
+.inner {
   width: 600px;
-  max-width: 90% !important;
+  max-width: 90%; 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; /* これで「JE'M」が左のラインに吸い付く */
 }
 
-/* 4. ロゴ：歌詞一覧の 50px と完全に一致させる（!importantで強制） */
-.site-header-sp a {
-  font-family: 'Aboreto', cursive;
-  font-size: 50px !important; 
-  text-decoration: none;
-  color: inherit;
-  line-height: 1.0 !important;
-  display: inline-block;
+/* 4. ロゴ：歌詞ページの 50px と完全一致 */
+.site-header {
+  width: 100%;
+  text-align: left;
   margin: 0;
   padding: 0;
 }
 
-/* 5. 下のメッセージ部分 */
-.statement {
-  margin-top: 125px; /* 歌詞一覧のリスト開始位置と同期 */
-  font-family: serif;
-  font-size: 20px;
-  color: black;
-  line-height: 1.6;
-  text-align: left;
+.site-header span {
+  font-family: 'Aboreto', cursive;
+  font-size: 50px; /* ここが 50px なら歌詞ページと同じ大きさになります */
+  line-height: 1;
+  display: inline-block;
 }
 
-/* 6. リンク部分 */
-.enter-link {
-  margin-top: 50px;
+/* 5. 画像とリンク */
+.main-img {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  display: block;
+}
+
+.bottom-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.bottom-row a {
   font-family: 'Aboreto', cursive;
-  font-size: 16px;
+  font-size: 22px;
   text-decoration: none;
-  color: #888;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 4px;
-  display: inline-block;
+  color: inherit;
+}
+
+/* 固定要素（GET IN TOUCH など） */
+.get-in-touch {
+  position: fixed;
+  bottom: 100px;
+  right: 24px;
+  font-size: 14px;
+}
+
+.copy {
+  position: fixed;
+  bottom: 60px;
+  right: 24px;
+  font-size: 12px;
 }
 </style>
 
-<div class="page-wrap-sp">
-  <div class="inner-sp">
+<div class="page-wrap">
+  <div class="inner">
     
-    <div class="site-header-sp">
-      <a href="{{ '/' | relative_url }}">JE'M</a>
+    <div class="site-header">
+      <span>JE'M</span>
     </div>
 
-    <div class="statement">
-      Designed for Mac, PC and iPad.
+    <img class="main-img" src="{{ '/jem2.jpg' | relative_url }}">
+
+    <div class="bottom-row">
+      <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
+      <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
+      <a href="https://jemmusicja.bandcamp.com" target="_blank">BANDCAMP</a>
     </div>
-    
-    <a href="{{ '/lyrics' | relative_url }}" class="enter-link">ENTER LYRICS</a>
 
   </div>
 </div>
+
+<div class="get-in-touch">
+  <a href="mailto:floribundatunes@duck.com">GET IN TOUCH</a>
+</div>
+
+<div class="copy">© All rights reserved</div>
