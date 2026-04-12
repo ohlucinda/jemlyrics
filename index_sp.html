@@ -3,82 +3,68 @@ layout: default
 ---
 
 <style>
-/* スマホ専用：歌詞ページの数値と1pxの狂いもなく同期 */
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  padding: 0;
-  background: white;
-  -webkit-text-size-adjust: 100%;
-}
-
-/* 歌詞ページの .page-wrap スマホ設定と一致 */
+/* 1. layout: default からの干渉を強制的にリセット */
 .page-wrap {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  padding: 40px 24px 100px; 
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important; 
+  padding: 40px 24px 100px !important; /* 歌詞ページと同期 */
+  gap: 30px !important;
+  width: 100% !important;
 }
 
-/* 歌詞ページの .inner と一致 */
+/* 2. 内枠：画面幅を超えないように制御 */
 .inner {
-  width: 600px;
-  max-width: 90%; 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
+  width: 100% !important;
+  max-width: 600px !important; /* 歌詞ページの inner と同じ最大幅 */
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important; 
 }
 
-/* ロゴ：歌詞ページの 50px と一致 */
+/* 3. ロゴ：50pxを死守 */
 .site-header {
-  width: 100%;
-  text-align: left;
+  width: 100% !important;
+  text-align: left !important;
 }
 
 .site-header span {
-  font-family: 'Aboreto', cursive;
-  font-size: 50px; 
-  line-height: 1.0;
-  display: inline-block;
+  font-family: 'Aboreto', cursive !important;
+  font-size: 50px !important; /* 歌詞ページと完全一致 */
+  line-height: 1.0 !important;
+  display: inline-block !important;
 }
 
+/* 4. 画像：横幅いっぱいに収める */
 .main-img {
-  width: 100%;
-  height: auto;
-  margin-top: 30px;
-  display: block;
+  width: 100% !important;
+  height: auto !important;
+  margin-top: 20px !important;
+  display: block !important;
 }
 
+/* 5. リンク：大きすぎるのを抑制 */
 .bottom-row {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  margin-top: 40px;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 15px !important;
+  margin-top: 30px !important;
 }
 
 .bottom-row a {
-  font-family: 'Aboreto', cursive;
-  font-size: 22px;
-  text-decoration: none;
-  color: inherit;
+  font-family: 'Aboreto', cursive !important;
+  font-size: 20px !important; /* 少し控えめに調整 */
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
-.get-in-touch {
-  position: fixed;
-  bottom: 100px;
-  right: 24px;
-  font-size: 14px;
-}
-
-.copy {
-  position: fixed;
-  bottom: 60px;
-  right: 24px;
-  font-size: 12px;
+/* 固定要素 */
+.get-in-touch, .copy {
+  right: 24px !important;
+  text-align: right !important;
 }
 </style>
 
