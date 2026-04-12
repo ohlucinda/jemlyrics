@@ -23,16 +23,19 @@ layout: default
   align-items: flex-start !important; 
 }
 
-/* 3. ロゴ：歌詞ページの「40px」と完全に一致させる */
+/* 3. ロゴ：歌詞ページのサイズと余白に完全同期 */
 .site-header {
   width: 100% !important;
   text-align: left !important;
+  /* 歌詞ページの .inner のパディングと合わせるために追加 */
+  padding-left: 2px !important; 
 }
 
 .site-header span {
   font-family: 'Aboreto', cursive !important;
-  font-size: 40px !important; /* 50から40に変更。これで歌詞ページと重なります */
+  font-size: 40px !important; /* 50pxから40pxに下げて一致させます */
   line-height: 1.0 !important;
+  letter-spacing: -1px !important; /* 文字間を詰めて歌詞ページの印象に近づける */
   display: inline-block !important;
 }
 
