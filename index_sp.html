@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<style>
+  /* スマホ専用の静寂をデザインする */
+  body {
+    background: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* 余計なスクロールを禁止 */
+  }
+
+  .sp-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: white;
+  }
+
+  /* 例のメッセージを、CSSの疑似要素ではなくHTMLとして配置 */
+  .statement {
+    font-family: serif;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 40px; /* 下のリンクとの余白 */
+    padding: 0 20px;
+    line-height: 1.6;
+  }
+
+  /* スマホでも歌詞ページには行けるようにしておくための控えめなリンク */
+  .enter-link {
+    font-family: 'Aboreto', cursive;
+    font-size: 14px;
+    text-decoration: none;
+    color: #888;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 4px;
+  }
+</style>
+
+<div class="sp-container">
+  <div class="statement">
+    Designed for Mac, PC and iPad.
+  </div>
+  
+  <a href="{{ '/lyrics' | relative_url }}" class="enter-link">ENTER LYRICS</a>
+</div>
