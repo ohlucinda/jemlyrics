@@ -151,35 +151,6 @@ layout: default
 
 } /* ← 151行目。これでMacの設定を一度「完結」させます */
 
-/* スマホ・iPadの時だけ、サイトを隠してメッセージを出す */
-@media screen and (max-width: 768px) {
-  /* iPhoneの時だけ、サイトの中身を根本から消してチラつきを防ぐ */
-  body {
-    display: none !important;
-  }
-  
-  /* 画面全体を白くし、メッセージを浮かび上がらせる */
-  html {
-    background: white;
-  }
-  
-  html::before {
-    content: "Designed for Mac, PC and iPad.";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    font-family: serif;
-    font-size: 20px;
-    text-align: center;
-    z-index: 9999;
-  }
-}
 </style>
 
 <div class="page-wrap">
