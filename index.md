@@ -151,6 +151,13 @@ layout: default
 
 } /* ← 151行目。これでMacの設定を一度「完結」させます */
 
+@media (max-width: 768px) {
+  .site-header-sp a {
+    font-size: 50px;
+  }
+}  
+  
+
 </style>
 
 <div class="page-wrap">
