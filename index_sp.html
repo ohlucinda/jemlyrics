@@ -17,22 +17,22 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; /* 歌詞一覧と同じく中央寄せにしてから、中のinnerで左に寄せる */
-  padding: 40px 24px 100px; /* 歌詞一覧のスマホ設定と完全一致 */
+  align-items: center; /* 歌詞一覧の .page-wrap と一致 */
+  padding: 40px 24px 100px; /* 歌詞一覧の @media 768px と一致 */
 }
 
 .inner-sp {
-  width: 100px;
-  max-width: 100%; /* 歌詞一覧の .inner と完全一致 */
+  width: 600px;        /* 歌詞一覧の .inner と一致 */
+  max-width: 90%;      /* 歌詞一覧の .inner と一致 */
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* 中身を左に揃える */
+  align-items: flex-start; /* 中身を左のラインに揃える */
 }
 
 /* 3. ロゴのサイズを 50px に同期 */
 .site-header-sp a {
   font-family: 'Aboreto', cursive;
-  font-size: 40px; /* 歌詞一覧のスマホ設定（@media 768px）と完全一致 */
+  font-size: 50px;     /* 歌詞一覧の 50px と完全一致 */
   text-decoration: none;
   color: inherit;
   line-height: 1;
@@ -40,7 +40,7 @@ body {
 
 /* 4. メッセージ部分のデザイン */
 .statement {
-  margin-top: 125px; /* 歌詞一覧の .list の margin-top と一致させています */
+  margin-top: 125px;   /* 歌詞一覧の .list の margin-top と一致 */
   font-family: serif;
   font-size: 20px;
   color: black;
@@ -48,9 +48,9 @@ body {
 }
 
 .enter-link {
-  margin-top: 50px; /* 歌詞一覧のリストの間隔（gap）と一致 */
+  margin-top: 50px;    /* 歌詞一覧のリストの間隔（gap）と一致 */
   font-family: 'Aboreto', cursive;
-  font-size: 16px; /* 歌詞一覧の a と一致 */
+  font-size: 16px;     /* 歌詞一覧のリストの文字サイズと一致 */
   text-decoration: none;
   color: #888;
   border-bottom: 1px solid #eee;
