@@ -194,6 +194,6 @@ function hideOverlay() {
 
 <script>
 if (/iPhone|Android.+Mobile/.test(navigator.userAgent)) {
-  window.location.replace("indexso.html");
+  window.location.replace("indexsp.html");
 }
 </script>
