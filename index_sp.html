@@ -3,58 +3,68 @@ layout: default
 ---
 
 <style>
-/* 1. 歌詞一覧ページの基本ルールを完全移植 */
-* { box-sizing: border-box; }
+/* 1. 全要素のボックスモデルをリセット */
+* { 
+  box-sizing: border-box !important; 
+}
 
 body {
   margin: 0;
   padding: 0;
   background: white;
+  -webkit-text-size-adjust: 100%; /* iPhoneで文字サイズが勝手に変わるのを防ぐ */
 }
 
-/* 2. スマホでの「正しい位置」を再現 */
+/* 2. 外枠：歌詞一覧の 40px 24px と完全に一致させる（!importantで強制） */
 .page-wrap-sp {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; /* 歌詞一覧の .page-wrap と一致 */
-  padding: 40px 24px 100px; /* 歌詞一覧の @media 768px と一致 */
+  align-items: center; 
+  padding: 40px 24px 100px !important; 
 }
 
+/* 3. 内枠：歌詞一覧の .inner（幅90%）と完全に一致させる */
 .inner-sp {
-  width: 600px;        /* 歌詞一覧の .inner と一致 */
-  max-width: 90%;      /* 歌詞一覧の .inner と一致 */
+  width: 600px;
+  max-width: 90% !important;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* 中身を左のラインに揃える */
+  align-items: flex-start;
 }
 
-/* 3. ロゴのサイズを 50px に同期 */
+/* 4. ロゴ：歌詞一覧の 50px と完全に一致させる（!importantで強制） */
 .site-header-sp a {
   font-family: 'Aboreto', cursive;
-  font-size: 50px;     /* 歌詞一覧の 50px と完全一致 */
+  font-size: 50px !important; 
   text-decoration: none;
   color: inherit;
-  line-height: 1;
+  line-height: 1.0 !important;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
-/* 4. メッセージ部分のデザイン */
+/* 5. 下のメッセージ部分 */
 .statement {
-  margin-top: 125px;   /* 歌詞一覧の .list の margin-top と一致 */
+  margin-top: 125px; /* 歌詞一覧のリスト開始位置と同期 */
   font-family: serif;
   font-size: 20px;
   color: black;
   line-height: 1.6;
+  text-align: left;
 }
 
+/* 6. リンク部分 */
 .enter-link {
-  margin-top: 50px;    /* 歌詞一覧のリストの間隔（gap）と一致 */
+  margin-top: 50px;
   font-family: 'Aboreto', cursive;
-  font-size: 16px;     /* 歌詞一覧のリストの文字サイズと一致 */
+  font-size: 16px;
   text-decoration: none;
   color: #888;
   border-bottom: 1px solid #eee;
   padding-bottom: 4px;
+  display: inline-block;
 }
 </style>
 
