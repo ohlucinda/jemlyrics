@@ -3,35 +3,18 @@ layout: default
 ---
 
 <style>
-/* 一旦、他の設定は全部無視。ロゴのサイズが動くかだけを見ます */
-.site-header span,
-.site-header a,
-.site-header-sp span,
-.site-header-sp a {
-  font-family: 'Aboreto', cursive !important;
-  font-size: 20px !important; /* あえて「明らかに小さい」サイズにしています */
-  line-height: 1.0 !important;
-}
+  /* 1. 画面を真っ赤にする（反映されているかどうかのチェック） */
+  body { 
+    background-color: red !important; 
+  }
 
-/* 画像が画面からはみ出さないための最低限の指定 */
-img {
-  max-width: 100% !important;
-  height: auto !important;
-}
+  /* 2. ロゴを極端に小さくする（サイズが動くかのチェック） */
+  .site-header span {
+    font-size: 10px !important;
+    color: blue !important;
+  }
 </style>
 
-<div class="page-wrap">
-  <div class="inner">
-    
-    <div class="site-header">
-      <span>JE'M</span>
-    </div>
-
-    <img src="{{ '/jem2.jpg' | relative_url }}">
-
-    <div class="links" style="margin-top: 20px;">
-      <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
-    </div>
-
-  </div>
+<div class="site-header">
+  <span>TEST DISPLAY</span>
 </div>
