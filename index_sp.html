@@ -3,51 +3,73 @@ layout: default
 ---
 
 <style>
-  /* スマホ専用の静寂をデザインする */
-  body {
-    background: white;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* 余計なスクロールを禁止 */
-  }
+/* 1. 歌詞一覧ページの基本ルールを完全移植 */
+* { box-sizing: border-box; }
 
-  .sp-container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: white;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
 
-  /* 例のメッセージを、CSSの疑似要素ではなくHTMLとして配置 */
-  .statement {
-    font-family: serif;
-    font-size: 20px;
-    color: black;
-    margin-bottom: 40px; /* 下のリンクとの余白 */
-    padding: 0 20px;
-    line-height: 1.6;
-  }
+/* 2. スマホでの「正しい位置」を再現 */
+.page-wrap-sp {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 歌詞一覧と同じく中央寄せにしてから、中のinnerで左に寄せる */
+  padding: 40px 24px 100px; /* 歌詞一覧のスマホ設定と完全一致 */
+}
 
-  /* スマホでも歌詞ページには行けるようにしておくための控えめなリンク */
-  .enter-link {
-    font-family: 'Aboreto', cursive;
-    font-size: 14px;
-    text-decoration: none;
-    color: #888;
-    letter-spacing: 0.1em;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 4px;
-  }
+.inner-sp {
+  width: 600px;
+  max-width: 90%; /* 歌詞一覧の .inner と完全一致 */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 中身を左に揃える */
+}
+
+/* 3. ロゴのサイズを 50px に同期 */
+.site-header-sp a {
+  font-family: 'Aboreto', cursive;
+  font-size: 50px; /* 歌詞一覧のスマホ設定（@media 768px）と完全一致 */
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+}
+
+/* 4. メッセージ部分のデザイン */
+.statement {
+  margin-top: 125px; /* 歌詞一覧の .list の margin-top と一致させています */
+  font-family: serif;
+  font-size: 20px;
+  color: black;
+  line-height: 1.6;
+}
+
+.enter-link {
+  margin-top: 50px; /* 歌詞一覧のリストの間隔（gap）と一致 */
+  font-family: 'Aboreto', cursive;
+  font-size: 16px; /* 歌詞一覧の a と一致 */
+  text-decoration: none;
+  color: #888;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
+}
 </style>
 
-<div class="sp-container">
-  <div class="statement">
-    Designed for Mac, PC and iPad.
+<div class="page-wrap-sp">
+  <div class="inner-sp">
+    
+    <div class="site-header-sp">
+      <a href="{{ '/' | relative_url }}">JE'M</a>
+    </div>
+
+    <div class="statement">
+      Designed for Mac, PC and iPad.
+    </div>
+    
+    <a href="{{ '/lyrics' | relative_url }}" class="enter-link">ENTER LYRICS</a>
+
   </div>
-  
-  <a href="{{ '/lyrics' | relative_url }}" class="enter-link">ENTER LYRICS</a>
 </div>
