@@ -3,7 +3,7 @@ layout: default
 ---
 
 <style>
-/* 1. スマホ専用のリセット（Macの設定を一切持ち込まない） */
+/* スマホ専用：歌詞ページの数値と1pxの狂いもなく同期 */
 * { box-sizing: border-box; }
 
 body {
@@ -13,40 +13,37 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-/* 2. 外枠：歌詞ページのスマホ表示とピタリと合わせる */
+/* 歌詞ページの .page-wrap スマホ設定と一致 */
 .page-wrap {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; /* 中央に置いてからinnerで制御 */
-  padding: 40px 24px 100px; /* 歌詞ページの 40px 24px と同期 */
+  align-items: center; 
+  padding: 40px 24px 100px; 
 }
 
-/* 3. 内枠：歌詞ページの .inner (width: 600px, max-width: 90%) を再現 */
+/* 歌詞ページの .inner と一致 */
 .inner {
   width: 600px;
   max-width: 90%; 
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* これで「JE'M」が左のラインに吸い付く */
+  align-items: flex-start; 
 }
 
-/* 4. ロゴ：歌詞ページの 50px と完全一致 */
+/* ロゴ：歌詞ページの 50px と一致 */
 .site-header {
   width: 100%;
   text-align: left;
-  margin: 0;
-  padding: 0;
 }
 
 .site-header span {
   font-family: 'Aboreto', cursive;
-  font-size: 50px; /* ここが 50px なら歌詞ページと同じ大きさになります */
-  line-height: 1;
+  font-size: 50px; 
+  line-height: 1.0;
   display: inline-block;
 }
 
-/* 5. 画像とリンク */
 .main-img {
   width: 100%;
   height: auto;
@@ -70,7 +67,6 @@ body {
   color: inherit;
 }
 
-/* 固定要素（GET IN TOUCH など） */
 .get-in-touch {
   position: fixed;
   bottom: 100px;
