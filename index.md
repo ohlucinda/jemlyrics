@@ -80,6 +80,7 @@ layout: default
   font-size: 14px;
   text-align: right;
   width: 260px;
+  font-family: "adobe-caslon-pro", serif;
 }
 
 /* Mac */
