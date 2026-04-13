@@ -80,28 +80,27 @@ layout: default
   font-size: 14px;
 }
 
-  /* Mac */
-  @media (min-width: 769px) {
+/* Mac（サイズだけ） */
+@media (min-width: 769px) {
   .get-in-touch {
     font-size: 16px;
   }
-
-  .copy {
-    font-size: 14px;
-  }
 }
 
-  @media (max-height: 700px) {
+/* 高さが低いとき（iPad横など） */
+@media (max-height: 700px) {
   .left-note,
   .copy {
     bottom: 40px;
   }
 }
 
-  @media (max-width: 820px) {
-  .left-note,
-  .copy {
-    bottom: 40px;
+/* iPad（縦・横まとめて） */
+@media (max-width: 1024px) {
+  .left-note {
+    left: auto;
+    right: 100px;
+    bottom: 20px;
   }
 }
 
