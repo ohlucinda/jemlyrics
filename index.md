@@ -73,6 +73,13 @@ layout: default
   text-align: right;
 }
 
+.left-note {
+  position: fixed;
+  bottom: 60px;
+  left: 100px;
+  font-size: 12px;
+}
+
   /* Mac */
   @media (min-width: 769px) {
   .get-in-touch {
@@ -174,6 +181,10 @@ layout: default
 </div>
 
 <div class="copy">© All rights reserved</div>
+
+<div class="copy left-note">
+  Designed for Mac, PC and iPad.
+</div>
 
 <div class="overlay" id="overlay" onclick="hideOverlay()">
   <img src="{{ '/hime01.jpg' | relative_url }}">
