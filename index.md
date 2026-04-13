@@ -75,12 +75,13 @@ layout: default
 
 .left-note {
   position: fixed;
-  bottom: 60px;
-  left: 100px;
+  bottom: 30px;
+  right: 100px;
   font-size: 14px;
+  text-align: right;
 }
 
-/* Mac（サイズだけ） */
+/* Mac */
 @media (min-width: 769px) {
   .get-in-touch {
     font-size: 16px;
@@ -89,17 +90,10 @@ layout: default
 
 /* 高さが低いとき（iPad横など） */
 @media (max-height: 700px) {
-  .left-note,
   .copy {
-    bottom: 40px;
+    bottom: 50px;
   }
-}
-
-/* iPad（縦・横まとめて） */
-@media (max-width: 1024px) {
   .left-note {
-    left: auto;
-    right: 100px;
     bottom: 20px;
   }
 }
