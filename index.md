@@ -132,43 +132,6 @@ layout: default
   font-family: 'Aboreto', cursive;
 }
 
-/* スマホ */
-@media (max-width: 768px) {
-  .page-wrap {
-    padding: 40px 24px;
-    gap: 30px;
-  }
-
-.main-img {
-  width: 100%;
-  margin-top: 20px;
-}
-
-  .bottom-row {
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .bottom-row a {
-    font-size: 22px;
-  }
-
-  .get-in-touch {
-    right: 24px;
-    bottom: 100px;
-    font-size: 14px;
-  }
-
-  .copy {
-    right: 24px;
-    bottom: 60px;
-    font-size: 12px;
-  }
-
-} /* ← 151行目。これでMacの設定を一度「完結」させます */
-
 </style>
 
 <div class="page-wrap">
