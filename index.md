@@ -91,8 +91,9 @@ layout: default
   }
 }
 
-  @media (max-height: 700px) {
-  .left-note {
+ @media (max-height: 700px) {
+  .left-note,
+  .copy {
     bottom: 20px;
   }
 }
