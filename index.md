@@ -76,7 +76,7 @@ layout: default
 
 .meta-note {
   position: fixed;
-  bottom: 30px;
+  bottom: 40px;
   right: 100px;
   font-size: 14px;
   text-align: right;
