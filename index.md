@@ -182,7 +182,7 @@ layout: default
 
 <div class="copy">© All rights reserved</div>
 
-<div class="copy left-note">
+<div class="left-note">
   Designed for Mac, PC and iPad.
 </div>
 
