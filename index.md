@@ -98,6 +98,13 @@ layout: default
   }
 }
 
+ @media (max-width: 820px) {
+  .left-note,
+  .copy {
+    bottom: 20px;
+  }
+}
+
 /* オーバーレイ */
 .overlay {
   display: none;
