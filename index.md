@@ -91,6 +91,12 @@ layout: default
   }
 }
 
+  @media (max-height: 700px) {
+  .left-note {
+    bottom: 20px;
+  }
+}
+
 /* オーバーレイ */
 .overlay {
   display: none;
