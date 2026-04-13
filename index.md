@@ -68,7 +68,7 @@ layout: default
   position: fixed;
   bottom: 60px;
   right: 100px;
-  font-size: 12px;
+  font-size: 14px;
   color: inherit;
   text-align: right;
 }
@@ -77,7 +77,7 @@ layout: default
   position: fixed;
   bottom: 60px;
   left: 100px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
   /* Mac */
