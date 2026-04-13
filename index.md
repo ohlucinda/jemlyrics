@@ -91,17 +91,17 @@ layout: default
   }
 }
 
- @media (max-height: 700px) {
+  @media (max-height: 700px) {
   .left-note,
   .copy {
-    bottom: 20px;
+    bottom: 40px;
   }
 }
 
- @media (max-width: 820px) {
+  @media (max-width: 820px) {
   .left-note,
   .copy {
-    bottom: 20px;
+    bottom: 40px;
   }
 }
 
