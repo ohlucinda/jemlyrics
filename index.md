@@ -157,7 +157,7 @@ layout: default
 
   .get-in-touch {
     right: 24px;
-    bottom: 120px;
+    bottom: 100px;
     font-size: 14px;
   }
 
