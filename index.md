@@ -73,12 +73,13 @@ layout: default
   text-align: right;
 }
 
-.left-note {
+.meta-note {
   position: fixed;
   bottom: 30px;
   right: 100px;
   font-size: 14px;
   text-align: right;
+  width: 260px;
 }
 
 /* Mac */
@@ -93,14 +94,7 @@ layout: default
   .copy {
     bottom: 50px;
   }
-  .left-note {
-    bottom: 20px;
-  }
-}
-
-@media (max-width: 500px) {
-  .left-note {
-    right: 80px;
+  .meta-note {
     bottom: 20px;
   }
 }
@@ -196,7 +190,7 @@ layout: default
 
 <div class="copy">© All rights reserved</div>
 
-<div class="left-note">
+<div class="meta-note">
   Designed for Mac, PC and iPad.
 </div>
 
