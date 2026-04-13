@@ -81,6 +81,7 @@ layout: default
   text-align: right;
   width: 260px;
   font-family: "adobe-caslon-pro", serif;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /* Mac */
