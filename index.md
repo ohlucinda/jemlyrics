@@ -69,8 +69,9 @@ layout: default
   bottom: 60px;
   right: 100px;
   font-size: 14px;
-  color: inherit;
+  color: rgba(0, 0, 0, 0.6);
   text-align: right;
+  font-family: "adobe-caslon-pro", serif;
 }
 
 .meta-note {
