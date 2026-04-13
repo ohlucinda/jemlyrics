@@ -51,7 +51,7 @@ layout: default
 /* GET IN TOUCH */
 .get-in-touch {
   position: fixed;
-  bottom: 100px;
+  bottom: 80px;
   right: 100px;
   font-size: 14px;
   text-align: right;
