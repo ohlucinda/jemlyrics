@@ -191,7 +191,7 @@ layout: default
   <a href="mailto:floribundatunes@duck.com">GET IN TOUCH</a>
 </div>
 
-<div class="copy">© All rights reserved</div>
+<div class="copy">© all rights reserved</div>
 
 <div class="meta-note">
   Designed for Mac, PC and iPad.
