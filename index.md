@@ -41,15 +41,14 @@ layout: default
   gap: 10px;
 }
 
-.bottom-row a {
-  font-size: 30px;
+.get-in-touch a {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
-  white-space: nowrap;
   transition: transform 0.2s ease;
 }
 
-.bottom-row a:hover {
+.get-in-touch a:hover {
   transform: scale(1.06);
 }  
 
