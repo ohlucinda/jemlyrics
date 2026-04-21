@@ -179,7 +179,7 @@ layout: default
 <div class="copy">© all rights reserved</div>
 
 <div class="meta-note">
-  Designed for Mac, PC and iPad.
+  Designed for Mac and PC 
 </div>
 
 <div class="overlay" id="overlay" onclick="hideOverlay()">
