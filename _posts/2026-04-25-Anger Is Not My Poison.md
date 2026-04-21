@@ -44,6 +44,3 @@ I am the truth you tried to bury
 And I rise whole
 With every part of me restored
 
-<p style="margin:0 0 6px 0; font-size:10px; color:#999; letter-spacing:0.12em; margin-left:20px;">
-  PREVIEW
-</p>
