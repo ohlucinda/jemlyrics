@@ -33,11 +33,18 @@ layout: default
   margin-top: 40px;
 }
 
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+}
+
 .bottom-row a {
   font-size: 30px;
   text-decoration: none;
   color: inherit;
-  display: inline-block;
+  white-space: nowrap;
   transition: transform 0.2s ease;
 }
 
