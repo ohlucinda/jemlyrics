@@ -66,6 +66,11 @@ layout: default
 .get-in-touch a {
   text-decoration: none;
   color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.get-in-touch a:hover {
+  transform: scale(1.06);
 }
 
 /* © */
