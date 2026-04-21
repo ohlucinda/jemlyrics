@@ -37,7 +37,6 @@ layout: default
   font-size: 30px;
   text-decoration: none;
   color: inherit;
-  white-space: nowrap;
   display: inline-block;
   transition: transform 0.2s ease;
 }
