@@ -33,12 +33,17 @@ layout: default
   margin-top: 40px;
 }
 
-.bottom-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 600px;
-  gap: 10px;
+.bottom-row a {
+  font-size: 30px;
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.bottom-row a:hover {
+  transform: scale(1.06);
 }
 
 .get-in-touch a {
