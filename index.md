@@ -46,7 +46,12 @@ layout: default
   text-decoration: none;
   color: inherit;
   white-space: nowrap;
+  transition: transform 0.2s ease;
 }
+
+.bottom-row a:hover {
+  transform: scale(1.06);
+}  
 
 /* GET IN TOUCH */
 .get-in-touch {
