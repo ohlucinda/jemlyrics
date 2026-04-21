@@ -49,7 +49,7 @@ layout: default
 }
 
 .bottom-row a:hover {
-  transform: scale(1.06);
+  transform: scale(1.16);
   opacity: 0.4;
 }
 
