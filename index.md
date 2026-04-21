@@ -82,6 +82,7 @@ layout: default
 
 .get-in-touch a:hover {
   transform: scale(1.06);
+  opacity: 0.6;
 }
 
 /* © */
