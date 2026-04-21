@@ -50,6 +50,7 @@ layout: default
 
 .bottom-row a:hover {
   transform: scale(1.06);
+  opacity: 0.8;
 }
 
 .get-in-touch a {
