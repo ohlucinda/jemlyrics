@@ -1,1 +1,24 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:webfeeds="http://webfeeds.org/rss/1.0">
+  <channel>
 
+    <title>{{ site.title }}</title>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <description>{{ site.description }}</description>
+
+    <webfeeds:icon>https://ohlucinda.github.io/jemmusic/apple-touch-icon.png</webfeeds:icon>
+    <webfeeds:accentColor>#00AEEF</webfeeds:accentColor>
+
+    {% for post in site.posts %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
+      <description>{{ post.excerpt }}</description>
+    </item>
+    {% endfor %}
+
+  </channel>
+</rss>
