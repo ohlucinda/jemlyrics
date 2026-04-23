@@ -3,8 +3,6 @@ description: "Song lyrics and independent music"
 url: "https://ohlucinda.github.io"
 baseurl: "/jemmusic"
 
-logo: /favicon.ico
-
 theme: minima
 
 kramdown:
