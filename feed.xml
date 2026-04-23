@@ -9,6 +9,12 @@ layout: null
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <description>{{ site.description }}</description>
 
+    <image>
+      <url>https://ohlucinda.github.io/jemmusic/apple-touch-icon.png</url>
+      <title>{{ site.title }}</title>
+      <link>{{ site.url }}{{ site.baseurl }}/</link>
+    </image>
+
     <webfeeds:icon>https://ohlucinda.github.io/jemmusic/apple-touch-icon.png</webfeeds:icon>
     <webfeeds:accentColor>#00AEEF</webfeeds:accentColor>
 
