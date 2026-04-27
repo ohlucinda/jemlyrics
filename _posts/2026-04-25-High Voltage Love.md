@@ -35,7 +35,7 @@ Watch the whole desert start to come into bloom
 It’s high-voltage love, it’s a permanent glow
 And I’m never gonna let my own fire go
 
-<div style="text-align:center; margin: 20px 0;">
+<div style="margin: 20px 0;">
   <audio controls style="width:260px; height:28px; opacity:0.85;">
     <source src="https://raw.githubusercontent.com/ohlucinda/media/main/Mirro Debt.mp3">
   </audio>
