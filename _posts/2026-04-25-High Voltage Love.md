@@ -36,7 +36,7 @@ It’s high-voltage love, it’s a permanent glow
 And I’m never gonna let my own fire go
 
 <div style="margin: 20px 0;">
-  <audio controls style="width:260px; height:28px; opacity:0.85;">
+  <audio controls style="width:280px; height:28px; opacity:0.85;">
     <source src="https://raw.githubusercontent.com/ohlucinda/media/main/High Voltage Love.mp3">
   </audio>
 </div>
