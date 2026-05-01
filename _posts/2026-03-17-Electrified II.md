@@ -1,6 +1,6 @@
 ---
 layout: lyrics
-title: ELECTRIFIED
+title: ELECTRIFIED II
 ---
 
 Static on the radio
