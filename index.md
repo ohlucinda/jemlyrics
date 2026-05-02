@@ -49,7 +49,7 @@ layout: default
 }
 
 .bottom-row a:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   opacity: 0.4;
 }
 
@@ -61,7 +61,7 @@ layout: default
 }
 
 .get-in-touch a:hover {
-  transform: scale(1.06);
+  transform: scale(1.02);
 }  
 
 /* GET IN TOUCH */
