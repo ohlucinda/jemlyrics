@@ -137,8 +137,12 @@ a { text-decoration: none; color: inherit; }
 </div>
 
     <div class="list">
-      {% for post in site.posts %}
-        <a href="{{ post.url | relative_url }}">{{ post.title | upcase }}</a>
+
+{% for post in site.posts %}
+
+<a href="{{ post.url | relative_url }}" data-search="{{ post.content | strip_html | downcase }}">
+  {{ post.title | upcase }}
+</a>
       {% endfor %}
     </div>
 
@@ -162,7 +166,7 @@ searchInput.addEventListener('input', function () {
   const keyword = searchInput.value.toLowerCase();
 
   items.forEach(item => {
-    const text = item.textContent.toLowerCase();
+    const text = (item.textContent + ' ' + item.dataset.search).toLowerCase();
 
     if (text.includes(keyword)) {
       item.style.display = '';
