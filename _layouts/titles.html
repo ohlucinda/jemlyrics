@@ -152,5 +152,26 @@ a { text-decoration: none; color: inherit; }
   <a href="{{ '/' | relative_url }}">BACK TO HOME</a>
 </div>
 
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const items = document.querySelectorAll('.list a');
+
+searchInput.addEventListener('input', function () {
+  const keyword = searchInput.value.toLowerCase();
+
+  items.forEach(item => {
+    const text = item.textContent.toLowerCase();
+
+    if (text.includes(keyword)) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+});
+</script>
+
 </body>
-</html>
+</html>  
