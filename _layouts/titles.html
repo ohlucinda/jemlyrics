@@ -110,6 +110,15 @@ a { text-decoration: none; color: inherit; }
       <a href="{{ '/' | relative_url }}">JE'M</a>
     </div>
 
+    <div class="search">
+  <input
+    type="text"
+    id="searchInput"
+    class="search-box"
+    placeholder="Search titles or words"
+  >
+</div>
+
     <div class="list">
       {% for post in site.posts %}
         <a href="{{ post.url | relative_url }}">{{ post.title | upcase }}</a>
