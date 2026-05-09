@@ -173,7 +173,7 @@ layout: default
 </div>
 
 <div class="get-in-touch">
-  <a href="mailto:floribundatunes@duck.com">GET IN TOUCH</a>
+  <a href="mailto:jemmusicja@duck.com">GET IN TOUCH</a>
 </div>
 
 <div class="copy">© all rights reserved</div>
