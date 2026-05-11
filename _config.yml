@@ -8,3 +8,5 @@ theme: minima
 kramdown:
   input: GFM
   hard_wrap: true
+
+permalink: /:title/
