@@ -176,7 +176,7 @@ layout: default
   <a href="mailto:jemmusicja@duck.com">GET IN TOUCH</a>
 </div>
 
-<div class="copy">Je'm is part of OHLUCINDA
+<div class="copy">
 Lyrics | Songs | Images
 © 2024 All rights reserved</div>
 
