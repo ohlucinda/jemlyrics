@@ -10,7 +10,7 @@ layout: null
     <description>{{ site.description }}</description>
 
     <image>
-      <url>https://ohlucinda.github.io/jemmusic/apple-touch-icon.png</url>
+      <url>https://lyrics.ohlucinda.com/apple-touch-icon.png</url>
       <title>{{ site.title }}</title>
       <link>{{ site.url }}{{ site.baseurl }}/</link>
     </image>
