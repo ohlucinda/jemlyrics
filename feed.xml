@@ -15,7 +15,7 @@ layout: null
       <link>{{ site.url }}{{ site.baseurl }}/</link>
     </image>
 
-    <webfeeds:icon>https://ohlucinda.github.io/jemmusic/apple-touch-icon.png</webfeeds:icon>
+    <webfeeds:icon>https://https://lyrics.ohlucinda.com/apple-touch-icon.png</webfeeds:icon>
     <webfeeds:accentColor>#00AEEF</webfeeds:accentColor>
 
     {% for post in site.posts %}
