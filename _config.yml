@@ -5,6 +5,9 @@ baseurl: ""
 
 theme: minima
 
+plugins:
+  - jekyll-sitemap
+
 kramdown:
   input: GFM
   hard_wrap: true
