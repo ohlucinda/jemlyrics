@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: Simple Joy
+permalink: /simplejoy/
 ---
 
 Never liked smiles much before you
