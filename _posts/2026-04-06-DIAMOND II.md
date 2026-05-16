@@ -1,6 +1,7 @@
 ---
 layout: lyrics
-title: DIAMOND II 
+title: DIAMOND II
+permalink: /diamondii/
 ---
 
 私はダイヤ
