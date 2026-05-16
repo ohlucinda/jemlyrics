@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: Electrified
+permalink: /electrified/
 ---
 
 Static on the radio
