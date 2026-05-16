@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: TITANIUM GRIP
+permalink: /titaniumgrip/
 ---
 
 Cracks in the mirror
