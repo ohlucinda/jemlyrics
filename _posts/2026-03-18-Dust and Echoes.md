@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: Dust and Echoes
+permalink: /dustandechoes/
 ---
 
 There’s a tea stain on the table in the shape of a regret
