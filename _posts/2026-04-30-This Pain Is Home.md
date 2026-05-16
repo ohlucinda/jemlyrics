@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: This Pain Is Home
+permalink: /thispainishome/
 ---
 
 You call it healing
