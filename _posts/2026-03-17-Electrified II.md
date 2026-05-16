@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: ELECTRIFIED II
+permalink: /electrifiedii/
 ---
 
 Static on the radio
