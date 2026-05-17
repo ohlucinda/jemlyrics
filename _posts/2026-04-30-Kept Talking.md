@@ -1,7 +1,7 @@
 ---
 layout: lyrics
 title: Ketp Talking
-permalink: /kepttalking/
+permalink: /kept-talking/
 ---
 
 I didn’t go anywhere
