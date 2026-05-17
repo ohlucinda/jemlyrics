@@ -1,7 +1,7 @@
 ---
 layout: lyrics
 title: Echo of the Summer
-permalink: /echoofthesummer/
+permalink: /echo-of-the-summer/
 ---
 積み上げたものはいつも脆くて
 自分で壊してゼロに戻してた
