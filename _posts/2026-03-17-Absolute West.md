@@ -1,7 +1,7 @@
 ---
 layout: lyrics
 title: Absolute West
-permalink: /absolutewest/
+permalink: /absolute-west/
 ---
 
 Golden skies and the radio plays
