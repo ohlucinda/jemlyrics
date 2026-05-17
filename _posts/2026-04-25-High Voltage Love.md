@@ -1,7 +1,7 @@
 ---
 layout: lyrics
 title: High Voltage Love
-permalink: /highvoltagelove/
+permalink: /high-voltage-love/
 ---
 
 I’ve been a stranger in my own hallways
