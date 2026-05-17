@@ -1,3 +1,4 @@
 ---
 layout: titles
+permalink: /titles/
 ---
