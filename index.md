@@ -165,7 +165,7 @@ layout: default
   <img class="main-img" src="{{ '/jem1.jpg' | relative_url }}">
 
   <div class="bottom-row">
-    <a href="{{ '/lyrics' | relative_url }}">LYRICS</a>
+    <a href="{{ '/titles' | relative_url }}">LYRICS</a>
     <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
     <a href="https://jemmusicja.bandcamp.com" target="_blank">BANDCAMP</a>
   </div>
