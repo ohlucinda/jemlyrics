@@ -1,7 +1,7 @@
 ---
 layout: lyrics
 title: Anger Is Not My Poison
-permalink: /angerisnotmypoison/
+permalink: /anger-is-not-my-poison/
 ---
 
 You denied my senses
