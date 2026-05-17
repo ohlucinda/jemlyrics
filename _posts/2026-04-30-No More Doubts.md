@@ -1,7 +1,7 @@
 ---
 layout: lyrics
 title: No More doubts
-permalink: /nomoredoubts/
+permalink: /no-more-doubts/
 ---
 
 Up and coming
