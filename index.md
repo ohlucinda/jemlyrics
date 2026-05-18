@@ -162,7 +162,7 @@ layout: default
   <span>JE'M</span>
 </div>
 
-  <img class="main-img" src="{{ '/jem1.jpg' | relative_url }}">
+  <img class="main-img" src="{{ '/jem3.jpg' | relative_url }}">
 
   <div class="bottom-row">
     <a href="{{ '/titles' | relative_url }}">LYRICS</a>
