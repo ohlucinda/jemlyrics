@@ -10,7 +10,7 @@ layout: default
   align-items: center;
   padding: 60px 40px;
   box-sizing: border-box;
-  font-family: 'Aboreto', cursive;
+  font-family: "jimbo-std-expanded", sans-serif;
   gap: 60px;
 }
 
