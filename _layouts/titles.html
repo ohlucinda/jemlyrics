@@ -40,7 +40,7 @@ a:hover {
 }
 
 /* 共通の軸 */
-  
+
 .inner {
   width: 600px;
   max-width: 90%;
@@ -77,14 +77,8 @@ a:hover {
 /* リスト */
 
 .list {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin-top: 125px;
-}
-
-.list {
   line-height: 2.2;
+  margin-top: 125px;
 }
 
 .list a {
@@ -112,10 +106,6 @@ a:hover {
 
 .back a {
   font-size: 14px;
-}
-
-.back a:hover {
-  color: #888;
 }
 
 /* iPad */
@@ -162,7 +152,7 @@ a:hover {
   }
 
   .list {
-    gap: 30px;
+    line-height: 2.2;
     margin-top: 87px;
   }
 
@@ -207,9 +197,9 @@ a:hover {
 
 <a href="{{ post.url | relative_url }}" data-search="{{ post.content | strip_html | downcase }}">
 
-  {{ post.title | upcase }}
+{{ post.title | upcase }}
 
-</a>
+</a><br>
 
 {% endfor %}
 
