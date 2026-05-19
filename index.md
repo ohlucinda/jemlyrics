@@ -113,19 +113,6 @@ layout: default
 
 }
 
-/* 高さが低いとき（iPad横など） */
-
-@media (max-height: 700px) {
-
-  .copy {
-    bottom: 50px;
-  }
-
-  .meta-note {
-    bottom: 20px;
-  }
-
-}
 
 </style>
 
