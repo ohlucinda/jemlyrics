@@ -3,6 +3,7 @@ layout: default
 ---
 
 <style>
+
 .page-wrap {
   min-height: 100vh;
   display: flex;
@@ -10,20 +11,19 @@ layout: default
   align-items: center;
   padding: 60px 40px;
   box-sizing: border-box;
-  font-family: "jimbo-std-expanded", sans-serif;
+  font-family: sans-serif;
   gap: 60px;
 }
 
 .site-header {
   cursor: pointer;
-
   width: 600px;
   max-width: 100%;
 }
 
 .site-header span {
   font-size: 70px;
-  color: inherit;
+  color: #111;
 }
 
 .main-img {
@@ -43,28 +43,24 @@ layout: default
 .bottom-row a {
   font-size: 30px;
   text-decoration: none;
-  color: inherit;
+  color: #111;
   white-space: nowrap;
-  transition: transform 0.2s ease;
+  transition: color 0.3s ease;
 }
 
 .bottom-row a:hover {
-  transform: scale(1.03);
-  opacity: 0.4;
+  color: #888;
 }
 
 .get-in-touch a {
   display: inline-block;
   text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s ease;
+  color: #111;
+  transition: color 0.3s ease;
 }
 
-.get-in-touch a:hover {
-  transform: scale(1.01);
-}  
-
 /* GET IN TOUCH */
+
 .get-in-touch {
   position: fixed;
   bottom: 80px;
@@ -76,24 +72,24 @@ layout: default
 
 .get-in-touch a {
   text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s ease;
+  color: #111;
+  transition: color 0.3s ease;
 }
 
 .get-in-touch a:hover {
-  transform: scale(1.06);
-  opacity: 0.4;
+  color: #888;
 }
 
 /* © */
+
 .copy {
   position: fixed;
   bottom: 60px;
   right: 100px;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.6);
+  color: #111;
   text-align: right;
-  font-family: "adobe-caslon-pro", serif;
+  font-family: sans-serif;
 }
 
 .meta-note {
@@ -103,28 +99,36 @@ layout: default
   font-size: 14px;
   text-align: right;
   width: 260px;
-  font-family: "adobe-caslon-pro", serif;
-  color: rgba(0, 0, 0, 0.6);
+  font-family: sans-serif;
+  color: #111;
 }
 
 /* Mac */
+
 @media (min-width: 769px) {
+
   .get-in-touch {
     font-size: 16px;
   }
+
 }
 
 /* 高さが低いとき（iPad横など） */
+
 @media (max-height: 700px) {
+
   .copy {
     bottom: 50px;
   }
+
   .meta-note {
     bottom: 20px;
   }
+
 }
 
 /* オーバーレイ */
+
 .overlay {
   display: none;
   position: fixed;
@@ -151,7 +155,7 @@ layout: default
 .overlay .close-hint {
   font-size: 16px;
   color: #888;
-  font-family: 'Aboreto', cursive;
+  font-family: sans-serif;
 }
 
 </style>
@@ -162,13 +166,13 @@ layout: default
   <span>Je'm</span>
 </div>
 
-  <img class="main-img" src="{{ '/jem3.jpg' | relative_url }}">
+<img class="main-img" src="{{ '/jem3.jpg' | relative_url }}">
 
-  <div class="bottom-row">
-    <a href="{{ '/titles' | relative_url }}">LYRICS</a>
-    <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
-    <a href="https://jemmusicja.bandcamp.com" target="_blank">BANDCAMP</a>
-  </div>
+<div class="bottom-row">
+  <a href="{{ '/titles' | relative_url }}">LYRICS</a>
+  <a href="https://music.apple.com/jp/artist/jem/1864719862?l=en-US" target="_blank">APPLE MUSIC</a>
+  <a href="https://jemmusicja.bandcamp.com" target="_blank">BANDCAMP</a>
+</div>
 
 </div>
 
@@ -178,10 +182,11 @@ layout: default
 
 <div class="copy">
 Lyrics | Songs | Images
-© 2024 All rights reserved</div>
+© 2024 All rights reserved
+</div>
 
 <div class="meta-note">
-  Designed for Mac and PC 
+Designed for Mac and PC
 </div>
 
 <div class="overlay" id="overlay" onclick="hideOverlay()">
@@ -190,6 +195,7 @@ Lyrics | Songs | Images
 </div>
 
 <script>
+
 function showOverlay() {
   const overlay = document.getElementById('overlay');
   overlay.style.display = 'flex';
@@ -199,10 +205,13 @@ function hideOverlay() {
   const overlay = document.getElementById('overlay');
   overlay.style.display = 'none';
 }
+
 </script>
 
 <script>
+
 if (/iPhone|Android.+Mobile/.test(navigator.userAgent)) {
   window.location.replace("indexsp.html");
 }
+
 </script>
