@@ -157,22 +157,3 @@ Lyrics | Songs | Images
 <div class="meta-note">
 Designed for Mac and PC
 </div>
-
-<div class="overlay" id="overlay" onclick="hideOverlay()">
-  <img src="{{ '/hime01.jpg' | relative_url }}">
-  <div class="close-hint">CLICK TO CLOSE</div>
-</div>
-
-<script>
-
-function showOverlay() {
-  const overlay = document.getElementById('overlay');
-  overlay.style.display = 'flex';
-}
-
-function hideOverlay() {
-  const overlay = document.getElementById('overlay');
-  overlay.style.display = 'none';
-}
-
-</script>
