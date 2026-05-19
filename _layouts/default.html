@@ -124,40 +124,54 @@ a:active {
 
 /* スマホ 縦向き */
 @media (max-width: 768px) and (orientation: portrait) {
-  .top { top: 310px; }
-}
-
-/* スマホ 横向き */
-@media (max-width: 768px) and (orientation: landscape) {
-  .top { top: 100px; }
-} 
-
-/* iPad mini 縦向き（769〜834px） */
-@media (min-width: 769px) and (max-width: 834px) and (orientation: portrait) {
-  .top { top: 500px; }
-} 
-
-/* iPad mini 横向き（769〜834px） */
-@media (min-width: 769px) and (max-width: 834px) and (orientation: landscape) {
 
   .top {
-    top: 40px;
-    background: blue;
+    top: 310px;
   }
 
 }
 
-/* iPad 縦向き（835〜1024px） */
-@media (min-width: 835px) and (max-width: 1024px) and (orientation: portrait) {
-  .top { top: 500px; }
-} 
+/* スマホ 横向き */
+@media (max-width: 768px) and (orientation: landscape) {
 
-/* iPad 横向き（835〜1024px） */
+  .top {
+    top: 100px;
+  }
+
+}
+
+/* iPad mini 縦向き */
+@media (min-width: 769px) and (max-width: 834px) and (orientation: portrait) {
+
+  .top {
+    top: 400px;
+  }
+
+}
+
+/* iPad mini 横向き */
+@media (min-width: 769px) and (max-width: 834px) and (orientation: landscape) {
+
+  .top {
+    top: 40px;
+  }
+
+}
+
+/* iPad 縦向き */
+@media (min-width: 835px) and (max-width: 1024px) and (orientation: portrait) {
+
+  .top {
+    top: 500px;
+  }
+
+}
+
+/* iPad 横向き */
 @media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
 
   .top {
-    top: 0px;
-    background: blue;
+    top: 60px;
   }
 
 }
