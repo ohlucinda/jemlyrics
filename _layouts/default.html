@@ -129,6 +129,19 @@ a:active {
   }
 }
 
+@media (max-width: 480px) and (orientation: portrait) {
+  .top {
+    top: 180px; /* iPhone小・iPad mini縦 */
+  }
+}
+
+@media (max-width: 480px) and (orientation: landscape) {
+  .top {
+    top: 160px; /* iPhone小・iPad mini横 */
+  }
+}
+  
+
 @media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
   .top {
     top: 200px; /* 横：上げる */
