@@ -122,9 +122,14 @@ a:active {
 }
 
 
-/* スマホ */
-@media (max-width: 768px) {
+/* スマホ 縦向き */
+@media (max-width: 768px) and (orientation: portrait) {
   .top { top: 310px; }
+}
+
+/* スマホ 横向き */
+@media (max-width: 768px) and (orientation: landscape) {
+  .top { top: 200px; }
 }
 
 /* iPad mini 縦向き（769〜834px） */
@@ -144,12 +149,12 @@ a:active {
 
 /* iPad 横向き（835〜1024px） */
 @media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
-  .top { top: 500px; }
+  .top { top: 240px; }
 }
 
 /* Mac / デスクトップ */
 @media (min-width: 1025px) {
-  .top { top: 500px; }
+  .top { top: 500px; 
  }
 }  
   
