@@ -131,10 +131,6 @@ layout: default
 
 <div class="page-wrap">
 
-<div class="site-header" onclick="showOverlay()">
-  <span>Je'm</span>
-</div>
-
 <img class="main-img" src="{{ '/jem3.jpg' | relative_url }}">
 
 <div class="bottom-row">
