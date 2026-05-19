@@ -1,72 +1,333 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-* { box-sizing: border-box; }
 
-body {
-  font-family: "jimbo-std-expanded", sans-serif;
-  margin: 0;
-  padding: 0;
+* {
+
+  box-sizing: border-box;
+
 }
 
-a { text-decoration: none; color: inherit; }
+body {
+
+  font-family: sans-serif;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #111;
+
+}
+
+a {
+
+  text-decoration: none;
+
+  color: #111;
+
+  transition: color 0.3s ease;
+
+}
+
+a:hover {
+
+  color: #888;
+
+}
 
 /* 全体 */
+
 .page-wrap {
+
   min-height: 100vh;
+
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
+
   padding: 60px 40px 100px;
+
   gap: 120px;
+
 }
 
 /* 共通の軸 */
+
 .inner {
+
   width: 600px;
+
   max-width: 90%;
+
 }
 
 /* タイトル */
+
 .site-header a {
+
   font-size: 70px;
+
 }
 
 .search {
+
   position: fixed;
+
   top: 72px;
+
   right: 100px;
+
 }
 
 .search-box {
+
   width: 240px;
+
   border: none;
-  border-bottom: 1px solid #999;
+
+  border-bottom: 1px solid #111;
+
   background: transparent;
-  font-family: "jimbo-std-expanded", sans-serif;
+
+  font-family: sans-serif;
+
   font-size: 18px;
+
   padding: 8px 0;
+
   outline: none;
+
 }
 
 /* リスト */
+
 .list {
+
   display: flex;
+
   flex-direction: column;
+
   gap: 50px;
+
   margin-top: 125px;
+
 }
 
 .list a {
+
   font-size: 18px;
+
 }
 
-.list a:hover {
-  opacity: 0.4;
+/* 画像 */
+
+.art {
+
+  position: fixed;
+
+  right: 100px;
+
+  bottom: 120px;
+
+  width: 240px;
+
+  height: auto;
+
+  max-height: 60vh;
+
+}
+
+/* BACK */
+
+.back {
+
+  position: fixed;
+
+  bottom: 60px;
+
+  right: 100px;
+
+}
+
+.back a {
+
+  font-size: 14px;
+
+}
+
+/* iPad */
+
+@media (max-width: 1024px) {
+
+  .art {
+
+    width: 200px;
+
+  }
+
+}
+
+/* iPad mini / スマホ */
+
+@media (max-width: 820px) {
+
+  .art {
+
+    display: none;
+
+  }
+
+}
+
+/* スマホ */
+
+@media (max-width: 768px) {
+
+  .page-wrap {
+
+    padding: 40px 24px 100px;
+
+    gap: 50px;
+
+  }
+
+  .inner {
+
+    position: relative;
+
+  }
+
+  .site-header a {
+
+    font-size: 50px;
+
+  }
+
+  .search {
+
+    position: absolute;
+
+    top: 77px;
+
+    left: 40px;
+
+  }
+
+  .list {
+
+    gap: 30px;
+
+    margin-top: 87px;
+
+  }
+
+  .list a {
+
+    font-size: 16px;
+
+  }
+
+  .back {
+
+    right: 24px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page-wrap">
+
+  <div class="inner">
+
+    <div class="site-header">
+
+      <a href="{{ '/' | relative_url }}">Je'm</a>
+
+    </div>
+
+    <div class="search">
+
+      <input
+        type="text"
+        id="searchInput"
+        class="search-box"
+        placeholder="Find lyrics by words"
+      >
+
+    </div>
+
+    <div class="list">
+
+{% for post in site.posts %}
+
+<a href="{{ post.url | relative_url }}" data-search="{{ post.content | strip_html | downcase }}">
+
+  {{ post.title | upcase }}
+
+</a>
+
+{% endfor %}
+
+    </div>
+
+  </div>
+
+</div>
+
+<img src="{{ '/che-EDIT.jpg' | relative_url }}" class="art">
+
+<div class="back">
+
+  <a href="{{ '/' | relative_url }}">TO HOME</a>
+
+</div>
+
+<script>
+
+const searchInput = document.getElementById('searchInput');
+
+const items = document.querySelectorAll('.list a');
+
+searchInput.addEventListener('input', function () {
+
+  const keyword = searchInput.value.toLowerCase();
+
+  items.forEach(item => {
+
+    const text = (item.textContent + ' ' + item.dataset.search).toLowerCase();
+
+    if (text.includes(keyword)) {
+
+      item.style.display = '';
+
+    } else {
+
+      item.style.display = 'none';
+
+    }
+
+  });
+
+});
+
+</script>
+
+</body>
+</html>  opacity: 0.4;
 }
 
 /* 画像 */
