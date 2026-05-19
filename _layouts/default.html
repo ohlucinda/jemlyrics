@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon-j.png' | relative_url }}">
-  
+
 <!-- SEO -->
 <title>{{ page.title | default: site.title }}</title>
 <meta name="description" content="{{ page.description | default: site.description }}">
@@ -25,25 +26,51 @@
 <meta name="twitter:title" content="{{ page.title | default: site.title }}">
 <meta name="twitter:description" content="{{ page.description | default: site.description }}">
 <meta name="twitter:image" content="{{ '/og-image2.jpg' | absolute_url }}">
+
 <link rel="alternate" type="application/atom+xml" title="Je’m | Lyrics" href="https://lyrics.ohlucinda.com/feed.xml">
 
 <style>
+
 * {
+
   box-sizing: border-box;
+
 }
+
 body {
-  font-family: "jimbo-std-expanded", sans-serif;
+
+  font-family: sans-serif;
+
   margin: 0;
+
   padding: 0;
+
   font-size: 20px;
+
+  color: #111;
+
 }
+
 a {
+
   text-decoration: none;
-  color: inherit;
+
+  color: #111;
+
+  transition: color 0.3s ease;
+
 }
+
+a:hover {
+
+  color: #888;
+
+}
+
 </style>
 
 </head>
+
 <body>
 
 {{ content }}
