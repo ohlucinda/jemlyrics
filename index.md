@@ -112,7 +112,23 @@ layout: default
   }
 
 }
+/* iPad mini 横向き */
+@media (min-width: 769px) and (max-width: 834px) and (orientation: landscape) {
 
+  .bottom-row {
+    margin-top: -40px;
+  }
+
+}
+
+/* iPad 横向き */
+@media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .bottom-row {
+    margin-top: -60px;
+  }
+
+}
 
 </style>
 
