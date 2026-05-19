@@ -127,37 +127,6 @@ layout: default
 
 }
 
-/* オーバーレイ */
-
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255,255,255,0.95);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-  cursor: pointer;
-  gap: 30px;
-}
-
-.overlay img {
-  width: 480px;
-  height: auto;
-  max-width: 90vw;
-  object-fit: contain;
-}
-
-.overlay .close-hint {
-  font-size: 16px;
-  color: #888;
-  font-family: sans-serif;
-}
-
 </style>
 
 <div class="page-wrap">
