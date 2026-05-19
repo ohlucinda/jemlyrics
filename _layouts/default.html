@@ -129,10 +129,15 @@ a:active {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* iPad・iPad mini横含む */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
   .top {
-    top: 380px;
+    top: 200px; /* 横：上げる */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+  .top {
+    top: 260px; /* 縦：下げる */
   }
 }
 
