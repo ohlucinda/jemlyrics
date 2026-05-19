@@ -121,6 +121,34 @@ a:active {
   color: black;
 }
 
+@media (max-width: 480px) {
+  /* iPhone小さめ・iPad mini縦寄り */
+  .top {
+    top: 180px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* スマホ */
+  .top {
+    top: 310px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* iPad・iPad mini横含む */
+  .top {
+    top: 300px;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Mac / PC */
+  .top {
+    top: 4400px;
+  }
+}
+  
 </style>
 
 </body>
