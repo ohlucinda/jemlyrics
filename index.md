@@ -2,12 +2,6 @@
 layout: default
 ---
 
-<script>
-if (window.innerWidth <= 768) {
-  window.location.replace("/titles");
-}
-</script>
-
 <style>
 
 .page-wrap {
