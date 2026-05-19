@@ -1,79 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon-j.png' | relative_url }}">
+<script>
+(function() {
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  const isTitles = location.pathname.includes("/titles");
 
-<!-- SEO -->
-<title>{{ page.title | default: site.title }}</title>
-<meta name="description" content="{{ page.description | default: site.description }}">
+  if (isMobile && !isTitles) {
+    window.location.replace("/titles");
+  }
+})();
+</script>
 
-<!-- OGP -->
-<meta property="og:title" content="{{ page.title | default: site.title }}">
-<meta property="og:description" content="{{ page.description | default: site.description }}">
-<meta property="og:image" content="{{ '/og-image1.jpg' | absolute_url }}">
-<meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="{{ site.title }}">
+<link rel="stylesheet" href="https://use.typekit.net/qsa5fag.css">
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ page.title | default: site.title }}">
-<meta name="twitter:description" content="{{ page.description | default: site.description }}">
-<meta name="twitter:image" content="{{ '/og-image2.jpg' | absolute_url }}">
-
-<link rel="alternate" type="application/atom+xml" title="Je’m | Lyrics" href="https://lyrics.ohlucinda.com/feed.xml">
-
-<style>
-
-* {
-
-  box-sizing: border-box;
-
-}
-
-body {
-
-  font-family: sans-serif;
-
-  margin: 0;
-
-  padding: 0;
-
-  font-size: 20px;
-
-  color: #111;
-
-}
-
-a {
-
-  text-decoration: none;
-
-  color: #111;
-
-  transition: color 0.3s ease;
-
-}
-
-a:hover {
-
-  color: #888;
-
-}
-
-</style>
+<!-- Favicon（必要ならここに追加） -->
 
 </head>
 
 <body>
 
-{{ content }}
+<img src="/jem5.jpg" class="bg">
+
+<div class="top">
+  <a href="/titles" class="lyrics-link">LYRICS</a>
+</div>
+
+<div class="footer">
+
+  <div class="touch">
+    <a href="mailto:floribundatunes@duck.com">GET IN TOUCH</a>
+  </div>
+
+  <div class="part">
+    <em>Je'm is part of</em> OHLUCINDA
+  </div>
+
+  <div class="links">
+    <a href="/titles">Lyrics</a> |
+    <a href="/songs">Songs</a> |
+    <a href="/images">Images</a>
+  </div>
+
+  <div class="copyright">
+    © 2024 All rights reserved
+  </div>
+
+</div>
+
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 背景画像 */
+.bg {
+  position: fixed;
+  top: -200px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* LYRICS */
+.top {
+  position: fixed;
+  top: 330px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'adobe-caslon-pro', serif;
+  font-size: 48px;
+  letter-spacing: 0.08em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:active {
+  opacity: 0.5;
+}
+
+.lyrics-link {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1.5px;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: 'adobe-caslon-pro', serif;
+  color: black;
+  width: 100%;
+  line-height: 1.6;
+}
+
+.touch {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.part {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.links {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.copyright {
+  font-size: 13px;
+}
+
+.footer a {
+  color: black;
+}
+
+</style>
 
 </body>
+
 </html>
