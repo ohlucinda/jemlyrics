@@ -122,44 +122,36 @@ a:active {
 }
 
 
-@media (min-width: 481px) and (max-width: 768px) {
-  /* スマホ */
-  .top {
-    top: 310px;
-  }
+/* スマホ */
+@media (max-width: 768px) {
+  .top { top: 310px; }
 }
 
-@media (max-width: 480px) and (orientation: portrait) {
-  .top {
-    top: 180px; /* iPhone小・iPad mini縦 */
-  }
+/* iPad mini 縦向き（769〜834px） */
+@media (min-width: 769px) and (max-width: 834px) and (orientation: portrait) {
+  .top { top: 240px; }
 }
 
-@media (max-width: 480px) and (orientation: landscape) {
-  .top {
-    top: 160px; /* iPhone小・iPad mini横 */
-  }
-}
-  
-
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-  .top {
-    top: 200px; /* 横：上げる */
-  }
+/* iPad mini 横向き（769〜834px） */
+@media (min-width: 769px) and (max-width: 834px) and (orientation: landscape) {
+  .top { top: 220px; }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
-  .top {
-    top: 500px; /* 縦：下げる */
-  }
+/* iPad 縦向き（835〜1024px） */
+@media (min-width: 835px) and (max-width: 1024px) and (orientation: portrait) {
+  .top { top: 260px; }
 }
 
+/* iPad 横向き（835〜1024px） */
+@media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
+  .top { top: 500px; }
+}
+
+/* Mac / デスクトップ */
 @media (min-width: 1025px) {
-  /* Mac / PC */
-  .top {
-    top: 500px;
-  }
+  .top { top: 500px; }
 }
+}  
   
 </style>
 
