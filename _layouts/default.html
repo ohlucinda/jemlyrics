@@ -1,52 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="stylesheet" href="https://use.typekit.net/qsa5fag.css">
-
 </head>
-
 <body>
-
 <img src="/fingg-red00.jpg" class="bg">
-
 <div class="top">
   <a href="/titles" class="lyrics-link">Lyrics</a>
 </div>
-
 <div class="footer">
-
   <div class="touch">
     <a href="mailto:floribundatunes@duck.com">GET IN TOUCH</a>
   </div>
-
   <div class="part">
     <em>Je'm is part of</em> OHLUCINDA
   </div>
-
   <div class="links">
     <a href="/titles">Lyrics</a> |
     <a href="/songs">Songs</a> |
     <a href="/images">Images</a>
   </div>
-
   <div class="copyright">
     © 2024 All rights reserved
   </div>
-
 </div>
-
 <style>
-
 body {
   margin: 0;
   padding: 0;
 }
-
 /* 背景 */
 .bg {
   position: fixed;
@@ -56,7 +40,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
 /* LYRICS */
 .top {
   position: fixed;
@@ -67,23 +50,19 @@ body {
   font-size: 48px;
   letter-spacing: 0.08em;
 }
-
 a {
   color: black;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
-
 a:active {
   opacity: 0.5;
 }
-
 .lyrics-link {
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 1.5px;
 }
-
 /* フッター */
 .footer {
   position: fixed;
@@ -96,104 +75,72 @@ a:active {
   width: 100%;
   line-height: 1.6;
 }
-
 .touch {
   font-size: 16px;
   margin-bottom: 6px;
 }
-
 .part {
   font-size: 14px;
   margin-bottom: 6px;
 }
-
 .links {
   font-size: 14px;
   margin-bottom: 6px;
 }
-
 .copyright {
   font-size: 13px;
 }
-
 .footer a {
   color: black;
 }
-
-
 /* スマホ 縦向き */
 @media (max-width: 768px) and (orientation: portrait) {
-
   .top {
     top: 310px;
   }
-
 }
-
 /* スマホ 横向き */
 @media (max-width: 768px) and (orientation: landscape) {
-
   .top {
     top: 80px;
   }
-
 }
-
 /* iPad mini 縦向き */
 @media (min-width: 769px) and (max-width: 834px) and (orientation: portrait) {
-
-  .top {
-    top: 400px;
-  }
-
-}
-
-/* iPad mini 横向き */
-@media (min-width: 769px) and (max-width: 834px) and (orientation: landscape) {
-
-  .top {
-    top: 20px;
-  }
-
-  .footer {
-    bottom: 10px;
-  }
-
-}
-
-/* iPad Air 2 縦向き */
-@media (min-width: 835px) and (max-width: 1024px) and (orientation: portrait) {
-
   .top {
     top: 500px;
   }
-
 }
-
-/* iPad Air 2 横向き */
-@media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
-
+/* iPad mini 横向き */
+@media (min-width: 769px) and (max-width: 834px) and (orientation: landscape) {
   .top {
     top: 20px;
   }
-
   .footer {
     bottom: 10px;
   }
-
 }
-  
+/* iPad Air 2 縦向き */
+@media (min-width: 835px) and (max-width: 1024px) and (orientation: portrait) {
+  .top {
+    top: 400px;
+  }
+}
+/* iPad Air 2 横向き */
+@media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
+  .top {
+    top: 20px;
+  }
+  .footer {
+    bottom: 10px;
+  }
+}
 /* Mac / デスクトップ */
 @media (min-width: 1025px) {
-
   .top {
     top: 600px;
   }
-
 }
-  
 </style>
-
 </body>
-
 </html>
