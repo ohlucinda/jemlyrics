@@ -111,6 +111,13 @@ a:active {
   .top {
     top: 200px;
   }
+  /* フッターの位置は変えず、Lyricsのリンクが入っている文字要素だけを上に引き上げる */
+  a[href*="lyrics"], 
+  a[href*="lyrics"]::parent,
+  div:has(> a[href*="lyrics"]) {
+    position: relative !important;
+    bottom: 140px !important; /* この数値を大きくするとLyricsの文字だけが上がります */
+  }
 }
 
 /* iPad Air 2 / iPad mini 5 横向き */
@@ -118,9 +125,16 @@ a:active {
   .top {
     top: 0;
   }
+  /* フッターの位置は変えず、Lyricsのリンクが入っている文字要素だけを上に引き上げる */
+  a[href*="lyrics"], 
+  a[href*="lyrics"]::parent,
+  div:has(> a[href*="lyrics"]) {
+    position: relative !important;
+    bottom: 90px !important; /* 横向き用の引き上げ位置 */
+  }
 }
 
-/* iPad 全体（その他のiPadや大きめのタブレットなど） */
+/* iPad 全体（その他のiPad用：今の数値を維持） */
 @media (min-width: 769px) and (max-width: 1023px) {
   .top {
     top: 700px;
