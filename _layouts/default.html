@@ -93,33 +93,35 @@ a:active {
   color: black;
 }
 /* スマホ 縦向き */
-@media (max-width: 768px) and (orientation: portrait) {
+@media (max-width: 767px) and (orientation: portrait) {
   .top {
     top: 310px;
   }
 }
+
 /* スマホ 横向き */
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 950px) and (orientation: landscape) {
   .top {
     top: 80px;
   }
 }
-/* iPad mini 縦向き */
-@media (min-width: 769px) and (max-width: 834px) and (orientation: portrait) {
+
+/* iPad Air 2 / iPad mini 5 縦向き */
+@media (min-width: 768px) and (max-width: 768px) and (orientation: portrait) {
   .top {
     top: 200px;
   }
 }
-/* iPad mini 横向き */
-@media (min-width: 769px) and (max-width: 834px) and (orientation: landscape) {
+
+/* iPad Air 2 / iPad mini 5 横向き */
+@media (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) {
   .top {
     top: 0;
   }
 }
-/* iPad 全体 */
 
-@media (min-width: 835px) and (max-width: 1024px) {
-
+/* iPad 全体（その他のiPadや大きめのタブレットなど） */
+@media (min-width: 769px) and (max-width: 1023px) {
   .top {
     top: 700px;
   }
