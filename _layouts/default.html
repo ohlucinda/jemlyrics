@@ -115,11 +115,23 @@ a:active {
    【限定：Mac / デスクトップ専用】の隔離部屋
    （横幅 1025px 以上の大画面だけに適用）
    ─────────────────────────────────────── */
-@media (min-width: 1025px) {
+@media (min-width: 1025px) {    /* ← 118行目：Macの部屋スタート */
+
   .top {
-    top: 300px; /* ◎ Macの画面でちょうどいい位置に調整してください */
+    top: 300px;
+  }                             /* ← 121行目のカッコは「.top」を閉じるだけにする */
+
+  .top a {
+    display: inline-block;
+    transition: transform 0.3s ease;
   }
-}
+
+  .top a:hover {
+    transform: translateY(4px);
+    opacity: 1;
+  }
+
+}                               /* ← 133行目：ここで最後にMacの部屋を閉じる */
 </style>
 </body>
 </html>
