@@ -102,50 +102,53 @@ a:active {
 }
 
 /* ───────────────────────────────────────
-   【限定：スマホ（iPhone）＆ iPad縦向き】の部屋
-   （横幅 820px 以下の画面に適用）
+   端末・画面の向きごとの完全独立部屋（上書き用）
    ─────────────────────────────────────── */
-@media (max-width: 820px) {
+
+/* 1. 【iPhoneの縦向き】専用
+   縦画面で一番綺麗に見えていた元のバランス */
+@media (max-width: 450px) and (orientation: portrait) {
   .top {
-    top: 310px; /* ◎ iPhone縦やiPad縦でちょうどいい位置に調整してください */
+    top: 310px;
+    font-size: 48px;
   }
 }
 
-@media (max-height: 450px) {
+/* 2. 【iPhoneの横向き】専用
+   高さが狭い画面に合わせて、位置とサイズを個別に救済 */
+@media (max-width: 950px) and (max-height: 450px) and (orientation: landscape) {
   .top {
-    top: 60px;        /* 90px から 40px に変更して上に避難 */
-    font-size: 36px;  /* 文字を少しスマートにして判定エリアをすっきり */
+    top: 60px;       /* ← 上すぎた 40px から 100px に下げました。ここで微調整できます */
+    font-size: 36px;
   }
 }
 
-/* ───────────────────────────────────────
-   【限定：Mac / デスクトップ専用】の隔離部屋
-   （横幅 1025px 以上の大画面だけに適用）
-   ─────────────────────────────────────── */
-@media (min-width: 1025px) {    /* ← 118行目：Macの部屋スタート */
-
+/* 3. 【iPadの縦向き】専用
+   これまではiPhone縦と同じ命令に従っていた部分 */
+@media (min-width: 451px) and (max-width: 820px) and (orientation: portrait) {
   .top {
-    top: 300px;
-
-    font-size: 80px; /* ◎【追加】ここにもMac用の大きさを書きます */
-  }                             /* ← 121行目のカッコは「.top」を閉じるだけにする */
-
-  .top a {
-    display: inline-block;
-    transition: transform 0.3s ease;
+    top: 500px;
+    font-size: 60px;
   }
+}
 
-  .top a:hover {
-    transform: translateY(4px);
-    opacity: 1;
+/* 4. 【iPadの横向き】専用
+   前々回に調整した、iPad横向きの理想のバランス */
+@media (min-width: 821px) and (max-width: 1024px) and (orientation: landscape) {
+  .top {
+    top: 180px;
+    font-size: 60px;
   }
+}
 
-  .touch a:hover {
-    color: #888;
-    opacity: 1;
+/* 5. 【Mac / デスクトップ】専用
+   iPadに引っ張られず、Macだけで独立して表示される特大サイズ */
+@media (min-width: 1025px) {
+  .top {
+    top: 500px;
+    font-size: 70px;
   }
-
-}                               /* ← 133行目：ここで最後にMacの部屋を閉じる */
+}         /* ← 133行目：ここで最後にMacの部屋を閉じる */
 </style>
 </body>
 </html>
