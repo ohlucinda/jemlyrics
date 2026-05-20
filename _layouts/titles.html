@@ -80,7 +80,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  margin-top: 100px;
 }
 
 .list a {
@@ -109,6 +108,13 @@ a:hover {
 .back a {
   font-size: 14px;
 }
+
+/* 一番下に追加：Mac / デスクトップ専用（画面幅1025px以上のPCだけに適用） */
+@media (min-width: 1025px) {
+  .list {
+    margin-top: 110px; /* ← Macで歌詞ページと重なる数値をここで自由に調整します */
+  }
+}  
 
 /* iPad */
 
