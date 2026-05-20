@@ -93,71 +93,48 @@ a:active {
   color: black;
 }
 
-/* スマホ 縦向き (変更なし) */
+/* スマホ 縦向き */
 @media (max-width: 767px) and (orientation: portrait) {
   .top {
     top: 310px;
   }
 }
 
-/* スマホ 横向き (変更なし) */
+/* スマホ 横向き */
 @media (max-width: 950px) and (orientation: landscape) {
   .top {
     top: 80px;
   }
 }
 
-/* スマホ 横向き（現在の状態をキープ） */
-@media (max-width: 950px) and (orientation: landscape) {
-  .top {
-    top: 80px;
-  }
-}
-
-/* ===================================================
-   iPad Air 2 / iPad mini 5 専用の指定
-   （他のコードに上書きされないよう、!important で位置を絶対固定します）
-   =================================================== */
-
-/* iPad 縦向き（miniのサイズズレを想定して760px〜790pxまでカバー） */
+/* iPad Air 2 / iPad mini 5 縦向き */
 @media (min-width: 760px) and (max-width: 790px) and (orientation: portrait) {
   .top {
-    top: 200px !important; /* Airの縦でうまくいっていた数値を強制適用 */
+    top: 200px !important;
   }
   .footer {
     bottom: 38px !important;
   }
 }
 
-/* iPad 横向き（Mac用コードに邪魔されないよう1000px〜1024pxでホールド） */
+/* iPad Air 2 / iPad mini 5 横向き */
 @media (min-width: 1000px) and (max-width: 1024px) and (orientation: landscape) {
   .top {
-    top: 0 !important; /* 横向きのときに一番綺麗に見える位置 */
+    top: 0 !important;
   }
   .footer {
     bottom: 38px !important;
   }
 }
 
-/* ===================================================
-   その他のデバイス（干渉を防ぐために数値を綺麗に切り分け）
-   =================================================== */
-
-/* iPad 全体（その他のタブレット用：干渉しないサイズに退避） */
+/* iPad 全体（その他のタブレット用） */
 @media (min-width: 791px) and (max-width: 999px) {
   .top {
     top: 700px;
   }
 }
   
-/* Mac / デスクトップ（iPadの1024pxと絶対に被らないよう、1025pxからスタート） */
-@media (min-width: 1025px) {
-  .top {
-    top: 550px;
-  }
-}
-  
-/* Mac / デスクトップ (iPad横向きと被らないよう1025px以上に設定) */
+/* Mac / デスクトップ */
 @media (min-width: 1025px) {
   .top {
     top: 550px;
