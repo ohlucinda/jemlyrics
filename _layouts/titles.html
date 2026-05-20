@@ -136,6 +136,12 @@ a:hover {
     left: 40px;
   }
 
+  @media (min-width: 600px) {
+    .search {
+      left: 110px; /* ← iPad縦のときだけ、この数値で検索ボックスを左に寄せられます */
+    }
+  }
+
   /* スマホ・iPad縦の時のリスト位置（ここで固定され、Mac用の調整には影響されません） */
   .list {
     gap: 50px;
