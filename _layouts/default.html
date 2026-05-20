@@ -31,6 +31,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 /* 背景 */
 .bg {
   position: fixed;
@@ -40,7 +41,11 @@ body {
   height: calc(100% + 200px);
   object-fit: cover;
 }
-/* LYRICS */
+
+/* ───────────────────────────────────────
+   【基本エリア】
+   ※ 主に iPad横向き（ベース）に合わせた数値にします
+   ─────────────────────────────────────── */
 .top {
   position: fixed;
   left: 50%;
@@ -48,7 +53,22 @@ body {
   font-family: 'adobe-caslon-pro', serif;
   font-size: 48px;
   letter-spacing: 0.08em;
+  
+  top: 180px; /* ◎ iPad横向きでちょうどいい位置に調整してください */
 }
+
+.footer {
+  position: fixed;
+  bottom: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: 'adobe-caslon-pro', serif;
+  color: black;
+  width: 100%;
+  line-height: 1.6;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -61,18 +81,6 @@ a:active {
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 1.5px;
-}
-/* フッター */
-.footer {
-  position: fixed;
-  bottom: 38px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  font-family: 'adobe-caslon-pro', serif;
-  color: black;
-  width: 100%;
-  line-height: 1.6;
 }
 .touch {
   font-size: 16px;
@@ -93,51 +101,23 @@ a:active {
   color: black;
 }
 
-/* スマホ 縦向き */
-@media (max-width: 767px) and (orientation: portrait) {
+/* ───────────────────────────────────────
+   【限定：スマホ（iPhone）＆ iPad縦向き】の部屋
+   （横幅 820px 以下の画面に適用）
+   ─────────────────────────────────────── */
+@media (max-width: 820px) {
   .top {
-    top: 310px;
+    top: 310px; /* ◎ iPhone縦やiPad縦でちょうどいい位置に調整してください */
   }
 }
 
-/* スマホ 横向き */
-@media (max-width: 950px) and (orientation: landscape) {
-  .top {
-    top: 80px;
-  }
-}
-
-/* iPad Air 2 / iPad mini 5 縦向き */
-@media (min-width: 760px) and (max-width: 790px) and (orientation: portrait) {
-  .top {
-    top: 200px !important;
-  }
-  .footer {
-    bottom: 38px !important;
-  }
-}
-
-/* iPad Air 2 / iPad mini 5 横向き */
-@media (min-width: 1000px) and (max-width: 1024px) and (orientation: landscape) {
-  .top {
-    top: 0 !important;
-  }
-  .footer {
-    bottom: 38px !important;
-  }
-}
-
-/* iPad 全体（その他のタブレット用） */
-@media (min-width: 791px) and (max-width: 999px) {
-  .top {
-    top: 700px;
-  }
-}
-  
-/* Mac / デスクトップ */
+/* ───────────────────────────────────────
+   【限定：Mac / デスクトップ専用】の隔離部屋
+   （横幅 1025px 以上の大画面だけに適用）
+   ─────────────────────────────────────── */
 @media (min-width: 1025px) {
   .top {
-    top: 550px;
+    top: 550px; /* ◎ Macの画面でちょうどいい位置に調整してください */
   }
 }
 </style>
