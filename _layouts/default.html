@@ -99,10 +99,11 @@ a:hover {
 .copyright {
   font-size: 13px;
 }
-.footer a {
-  color: black;
-}
 
+.footer a:hover {
+  color: #888;
+}
+  
 /* ───────────────────────────────────────
    端末・画面の向きごとの完全独立部屋（最新・完全版）
    ─────────────────────────────────────── */
@@ -158,6 +159,10 @@ a:hover {
   .top {
     top: 540px;
     font-size: 70px;
+  }
+  /* 💡Macのとき、フッター内のリンクにマウスを乗せたら何よりも最優先で色を変える命令 */
+  .footer a:hover {
+    color: #888 !important;
   }
 }
 </style>
