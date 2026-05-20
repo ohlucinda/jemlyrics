@@ -111,12 +111,10 @@ a:active {
   .top {
     top: 200px;
   }
-  /* フッターの位置は変えず、Lyricsのリンクが入っている文字要素だけを上に引き上げる */
-  a[href*="lyrics"], 
-  a[href*="lyrics"]::parent,
-  div:has(> a[href*="lyrics"]) {
-    position: relative !important;
-    bottom: 140px !important; /* この数値を大きくするとLyricsの文字だけが上がります */
+  /* フッターの位置は固定したまま、内側の底上げをして文字を上に押し上げる */
+  footer, .footer, body > div:last-child {
+    padding-bottom: 180px !important; /* この数値を大きくすると、全体が上に上がります */
+    box-sizing: border-box !important;
   }
 }
 
@@ -125,12 +123,10 @@ a:active {
   .top {
     top: 0;
   }
-  /* フッターの位置は変えず、Lyricsのリンクが入っている文字要素だけを上に引き上げる */
-  a[href*="lyrics"], 
-  a[href*="lyrics"]::parent,
-  div:has(> a[href*="lyrics"]) {
-    position: relative !important;
-    bottom: 90px !important; /* 横向き用の引き上げ位置 */
+  /* フッターの位置は固定したまま、内側の底上げをして文字を上に押し上げる */
+  footer, .footer, body > div:last-child {
+    padding-bottom: 120px !important; /* 横向き用の底上げ数値 */
+    box-sizing: border-box !important;
   }
 }
 
