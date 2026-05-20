@@ -129,35 +129,17 @@ a:hover {
     font-size: 50px;
   }
 
+  /* titles.html の真ん中あたり、@media (max-width: 820px) の中 */
+
   /* スマホ・iPad縦の時の検索ボックス位置 */
   .search {
-    position: absolute;
-    top: 77px;
-    left: 40px;
+    position: relative; /* ← absolute から relative に変更します */
+    top: 0;             /* ← topの数値をいったん 0 にします */
+    left: 0;            /* ← leftの数値を 0 にします */
+    margin-top: 30px;   /* ← ロゴと検索ボックスの間の隙間（上下）をここで調整します */
+    margin-bottom: -30px; /* ← 検索ボックスと下のリストが離れすぎないように引き締めます */
   }
-
-  @media (min-width: 600px) {
-    .search {
-      left: 110px; /* ← iPad縦のときだけ、この数値で検索ボックスを左に寄せられます */
-    }
-  }
-
-  /* スマホ・iPad縦の時のリスト位置（ここで固定され、Mac用の調整には影響されません） */
-  .list {
-    gap: 50px;
-    margin-top: 120px; 
-  }
-
-  .list a {
-    font-size: 16px;
-  }
-
-  .back {
-    right: 24px;
-  }
-
 }
-
 
 /* ─── 【限定：Mac / デスクトップ専用】の隔離部屋 ─── */
 @media (min-width: 1025px) {
