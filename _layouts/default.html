@@ -109,25 +109,33 @@ a:active {
 /* iPad Air 2 / iPad mini 5 縦向き */
 @media (min-width: 768px) and (max-width: 768px) and (orientation: portrait) {
   .top {
-    top: 200px;
+    /* Je'mのロゴ（Lyrics）の縦位置 */
+    top: 360px; 
   }
-  /* フッターの位置は固定したまま、内側の底上げをして文字を上に押し上げる */
-  footer, .footer, body > div:last-child {
-    padding-bottom: 180px !important; /* この数値を大きくすると、全体が上に上がります */
-    box-sizing: border-box !important;
+  .footer {
+    /* フッター全体の底辺の位置はキープ */
+    bottom: 38px; 
+    line-height: 1.4;
   }
+  /* フッターの中の各要素の隙間をほんの少し引き締めて重なりを防ぐ */
+  .touch { margin-bottom: 4px; }
+  .part { margin-bottom: 4px; }
+  .links { margin-bottom: 4px; }
 }
 
 /* iPad Air 2 / iPad mini 5 横向き */
 @media (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) {
   .top {
-    top: 0;
+    /* 横向きのときは画面の高さが低くなるため、ロゴを少し上に逃がします */
+    top: 180px; 
   }
-  /* フッターの位置は固定したまま、内側の底上げをして文字を上に押し上げる */
-  footer, .footer, body > div:last-child {
-    padding-bottom: 120px !important; /* 横向き用の底上げ数値 */
-    box-sizing: border-box !important;
+  .footer {
+    bottom: 38px;
+    line-height: 1.3;
   }
+  .touch { margin-bottom: 2px; }
+  .part { margin-bottom: 2px; }
+  .links { margin-bottom: 2px; }
 }
 
 /* iPad 全体（その他のiPad用：今の数値を維持） */
