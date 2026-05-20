@@ -167,10 +167,10 @@ a:hover {
 
 }
 
-/* 一番下に追加：Mac / デスクトップ専用（画面幅1025px以上のPCだけに適用） */
+/* Mac / デスクトップ専用（画面幅1025px以上のPCだけに適用） */
 @media (min-width: 1025px) {
   .list {
-    margin-top: 110px; /* ← Macで歌詞ページと重なる数値をここで自由に調整します */
+    margin-top: 150px; /* ← Macの一番上のタイトルの高さは、ここだけで調整します */
   }
 }  
 
@@ -180,21 +180,23 @@ a:hover {
 
 <body>
 
-<div class="search">
-  <input
-    type="text"
-    id="searchInput"
-    class="search-box"
-    placeholder="Find lyrics by words"
-  >
-</div>
-
 <div class="page-wrap">
 
   <div class="inner">
 
     <div class="site-header">
       <a href="{{ '/' | relative_url }}">Je'm</a>
+    </div>
+
+    <div class="search">
+
+      <input
+        type="text"
+        id="searchInput"
+        class="search-box"
+        placeholder="Find lyrics by words"
+      >
+
     </div>
 
     <div class="list">
