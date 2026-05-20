@@ -46,13 +46,13 @@ a:hover {
   max-width: 90%;
 }
 
-/* ─── 【基本：PC（Mac）＆ iPad横向き】の設定 ─── */
+/* ─── 【基本の設定】 ─── */
 
 .site-header a {
   font-size: 70px;
 }
 
-/* 検索ボックスの位置（Macの画面を見ながら、topの数値を増減してJe'mの底辺と下線を合わせてください） */
+/* 検索ボックスの基本位置 */
 .search {
   position: fixed;
   top: 72px; 
@@ -75,12 +75,12 @@ a:hover {
   color: #111;
 }
 
-/* リストの位置 */
+/* リストの基本位置 */
 .list {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  margin-top: 150px; /* MacとiPad横向きの時の、リストの上の余白 */
+  margin-top: 150px;
 }
 
 .list a {
@@ -112,7 +112,6 @@ a:hover {
 /* ─── 【限定：スマホ（iPhone）＆ iPad縦向き】の設定 ─── */
 @media (max-width: 820px) {
 
-  /* iPad縦やスマホでは、右下の大きな画像はスッキリ非表示にする */
   .art {
     display: none;
   }
@@ -130,14 +129,14 @@ a:hover {
     font-size: 50px;
   }
 
-  /* スマホ・iPad縦の時の検索ボックスの位置。これでmini縦のズレも綺麗に直ります */
+  /* スマホ・iPad縦の時の検索ボックス位置 */
   .search {
     position: absolute;
     top: 77px;
     left: 40px;
   }
 
-  /* スマホ・iPad縦の時のリストの上の余白（140pxに増やして、詰まりを解消しました） */
+  /* スマホ・iPad縦の時のリスト位置（ここで固定され、Mac用の調整には影響されません） */
   .list {
     gap: 50px;
     margin-top: 140px; 
@@ -149,6 +148,22 @@ a:hover {
 
   .back {
     right: 24px;
+  }
+
+}
+
+
+/* ─── 【限定：Mac / デスクトップ専用】の隔離部屋 ─── */
+@media (min-width: 1025px) {
+
+  /* Macの検索ボックスの位置は、ここでiPhoneから隔離して調整します */
+  .search {
+    top: 72px; /* ← ここを 78px や 80px など、下線がロゴと揃うまで増やしてみてください */
+  }
+
+  /* Macのリスト開始位置（余白）は、ここでiPhoneから隔離して調整します */
+  .list {
+    margin-top: 150px; /* ← Mac側の一覧をもっと下げたい場合は、ここを増やします */
   }
 
 }
