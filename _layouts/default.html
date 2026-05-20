@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 <link rel="stylesheet" href="https://use.typekit.net/qsa5fag.css">
 </head>
 <body>
@@ -37,7 +37,7 @@ body {
   top: -200px;
   left: 0;
   width: 100%;
-  height: calc(100% + 200px); /* ← ここを変更 */
+  height: calc(100% + 200px);
   object-fit: cover;
 }
 /* LYRICS */
@@ -92,55 +92,49 @@ a:active {
 .footer a {
   color: black;
 }
-/* スマホ 縦向き */
+
+/* スマホ 縦向き (変更なし) */
 @media (max-width: 767px) and (orientation: portrait) {
   .top {
     top: 310px;
   }
 }
 
-/* スマホ 横向き */
+/* スマホ 横向き (変更なし) */
 @media (max-width: 950px) and (orientation: landscape) {
   .top {
     top: 80px;
   }
 }
 
-/* iPad Air 2 / iPad mini 5 縦向き (画面幅768pxを完全に包み込む) */
-@media (min-width: 760px) and (max-width: 780px) and (orientation: portrait) {
+/* iPad Air 2 / iPad mini 5 縦向き (確実に検知できるように範囲を修正) */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
   .top {
-    top: 360px; /* 背景のJe'mロゴの位置に合わせる数値 */
+    top: 360px; /* 背景ロゴの真上に重なる位置 */
   }
   .footer {
-    bottom: 38px; /* フッター最下部の位置はキープ */
+    bottom: 38px; /* 元の位置をキープ */
   }
 }
 
-/* iPad Air 2 / iPad mini 5 横向き (画面幅1024pxを完全に包み込む) */
-@media (min-width: 1000px) and (max-width: 1040px) and (orientation: landscape) {
+/* iPad Air 2 / iPad mini 5 横向き */
+@media (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) {
   .top {
-    top: 180px; /* 横向き時のロゴの位置に合わせる数値 */
+    top: 180px; /* 横向きの画面の高さに合わせたロゴ位置 */
   }
   .footer {
-    bottom: 38px;
+    bottom: 38px; /* 元の位置をキープ */
   }
 }
 
-/* iPad 全体（その他のiPad用：上記のサイズを避けて設定） */
-@media (min-width: 781px) and (max-width: 999px) {
+/* iPad 全体（その他のタブレット等：数値を整理） */
+@media (min-width: 769px) and (max-width: 1023px) and (orientation: landscape) {
   .top {
     top: 700px;
   }
 }
-
-/* Mac / デスクトップ (iPad横向きの1024pxより後ろからスタート) */
-@media (min-width: 1041px) {
-  .top {
-    top: 550px;
-  }
-}
   
-/* Mac / デスクトップ */
+/* Mac / デスクトップ (iPad横向きと被らないよう1025px以上に設定) */
 @media (min-width: 1025px) {
   .top {
     top: 550px;
