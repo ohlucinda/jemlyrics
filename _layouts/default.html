@@ -111,57 +111,36 @@ a:hover {
    端末・画面の向きごとの完全独立部屋（最新・完全版）
    ─────────────────────────────────────── */
 
-/* 1. 【iPhoneの縦向き】専用
-   縦画面で一番綺麗に見えていた元のバランス */
+/* 1. 【iPhoneの縦向き】専用 */
 @media (max-width: 450px) and (orientation: portrait) {
-  .top {
-    top: 310px;
-    font-size: 48px;
-  }
+  .top { top: 310px; font-size: 48px; }
 }
 
-/* 2. 【iPhoneの横向き】専用
-   高さが狭い画面に合わせて、位置とサイズを個別に救済 */
+/* 2. 【iPhoneの横向き】専用 */
 @media (max-width: 950px) and (max-height: 450px) and (orientation: landscape) {
-  .top {
-    top: 70px;
-    font-size: 36px;
-  }
+  .top { top: 70px; font-size: 36px; }
 }
 
-/* 3. 【iPadの縦向き】専用（iPad miniの縦向きもここ）
-   これまでの理想のバランス */
-@media (min-width: 451px) and (max-width: 820px) and (orientation: portrait) {
-  .top {
-    top: 500px;
-    font-size: 60px;
-  }
+/* 3. 【iPad mini】専用（縦・横） */
+@media (width: 768px) and (height: 1024px) and (orientation: portrait) {
+  .top { top: 400px; font-size: 55px; }
+}
+@media (width: 1024px) and (height: 768px) and (orientation: landscape) {
+  .top { top: 120px; font-size: 50px; }
 }
 
-/* 4-A. 【iPad miniの横向き】専用 ★ここだけ独立 */
-@media screen and (width: 1024px) and (height: 768px) and (orientation: landscape) {
-  .top {
-    top: 100px !important;
-    font-size: 40px !important;
-  }
+/* 4. 【普通のiPad / iPad Pro】専用（縦・横） */
+@media (min-width: 769px) and (max-width: 1366px) and (orientation: portrait) {
+  .top { top: 500px; font-size: 60px; }
 }
-
-/* 4-B. 【普通のiPad / iPad Proの横向き】専用 ★ここも独立
-   今「いい感じ」に見えている大きなiPadのバランスをそのまま固定 */
 @media (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
-  .top {
-    top: 300px;
-    font-size: 60px;
-  }
+  .top { top: 300px; font-size: 60px; }
 }
 
-/* 5. 【Mac / デスクトップ】専用
-   今「いい感じ」に見えているMacの特大サイズをそのまま固定 */
+/* 5. 【Mac / デスクトップ】専用 */
 @media (min-width: 1367px) {
-  .top {
-    top: 540px;
-    font-size: 70px;
-  }
+  .top { top: 540px; font-size: 70px; }
+}
   /* 💡Macのとき、フッター内のリンクにマウスを乗せたら何よりも最優先で色を変える命令 */
   .footer a:hover {
     color: #888 !important;
