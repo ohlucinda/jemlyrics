@@ -105,23 +105,4 @@ layout: default
 
 </style>
 
-<div class="page-wrap">
-
-
-<div class="bottom-row">
-  <a href="{{ '/titles' | relative_url }}">LYRICS</a>
-
-</div>
-
-<div class="get-in-touch">
-  <a href="mailto:jemmusicja@duck.com">GET IN TOUCH</a>
-</div>
-
-<div class="copy">
-Lyrics | Songs | Images
-© 2024 All rights reserved
-</div>
-
-<div class="meta-note">
-Designed for Mac and PC
 </div>
