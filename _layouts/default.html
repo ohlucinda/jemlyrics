@@ -121,22 +121,12 @@ a:hover {
   .top { top: 70px; font-size: 36px; }
 }
 
-/* 3. 【普通のiPad / iPad Pro】専用（縦） */
-@media (min-width: 821px) and (max-width: 1366px)
-and (orientation: portrait) {
-  .top {
-    top: 500px;
-    font-size: 60px;
-  }
+/* 3. 【iPad mini】専用（高さの指定を排除し、幅で確実に拾う） */
+@media (min-width: 768px) and (max-width: 768px) and (orientation: portrait) {
+  .top { top: 400px; font-size: 55px; }
 }
-
-/* 3. 【普通のiPad / iPad Pro】専用（横） */
-@media (min-width: 1181px) and (max-width: 1366px)
-and (orientation: landscape) {
-  .top {
-    top: 300px;
-    font-size: 60px;
-  }
+@media (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) {
+  .top { top: 120px; font-size: 40px; }
 }
 
 /* 4. 【普通のiPad / iPad Pro】専用（縦・横） */
