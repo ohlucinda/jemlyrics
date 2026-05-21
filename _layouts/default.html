@@ -121,14 +121,28 @@ a:hover {
   .top { top: 70px; font-size: 36px; }
 }
 
-/* 3. 【iPad mini】専用 */
-/* 縦向き：幅 768px */
-@media screen and (width: 768px) and (orientation: portrait) {
-  .top { top: 400px; font-size: 55px; }
+/* iPad mini 縦 */
+@media screen
+and (min-width: 760px)
+and (max-width: 820px)
+and (orientation: portrait) {
+
+  .top {
+    top: 400px;
+    font-size: 40px;
+  }
 }
-/* 横向き：幅 1024px */
-@media screen and (width: 1024px) and (orientation: landscape) {
-  .top { top: 100px; font-size: 30px; }
+
+/* iPad mini 横 */
+@media screen
+and (min-width: 1000px)
+and (max-width: 1100px)
+and (orientation: landscape) {
+
+  .top {
+    top: 100px;
+    font-size: 40px;
+  }
 }
 
 /* 4. 【普通のiPad / iPad Pro】専用（縦・横） */
