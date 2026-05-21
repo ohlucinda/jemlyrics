@@ -138,12 +138,11 @@ a:hover {
   }
 }
 
-/* 4-A. 【iPad miniの横向き】専用 ★ここだけ独立
-   横幅が1024pxまでの小ぶりなiPad横向き */
-@media (min-width: 951px) and (max-width: 1024px) and (orientation: landscape) {
+/* 4-A. 【iPad miniの横向き】専用 ★ここだけ独立 */
+@media screen and (width: 1024px) and (height: 768px) and (orientation: landscape) {
   .top {
-    top: 120px;       /* 💡iPad miniの横向きを見ながら、この数値だけを好きな位置に微調整してください */
-    font-size: 50px;
+    top: 120px !important;
+    font-size: 50px !important;
   }
 }
 
