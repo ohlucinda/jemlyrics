@@ -104,5 +104,3 @@ layout: default
 }
 
 </style>
-
-</div>
