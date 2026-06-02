@@ -10,12 +10,12 @@ layout: null
     <description>{{ site.description }}</description>
 
     <image>
-      <url>https://lyrics.ohlucinda.com/apple-touch-icon-j.png</url>
+      <url>https://lyrics.ohlucinda.com/apple-touch-icon.png</url>
       <title>{{ site.title }}</title>
       <link>{{ site.url }}{{ site.baseurl }}/</link>
     </image>
 
-    <webfeeds:icon>https://lyrics.ohlucinda.com/apple-touch-icon-j.png</webfeeds:icon>
+    <webfeeds:icon>https://lyrics.ohlucinda.com/apple-touch-icon.png</webfeeds:icon>
     <webfeeds:accentColor>#00AEEF</webfeeds:accentColor>
 
     {% for post in site.posts %}
