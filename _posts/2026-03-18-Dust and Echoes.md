@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: Dust and Echoes
+image: twosongs.jpg
 permalink: /dust-and-echoes/
 ---
 
