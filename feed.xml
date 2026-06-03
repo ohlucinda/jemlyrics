@@ -7,11 +7,6 @@ layout: null
 
     <title>{{ site.title }}</title>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
-    
-    <description><![CDATA[
-<img src="https://lyrics.ohlucinda.com/images/Je'm-og-b.jpg" />
-{{ post.excerpt | strip_html | strip_newlines }}
-]]></description>
 
     <image>
       <url>https://lyrics.ohlucinda.com/apple-touch-icon.png</url>
