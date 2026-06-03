@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: TITANIUM GRIP
+image: titaniumgrip.jpg
 permalink: /titanium-grip/
 ---
 
