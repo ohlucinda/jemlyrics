@@ -9,7 +9,7 @@ layout: null
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     
     <description><![CDATA[
-<img src="https://lyrics.ohlucinda.com/apple-touch-icon.png" />
+<img src="https://lyrics.ohlucinda.com/images/Je'm-og-b.jpg" />
 {{ post.excerpt | strip_html | strip_newlines }}
 ]]></description>
 
