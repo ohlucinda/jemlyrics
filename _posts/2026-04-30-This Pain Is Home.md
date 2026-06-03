@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: This Pain Is Home
+image: nomoredoubts.jpg
 permalink: /this-pain-is-home/
 ---
 
