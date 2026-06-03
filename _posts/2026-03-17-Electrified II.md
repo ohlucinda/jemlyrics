@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: ELECTRIFIED II
+image: electrifiedii.jpg
 permalink: /electrified-ii/
 ---
 
