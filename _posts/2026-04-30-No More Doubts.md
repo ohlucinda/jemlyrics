@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: No More doubts
+image: nomoredoubts.jpg
 permalink: /no-more-doubts/
 ---
 
