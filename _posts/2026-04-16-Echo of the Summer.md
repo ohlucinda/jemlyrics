@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: Echo of the Summer
+image: echoofthesummer.jpg
 permalink: /echo-of-the-summer/
 ---
 積み上げたものはいつも脆くて
