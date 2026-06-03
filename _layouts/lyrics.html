@@ -135,7 +135,7 @@ a:hover {
 
     <a href="{{ '/' | relative_url }}">Je'm</a>
 
-    <img src="/images/{{ page.image }}"
+    <img src="{{ '/images/' | append: page.image | relative_url }}"
      class="floating-art">
 
   </div>
