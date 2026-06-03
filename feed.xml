@@ -23,12 +23,17 @@ layout: null
     <webfeeds:accentColor>#00AEEF</webfeeds:accentColor>
 
     {% for post in site.posts %}
-    <item>
-      <title>{{ post.title }}</title>
-      <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
-      <description>{{ post.excerpt }}</description>
-    </item>
-    {% endfor %}
+<item>
+  <title>{{ post.title }}</title>
+  <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
+
+  <description><![CDATA[
+  <img src="https://lyrics.ohlucinda.com/images/Je'm-og-b.jpg" />
+  {{ post.excerpt | strip_html | strip_newlines }}
+  ]]></description>
+
+</item>
+{% endfor %}
 
   </channel>
 </rss>
