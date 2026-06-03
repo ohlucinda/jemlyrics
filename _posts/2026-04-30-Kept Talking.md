@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: Ketp Talking
+image: nomoredoubts.jpg
 permalink: /kept-talking/
 ---
 
