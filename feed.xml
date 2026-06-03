@@ -23,9 +23,9 @@ layout: null
   <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
 
   <description><![CDATA[
-  <img src="https://lyrics.ohlucinda.com/images/Je'm-og-b.jpg" />
-  {{ post.excerpt | strip_html | strip_newlines }}
-  ]]></description>
+<img src="https://lyrics.ohlucinda.com/images/{{ post.image }}" />
+{{ post.excerpt | strip_html | strip_newlines }}
+]]></description>
 
 </item>
 {% endfor %}
