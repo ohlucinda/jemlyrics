@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: Simple Joy
+image: twosongs.jpg
 permalink: /simple-joy/
 ---
 
