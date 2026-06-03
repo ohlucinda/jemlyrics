@@ -1,7 +1,7 @@
 ---
 layout: lyrics
 title: Electrified
-imamge: nomoredoubts.jpg
+image: nomoredoubts.jpg
 permalink: /electrified/
 ---
 
