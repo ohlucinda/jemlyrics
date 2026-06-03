@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: DIAMOND II
+image: diamonii.jpg
 permalink: /diamond-ii/
 ---
 
