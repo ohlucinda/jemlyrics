@@ -1,7 +1,7 @@
 ---
 layout: lyrics
 title: Absolute West
-imgaes: absolutewest.jpg
+imgae: absolutewest.jpg
 permalink: /absolute-west/
 ---
 
