@@ -1,6 +1,7 @@
 ---
 layout: lyrics
 title: Anger Is Not My Poison
+image: angerisnotmypoison.jpg
 permalink: /anger-is-not-my-poison/
 ---
 
