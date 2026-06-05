@@ -1,6 +1,6 @@
 ---
 layout: lyrics
-title: それでもここにいる
+title: Stay By My Side
 ---
 
 いつからだろう
