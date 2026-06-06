@@ -131,6 +131,62 @@ a:hover {
     color: #888 !important;
   }
 }
+
+@media (max-width: 768px) {
+
+  .page-wrap {
+    padding: 40px 24px 0px;
+  }
+
+  .site-header a {
+    font-size: 50px;
+  }
+
+  .lyrics-content {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .lyrics-content iframe {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .back {
+    right: 24px;
+  }
+}
+  
+</style>
+</head>
+
+<body>
+
+<div class="page-wrap">
+
+  <div class="inner">
+
+   <div class="site-header">
+  <div class="jem-wrap">
+
+    <a href="{{ '/' | relative_url }}">Je'm</a>
+
+    <img src="{{ '/images/' | append: page.image | relative_url }}"
+         class="floating-art">
+
+  </div>
+</div>
+
+    <div class="lyrics-content">
+      {{ content }}
+    </div>
+
+  </div>
+
+</div>
+  
+  
   
 </style>
 </body>
