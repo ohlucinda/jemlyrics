@@ -25,7 +25,10 @@ I am a lyricist.
 My music begins with words.  
 <br><br>
 
-Using evolving vocal personas such as Jem and An, I create songs that move between psychedelic textures, fragile emotional landscapes, punk spirit, folk narratives, and dreamlike atmospheres.  
+Using evolving vocal personas such as Jem and An.  
+<br><br>
+
+I create songs that move between psychedelic textures, fragile emotional landscapes, punk spirit, folk narratives, and dreamlike atmospheres.  
 <br><br><br><br><br><br>
 
 My process is deeply hands-on: shaping structure, editing, mixing, mastering, visual direction, and release.  
