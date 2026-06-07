@@ -18,8 +18,14 @@ I create songs that move between psychedelic textures, fragile emotional landsca
 My process is deeply hands-on: shaping structure, editing, mixing, mastering, visual direction, and release.  
   </div>
 
-<div class="back">
+<div class="to-home">
 
-  <a href="{{ '/' | relative_url }}">TO HOME</a>
+    <a href="{{ '/' | relative_url }}">TO HOME</a>
+
+  </div>
 
 </div>
+
+.to-home {
+  margin-top: 60px;
+}
