@@ -25,7 +25,3 @@ My process is deeply hands-on: shaping structure, editing, mixing, mastering, vi
   </div>
 
 </div>
-
-.to-home {
-  margin-top: 60px;
-}
