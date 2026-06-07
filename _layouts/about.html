@@ -64,11 +64,6 @@ body {
   object-fit: cover;
 }
 
-/* ───────────────────────────────────────
-   【基本エリア】
-   ※ 主に iPad横向き（ベース）に合わせた数値にします
-   ─────────────────────────────────────── */
-
 a:hover {
   color: #888;
 }
@@ -81,38 +76,6 @@ a:hover {
 
 .back a {
   font-size: 14px;
-}
-  
-/* ───────────────────────────────────────
-   端末・画面の向きごとの完全独立部屋（最新・完全版）
-   ─────────────────────────────────────── */
-
-/* 1. 【iPhoneの縦向き】専用 */
-@media (max-width: 450px) and (orientation: portrait) {
-  .top { top: 270px; font-size: 48px; }
-}
-
-/* 2. 【iPhoneの横向き】専用 */
-@media (max-width: 950px) and (max-height: 450px) and (orientation: landscape) {
-  .top { top: 74px; font-size: 36px; }
-}
-
-/* 4. 【普通のiPad / iPad Pro】専用（縦・横） */
-@media (min-width: 769px) and (max-width: 1180px) and (orientation: portrait) {
-  .top { top: 500px; font-size: 50px; }
-}
-@media (min-width: 1025px) and (max-width: 1336px) and (orientation: landscape) {
-  .top { top: 280px; font-size: 50px; }
-}
-
-/* 5. 【Mac / デスクトップ】専用 */
-@media (min-width: 1367px) {
-  .top { top: 440px; font-size: 70px; }
-  
-/* Macだけ */
-  .footer a:hover {
-    color: #888 !important;
-  }
 }
   
 </style>
