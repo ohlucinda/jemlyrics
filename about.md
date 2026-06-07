@@ -18,7 +18,7 @@ I create songs that move between psychedelic textures, fragile emotional landsca
 My process is deeply hands-on: shaping structure, editing, mixing, mastering, visual direction, and release.  
  
 
-<div style="margin-top:60px;">
+<div style="margin-top:40px; text-align:right; font-size:14px;">
   <a href="{{ '/' | relative_url }}">TO HOME</a>
 </div>
 
