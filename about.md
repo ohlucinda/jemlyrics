@@ -4,8 +4,8 @@ title:
 permalink: /about/
 ---
 
-  <div class="about-content" style="white-space: pre-wrap; font-size: 20px; text-align: left; line-height: 2.4; max-width: 680px; margin: 0 auto;">
-
+ <div class="about-content" style="white-space: pre-wrap; font-size: 20px; text-align: left; line-height: 2.4; max-width: 680px; width: 90%; margin: 0 auto;">
+   
 I am a lyricist.  
 
 My music begins with words.  
