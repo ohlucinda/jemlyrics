@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,6 +42,12 @@ href="https://use.typekit.net/qsa5fag.css">
 <body>
   
 {{ content }}
+
+ <div class="back">
+
+  <a href="{{ '/' | relative_url }}">TO HOME</a>
+
+</div> 
   
 <div class="footer">
   <div class="touch">
@@ -139,6 +146,16 @@ a:hover {
 .footer a:hover {
   color: #888;
 }
+
+.back {
+  position: fixed;
+  bottom: 90px;
+  right: 100px;
+}
+
+.back a {
+  font-size: 14px;
+}  
   
 /* ───────────────────────────────────────
    端末・画面の向きごとの完全独立部屋（最新・完全版）
