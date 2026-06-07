@@ -16,8 +16,10 @@ Using evolving vocal personas such as Jem and An.
 I create songs that move between psychedelic textures, fragile emotional landscapes, punk spirit, folk narratives, and dreamlike atmospheres.  
 
 My process is deeply hands-on: shaping structure, editing, mixing, mastering, visual direction, and release.  
-  </div>
+ 
 
 <div style="margin-top:60px;">
   <a href="{{ '/' | relative_url }}">TO HOME</a>
 </div>
+
+ </div>
