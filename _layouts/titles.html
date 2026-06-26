@@ -201,7 +201,7 @@ right: 24px;
 
 </div>
 
-<img src="{{ '/airpodsp2.jpg' | relative_url }}" class="art">
+<img id="random-art" src="" class="art">
 
 <div class="back">
 
@@ -236,6 +236,17 @@ searchInput.addEventListener('input', function () {
   });
 
 });
+
+  const images = [
+  "{{ '/airpodsp2.jpg' | relative_url }}",
+  "{{ '/sentimental-s.jpg' | relative_url }}",
+
+];
+
+const randomImage =
+  images[Math.floor(Math.random() * images.length)];
+
+document.getElementById('random-art').src = randomImage;
 
 </script>
 
